@@ -9,13 +9,13 @@
 require_once "../Business/toolbox/ItemProxy.php";
 
 $itemProxy=new ItemProxy();
-//$item=$itemProxy->loadItem(8);
-//var_dump($item);
+$item=$itemProxy->loadItem(8);
+var_dump($item);
 
-$items=$itemProxy->getItemsByName("感冒灵", 1, 1);
-foreach ($items as $item) {
-	var_dump($item);
-}
+//$items=$itemProxy->getItemsByName("感冒灵", 1, 1);
+//foreach ($items as $item) {
+//	var_dump($item);
+//}
 
 //$item=new DrugItem();
 //$item->mName="感冒灵";
