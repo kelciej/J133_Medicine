@@ -1,0 +1,7 @@
+<application>
+  <component name="UISettings">
+    <option name="LEFT_HORIZONTAL_SPLIT" value="true" />
+    <option name="COLOR_BLINDNESS" value="deuteranopia" />
+    <option name="DND_WITH_PRESSED_ALT_ONLY" value="true" />
+  </component>
+</application>
