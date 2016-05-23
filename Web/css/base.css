@@ -1,0 +1,140 @@
+@charset"utf-8";
+* { padding: 0; margin: 0; }
+body { font-size: 12px; color: #666; font-family: "宋体"; /*background-color:#f5f5f5;*/ }
+div { height: auto; }
+ul, li { list-style: none; }
+img { border: none; }
+input, button, select { vertical-align: middle; }
+/*清除浮动样式*/
+.clear { clear: both; height: 0; width: 100%; }
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+.clearfix { zoom: 1; clear: both; }
+
+/*头部样式*/
+/*
+.header_t, .header, .navc, .Crumbs { margin-left: auto; margin-right: auto; width: 980px; }
+.header_top { background: #f7f7f7; border-bottom: 1px solid #e6e6e6; height: 35px; color: #767676; line-height: 35px; }
+.header_t_l { float: left; }
+.header_t_r { float: right; }
+.hNavList li { float: right; padding: 0px 8px; position: relative; z-index: 10; }
+li.tphone, li.ttel, li.tcart { background: url(../image/ico_t.png) no-repeat 6px -74px; padding-left: 20px; }
+li.ttel { background-position: 7px -37px; font-weight: bold; }
+li.tcart { background-position: -3px -2px; font-weight: bold; }
+li.tcart a { margin: 0px 3px; }
+.tlast { padding-right: 12px; }
+*/
+/*----------- 8.28 -----------*/
+
+/*顶部导航栏*/
+/*
+.hNavList .Ycen { display: block; }
+.hNavList .Yico_dian { background: url(../image/ico_t.png) no-repeat -2px -120px; position: absolute; right: 5px; top: 12px; display: block; width: 10px; height: 10px; }
+.hNavList .Yhover .Ycen { background: #FFFFFF; position: absolute; height: 36px; width: 100%; display: block; z-index: -1; margin-left: -8px; border: 1px solid #e6e6e6; border-bottom: none; border-top: none; top: 0; }
+.hNavList .Yhover .Yico_dian { background-position: -2px -133px; }
+.hNavList .Yhover .Ytopnavdiv { position: absolute; background: #FFFFFF; display: block; border: 1px solid #e6e6e6; z-index: -2; right: -2px; top: 35px; overflow: hidden; }
+.hNavList .Yhover .Ytopnavdiv b { color: #cc0000; padding-left: 3px; }
+.hNavList .Yaccount .Ytopnavdiv { width: 88px; }
+.hNavList .Ymyorder { width: 76px; }
+.hNavList .Ymyorder .Ytopnavdiv { width: 92px; left: 0px; right: auto; }
+.hNavList .Ymyorder .Yico_dian { right: 20px; }
+.hNavList .YService .Ytopnavdiv { width: 76px; }
+.hNavList .Ytopnavdiv a { color: #939393; }
+.hNavList .Ytopnavdiv a:hover { color: #FF0000; }
+
+/*此处将Ymykadc改为Ytopnavdl*/
+/*
+.Ytopnavdl, .Ymyorderc, .YServicec{ background: #f7f7f7; line-height: 24px; padding: 5px 7px;}
+/*显示顶部导航栏二级菜单*/
+/*
+.Ytopnavdiv {display: none;}
+.YService .Ytopnavdiv .dl{float: none;}
+.YService:hover .Ytopnavdiv{display: block;height: inherit;width:inherit;position: absolute;}
+.Yaccount:hover .Ytopnavdiv{display: block;height: inherit;width:inherit;position: absolute;}
+.Ymyorder:hover .Ytopnavdiv{display: block;height: inherit;width:inherit;position: absolute;}
+*/
+/*
+.header { height: 112px; }
+.header_l { float: left; width: 270px; }
+.header_logo { padding: 10px 0px 5px; }
+.header_l p span { color: #FF0000; }
+.header_l p a:hover { color: #666666; }
+.header_r { float: right; width: 730px; padding-top: 30px; }
+.header_r_d { padding: 10px 0px 0px; }
+.header_r_d span { padding: 0px 4px; }
+*/
+/*旧的搜索栏
+.header_search { border: 2px solid #FF0000; width: 536px; margin-left: 0; height: 32px; position: relative; }
+.header_search .stxt { border: none; width: 440px; float: left; padding: 3px 8px; line-height: 26px; height: 26px; color: #bfbfbf; background: #FFFFFF; }
+.header_search .sbtn { background: #FF0000; border: none; color: #FFFFFF; width: 80px; height: 32px; font-size: 16px; font-family: "微软雅黑"; cursor: pointer; }
+*/
+.nav { background: #2d8ef3; height: 40px; clear: both; }
+/*
+.categorys { float: left; width: 200px; height: 40px; background: #0066d4; }
+.categorys h2 { line-height: 40px; text-align: center; font-size: 18px; font-family: "微软雅黑"; }
+.categorys h2 a { color: #FFFFFF; background: url(http://res.360kad.com/theme/default/img/user/2015/ico_110.jpg) no-repeat right 5px; line-height: 36px; padding: 0px 25px; font-weight: normal; }
+.navclist { float: left; padding-left: 1px; }
+.navclist li { float: left; height: 40px; }
+.navclist li a { color: #FFFFFF; display: block; font-size: 14px; font-weight: bold; line-height: 40px; padding: 0px 20px; }
+.navclist li a:hover { background: #0066d4; text-decoration: none; }
+.Crumbs { height: 40px; line-height: 40px; color: #767676; }
+.Crumbs a { color: #767676; }
+.Crumbs span { color: #a6a6a6; }
+.header_top a { color: #666; text-decoration: none; }
+.header_top a:hover { color: #ff0000; text-decoration: underline; }
+
+/*底部*/
+.wrap_footer { margin-top: 40px; width: 100%; background: #2d8ff4; clear: both; }
+.wrap_footer .item01 { width: 100%; height: 100px; border-bottom: 1px solid #147ce8; }
+.wrap_footer .item01 .width980, .footer_list .width980 { margin: 0 auto; width: 980px; position: relative; z-index: 1; }
+.wrap_footer .item01 .width980 .safeBuy { position: absolute; left: 0; top: 0; width: 240px; height: 86px; }
+.wrap_footer .item02 .width980 { padding: 20px 0 0 20px; width: 960px; }
+.wrap_footer .item02 { height: 222px; border-top: 1px solid #439ffd; border-bottom: 0; overflow: hidden; }
+.wrap_footer .item02 .lside { float: left; width: 106px; color: #fff; }
+.wrap_footer .item02 .lside .title { padding-bottom: 8px; font: bold 14px/20px ""; }
+.wrap_footer .item02 .lside .title02 { padding-top: 8px; width: 78px; line-height: 16px; text-align: center; }
+.wrap_footer .item02 .lside .appCode { float: left; width: 106px; }
+.wrap_footer .item02 .lside .appCode .code { width: 106px; height: 106px; background: url(http://res.360kad.com/theme/default/img/user/2015/codeallbgs.gif) 0 0 no-repeat; }
+.wrap_footer .item02 .lside .appCode .pl8 { padding-left: 8px; }
+.wrap_footer .item02 .lside .ios, .wrap_footer .item02 .lside .android { display: inline; margin-top: 8px; float: left; }
+.wrap_footer .item02 .lside .ios a { float: left; width: 29px; height: 29px; background: url(http://res.360kad.com/theme/default/img/user/2015/codeallbgs.gif) -212px 0 no-repeat; }
+.wrap_footer .item02 .lside .ios a:hover { background-position: -270px 0; }
+.wrap_footer .item02 .lside .android a { float: left; width: 29px; height: 29px; background: url(http://res.360kad.com/theme/default/img/user/2015/codeallbgs.gif) -241px 0 no-repeat; }
+.wrap_footer .item02 .lside .android a:hover { background-position: -299px 0; }
+.wrap_footer .item02 .lside .line { margin: 12px 14px 0 14px; float: left; height: 24px; border-left: 1px solid #147ce8; border-right: 1px solid #439ffd; overflow: hidden; }
+.wrap_footer .item02 .mside { float: right; padding-right: 10px; }
+.wrap_footer .item02 .mside li { float: left; width: 114px; text-align: left; color: #fff; line-height: 22px; }
+.wrap_footer .item02 .mside .phonePic { padding-top: 4px; width: 180px; line-height: 24px; text-align: right; }
+.wrap_footer .item02 .mside .phonePic .pt4 { padding-top: 4px; }
+.wrap_footer .item02 .mside li .title { padding-bottom: 22px; font: bold 16px/24px ""; }
+.wrap_footer .item02 .mside li a, .wrap_footer .item02 .mside li a:hover { color: #fff; text-decoration: none; }
+
+.footer_list { padding-top: 10px; width: 100%; overflow: hidden; line-height: 22px; padding-bottom: 15px; }
+.footer_list a { padding-right: 12px; color: #666; }
+.footer_list a:hover, .footer_list .about133List a:hover, .footer_list .hyRz li a:hover { color: #ff0000; text-decoration: underline; }
+.footer_list p .title { font-weight: bold; color: #666; }
+.footer_list p .fl { float: left; }
+.footer_list p.friendLinks { height: 22px; overflow: hidden; }
+.footer_list p .linkBox { width: 1092px; text-align: left; }
+.footer_list .about133List { margin-top: 6px; padding-top: 6px; text-align: center; }
+.footer_list .about133List a { padding-right: 0; color: #666; }
+.footer_list .diploma_list { padding-left: 16px; text-align: left; }
+.footer_list .diploma_list a { padding-right: 0; }
+.footer_list .diploma_list .pr8 { padding-right: 8px; }
+.footer_list .hyRz { padding-left: 224px; }
+.footer_list .hyRz li { padding-left: 8px; float: left; }
+.footer_list .hyRz li a { padding-right: 0; float: left; color: #333; line-height: 18px; }
+.footer_list .hyRz li .txt { padding-right: 4px; width: 66px; background: url(http://res.360kad.com/theme/default/img/user/2015/rightLine.png) no-repeat right 6px; }
+.footer_list .hyRz li .item01 { padding-left: 1px; width: 60px; }
+.footer_list .hyRz li .item02 { width: 56px; }
+.footer_list .hyRz li .item03 { padding: 4px 8px 0 0; background: url(http://res.360kad.com/theme/default/img/user/2015/rightLine.png) no-repeat right 6px; }
+.footer_list .bottom { text-align: center; color: #666; }
+/*2015-7-23修改*/
+.wrap_footer .item02 .width980{width:1180px; padding-left:20px;}
+.wrap_footer .item02 .lside{float:left;width: 248px;color:#fff;}
+.wrap_footer .item02 .lside .weixinCode{float:right;width: 106px;}
+.wrap_footer .item02 .lside .weixinCode .code{width: 106px;height: 106px;background: url(http://res.360kad.com/theme/default/img/user/2015/codeallbgs.gif) -106px 0 no-repeat;}
+.wrap_footer .item02 .lside .title{text-align: center;}
+.wrap_footer .item02 .lside .title02{margin:0 auto;}
+.wrap_footer .item02 .mside .phonePic{padding-left:60px;}
+/*2015-7-23修改*/
+

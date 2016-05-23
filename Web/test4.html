@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--布局:www_search_product_v2-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>商品搜索</title>
+    <link href="css/baseM3.css" rel="stylesheet" type="text/css"/>
+    <link href="css/headFooter.css" rel="stylesheet" type="text/css"/>
+    <link href="css/search.css" rel="stylesheet" type="text/css"/>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.1.7.1.min.js" type="text/javascript"></script>
+    <!--<script src="js/jquery.1.7.2.min.js" type="text/javascript"></script>-->
+    <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+    </script>
+</head>
+<body>
+    <!--主体-->
+    <script type="text/javascript">
+        $(function(){
+            $("#num").keyup(function(){
+                if(isNaN($(this).val()) || parseInt($(this).val())<1){
+                    //$(this).val("1");
+                    $("#total-price").html($("#price1").text());
+                    return;
+                }
+                var total = parseFloat($("#price1").text())*parseInt($(this).val());
+                $("#total-price").html(total.toFixed(2));
+            })
+
+        })
+        /*商品数量+1*/
+        function addnum(){
+            var num_add = parseInt($("#num").val())+1;
+            if($("#num").val()==""){
+                num_add = 1;
+            }
+
+            $("#num").val(num_add);
+            var total = parseFloat($("#price1").text())*parseInt($("#num").val());
+            $("#total-price").html(total.toFixed(2));
+        }
+        /*商品数量-1*/
+        function decnum(){
+            var num_dec = parseInt($("#num").val())-1;
+            if(num_dec<1){
+                //num_dec=0;
+                //购买数量必须大于或等于1
+                alert("not lt 1");
+            }
+            else{
+                $("#num").val(num_dec);
+                var total = parseFloat($("#price1").text())*parseInt($("#num").val());
+                $("#total-price").html(total.toFixed(2));
+
+        }}
+    </script>
+    <div class="cart-body" style="display: block;">
+        <div class="cart-sectionA ">
+            <p class="th-title">我的购物车</p>
+            <ul class="pro-list-box"><!--OTC-->
+                <li class="act">
+                    <div class="disb item1">
+                        <label for="" class="single-chose">
+                            <i class="on">
+                                <input type="checkbox" class="check-box-input" name="product" id="" value="" redemp="" onclick="changeSelect(this)">
+                            </i>
+                        </label>
+                    </div>
+                    <div class="disb item3">
+                        <p>
+                            <i class="icon0 ">
+                            </i>
+                            <a href="#" target="_blank" title="">品牌名 药品名 规格</a>
+                        </p>
+                    </div>¥
+                    <div class="disb item4" id="price1">68.00</div>
+                    <div class="disb item5">
+                        <span class="reduct-btn" id="reduct-btn" onclick="decnum()">-</span>
+                        <!--<span class="reduct-btn" id="reduct-btn" onclick="changeCart(event,'c526e3ba83cc4cd99f52e1e980a370a1',-1)">-</span>  -->
+                        <input type="text" maxlength="3" id="num" class="num-txt" value="3" onblur="changeCart(event,'c526e3ba83cc4cd99f52e1e980a370a1',0)">
+                        <span class="reduct-btn" id="add-btn" onclick="addnum()">+</span>
+                    </div>
+                    <div class="disb item9"><span class="delte-btn" id="" onclick="Delete(event,'c526e3ba83cc4cd99f52e1e980a370a1');">删除</span></div>
+                </li>
+                <input id="" class="cartId" value="" type="hidden">
+                <input id="" value="null" type="hidden"><input id="" value="0" type="hidden">
+                <input id="" type="hidden" value="0"><input id="" type="hidden" value="undefined">
+            </ul>合计：¥
+            <p class="total-price kad_notRx_total_price" id="total-price">204.00</p>
+        </div>
+    </div>
+    <!--END主体-->
+
+
+        <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        <html xmlns="http://www.w3.org/1999/xhtml">
+        <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+            <title>js数量加减</title>
+            <script type="text/javascript" src="http://www.jb51.net/Public/js/jquery.min.js"></script>
+            <script type="text/javascript">
+                $(function(){
+                    $("#quantity").keyup(function(){
+                        if(isNaN($(this).val()) || parseInt($(this).val())<1){
+                            $(this).val("0");
+                            $("#totalPrice").html($("#price").text());
+                            return;
+                        }
+                        var total = parseFloat($("#price").text())*parseInt($(this).val());
+                        $("#totalPrice").html(total.toFixed(2));
+                    })
+
+                })
+                /*商品数量+1*/
+                function numAdd(){
+                    var num_add = parseInt($("#quantity").val())+1;
+                    if($("#quantity").val()==""){
+                        num_add = 1;
+                    }
+                    $("#quantity").val(num_add);
+                    var total = parseFloat($("#price").text())*parseInt($("#quantity").val());
+                    $("#totalPrice").html(total.toFixed(2));
+                }
+                /*商品数量-1*/
+                function numDec(){
+                    var num_dec = parseInt($("#quantity").val())-1;
+                    if(num_dec<1){
+                        //购买数量必须大于或等于1
+                        alert("not lt 1");
+                    }else{
+                        $("#quantity").val(num_dec);
+                        var total = parseFloat($("#price").text())*parseInt($("#quantity").val());
+                        $("#totalPrice").html(total.toFixed(2));
+                    }
+                }
+            </script>
+        </head>
+        <body>
+        <p>Quantity:
+            <span onclick="numDec()">-</span>
+            <input type="text" id="quantity" />
+            <span onclick="numAdd()">+</span>
+        </p>
+        <p class="sdsd">Total Price:
+            <span id="totalPrice">28.10</span>
+        </p>
+        <p id="price">28.1</p>
+        <!--<input type="hidden" value="28.1" id="price" /><!--单价-->
+        </body>
+        </html>
+</body>
+</html>

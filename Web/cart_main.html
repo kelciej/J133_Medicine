@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>查看购物车</title>
+    <!--
+    <script src="http://res1.360kad.com/script/jquery.1.7.1.min.js" type="text/javascript"></script>
+    <script language="javascript" type="text/javascript" async="async" src="http://ctr.360kad.com/ctrjs/ctr_v2.js"></script>
+    <script src="http://res1.360kad.com/script/envconfig.js" type="text/javascript"></script>
+    <script src="http://res.360kad.com/script/url.js" type="text/javascript"></script>
+    <script src="js/form-btn.js" type="text/javascript"></script>
+    <script src="js/form-btn.js" type="text/javascript"></script>
+    <script src="http://res2.360kad.com/script/rx_base.js" type="text/javascript"></script>   -->
+    <link href="css/base.css" rel="stylesheet" type="text/css"/>
+    <link href="css/headFooter.css" rel="stylesheet" type="text/css"/>
+    <link href="css/order_cart.css" rel="stylesheet" type="text/css"/>
+    <link href="http://res.360kad.com/theme/default/css/user/2015/orderProcess.css" rel="stylesheet" type="text/css"/>
+    <script src="js/jquery.1.7.1.min.js" type="text/javascript"></script>
+
+    <link href="http://res.360kad.com/script/Emailmatch/email.css" rel="stylesheet" type="text/css"/>
+    <style type="text/css">
+        .item2 img { width: 100px; }
+        .header_search { float: left; }
+        .header_r_d { clear: both; }
+        .header_search_fine { float: left; margin-top: 10px; padding-left: 10px; }
+    </style>
+
+
+    <script>
+        window.cartConfig = {
+            cartFreePostage:"该订单已包邮",
+            cartPostage: "还差{0}元包邮",
+            postage: 39
+        };
+    </script>
+    <!--
+    <script src="http://res4.360kad.com/script/Recomm2.js" type="text/javascript"></script>
+    <script src="http://res4.360kad.com/script/web2014/publicsearch.js" type="text/javascript"></script>
+    <script src="http://res3.360kad.com/script/Emailmatch/jquery.emailmatch-new.js" type="text/javascript"></script>
+    <script src="http://res.360kad.com/script/cart.js" type="text/javascript"></script>
+    <script src="http://res.360kad.com/script/cartList.js" type="text/javascript"></script>
+    -->
+    <script type="text/javascript">
+        $(function () {
+            if (IsLogin()) {
+                $("#h_isLogin").val(1);
+            }
+            $('#kad-delte-closeBtn').click(function () { $('#kad-delete-pop .pop-btn-right').click(); });//弹窗右上角的X
+        });
+
+        function LogOut() {
+            location.href = 'http://user.360kad.com/User/LogOut?ReturnUrl=' + document.URL;
+        }
+    </script>
+
+</head>
+<!--部件结束:NewLoginRegTop-->
+
+<body>
+<div class="header_top">
+    <div class="header_t">
+        <div class="header_t_l">
+            <div class="YnewNoLogin">
+                欢迎来到133号药铺 ！
+                <a href="Login.html">[请登录]</a>
+                <a href="Register.html">[免费注册]</a>
+            </div>
+            <!--登陆推出-->
+            <ul class="YnewYesLogin">
+                <li>欢迎回来！</li>
+                <li class="YUserName"></li>
+                <li class="Yout"></li>
+                <a href="#">[退出]</a>
+            </ul>
+        </div>
+        <div class="header_t_r">
+            <ul class="hNavList">
+                <li class="Ywebnav">
+                    <span class="Ycen"></span>
+                    <span class="Yico_dian"></span>
+                    <span class="tlast">网站导航</span>
+                    <div class="Ytopnavdiv">
+                        <dl>
+                            <dt>专科用药</dt>
+                            <dd><a href="#" target="_blank">肝胆科</a></dd>
+                            <dd><a href="#" target="_blank">肠胃科</a></dd>
+                        </dl>
+                        <dl class="d2">
+                            <dt>家庭用药</dt>
+                            <dd><a href="" target="_blank">感冒发烧</a></dd>
+                            <dd><a href="#" target="_blank">消炎清热</a></dd>
+                            <dd><a href="#" target="_blank">日常护理</a></dd>
+                        </dl>
+                        <dl>
+                            <dt>健康热点</dt>
+                            <dd><a href="http://jf.360kad.com/" target="_blank">减肥瘦身</a></dd>
+                            <dd><a href="http://sex.360kad.com/" target="_blank">两性健康</a></dd>
+                        </dl>
+                    </div>
+                </li>
+                <li class="YService">
+                    <span class="Ycen"></span><span class="Yico_dian"></span><span class="tlast">客户服务</span>
+                    <div class="Ytopnavdiv">
+                        <dl class="Ytopnavdl">
+                            <dd><a href="help">帮助中心</a></dd>
+                            <dd><a href="ContactSer">联系客服</a></dd>
+                            <dd><a href="Complaint">投诉建议</a></dd>
+                        </dl>
+                    </div>
+                </li>
+                <li class="ttel" ><a href="tel:＋8618321873524">+86 &nbsp; 183-2187-3524</a></li>
+                <li class="tcart">购物车<a href="#">0</a>件</li>
+                <li class="Ymyorder ">
+                    <span class="Ycen"></span><span class="Yico_dian_a"></span><a href="order" class="tlast">我的订单</a>
+                </li>
+                <li class="Yaccount">
+                    <span class="Ycen"></span><span class="Yico_dian"></span><a href="user" class="tlast">我的账户</a>
+                    <div class="Ytopnavdiv">
+                        <dl class="Ytopnavdl">
+                            <dd><a href="#">我的处方</a></dd>
+                            <dd><a href="#">收货地址</a></dd>
+                        </dl>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="order-msg-wrap">
+    <!--顶部-->
+    <div class="subsuccess_h clearfix">
+        <div class="head_l">
+            <a href="index.html">
+                <img src="image/j133_logo.png"  />
+            </a>
+        </div>
+        <div class="head_r">
+            <img src="image/shop_p2.png"  />
+        </div>
+    </div>
+    <!--顶部end-->
+    <!--头部--
+    <div class="ctime cartTime">
+        <span class="ctimeInfo" style="float: left; line-height: 18px; font-weight: bold;">
+        </span>
+        <input type="hidden" id="ctimeType" value="cart" />
+        <div class="ctimew">
+            <img src="http://res.360kad.com/theme/default/img/ctimeChm.png" alt="倒计时说明"  />
+            <ul class="ctimeWarn">
+                <li>▪ 由于库存有限，我们只能暂时为您在购物车保留20分钟。</li>
+                <li>▪ 超时后点击去结算，如果还有货，会自动加入购物车。</li>
+            </ul>
+        </div>
+    </div>-->
+    <div class="cart-thead clearfix">
+        <label for="" class="full-chose-box">
+            <i>
+                <input type="checkbox" name="" id="full-chose-input" class="full-chose-input check-box-input" />
+            </i>全选
+        </label>
+        <span class="pro-title" style="width: 20%">商品名称</span>
+        <span class="other-msg"style="width: 50%">
+            <span class="sw80">价格</span><span class="line">|</span><span class="sw80">数量</span><span class="line">|</span><span class="sw80">小计</span><span class="line">|</span><span class="sw80">操作</span>
+        </span>
+    </div>
+    <!--主体-->
+    <script type="text/javascript">
+        $(function(){
+            $("#num").keyup(function(){
+                if(isNaN($(this).val()) || parseInt($(this).val())<1){
+                    $(this).val("1");
+                    $("#total-price").html($("#price1").text());
+                    return;
+                }
+                var total = parseFloat($("#price1").text())*parseInt($(this).val());
+                $("#total-price").html(total.toFixed(2));
+            })
+        })
+        function addnum(){
+            var num_add = parseInt($(".num-txt").val())+1;
+            if($(".num-txt").val()==""){
+                num_add = 1;
+            }
+            $(".num-txt").val(num_add);
+            var total = parseFloat($("#price1").text())*parseInt($(".num-txt").val());
+            $("#total-price").html(total.toFixed(2));
+        }
+        function decnum(){
+            var num_dec = parseInt($(".num-txt").val())-1;
+            if(num_dec<1) {
+                num_dec = 0;
+            }            else{
+                $(".num-txt").val(num_dec);
+                var total = parseFloat($("#price1").text())*parseInt($(".num-txt").val());
+                $("#total-price").html(total.toFixed(2));
+        }}
+    </script>
+
+    <div class="cart-body" style="display: block;">
+        <div class="cart-sectionA ">
+            <p class="th-title">我的购物车</p>
+            <ul class="pro-list-box"><!--OTC-->
+                <li class="act">
+                    <div class="disb item1">
+                        <label for="" class="single-chose">
+                            <i class="on">
+                                <input type="checkbox" class="check-box-input" name="product" id="c526e3ba83cc4cd99f52e1e980a370a1" value="c526e3ba83cc4cd99f52e1e980a370a1" redemp="" onclick="changeSelect(this)">
+                            </i>
+                        </label>
+                    </div>
+                    <div class="disb item2">
+                        <a href="#" target="_blank" title="">
+                            <img src="image/ganmao1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="disb item3">
+                        <p>
+                            <i class="icon0 ">
+                            </i>
+                            <a href="#" target="_blank" title="">品牌名 药品名 规格</a>
+                        </p>
+                    </div>
+                    <span>¥</span><div class="disb item4" id="price1">1.00</div>
+                    <div class="disb item5">
+                        <span class="reduct-btn" id="reduct-btn" onclick="decnum()">-</span>
+                        <!--<span class="reduct-btn" id="reduct-btn" onclick="changeCart(event,'c526e3ba83cc4cd99f52e1e980a370a1',-1)">-</span>  -->
+                        <input type="text" maxlength="3" id="" class="num-txt" value="3" onblur="changeCart(event,'c526e3ba83cc4cd99f52e1e980a370a1',0)">
+                        <span class="reduct-btn" id="add-btn" onclick="addnum()">+</span>
+                        <!--<span class="reduct-btn" id="add-btn" onclick="changeCart(event,'c526e3ba83cc4cd99f52e1e980a370a1',1)">+</span>-->
+                    </div>
+                    <!--
+                    <div class="disb item6">省<span class="save-price">¥0.00</span>元</div>         -->
+                    <div class="disb item8">￥<span id="price_c526e3ba83cc4cd99f52e1e980a370a1">204.00</span></div>
+                    <div class="disb item9"><span class="delte-btn" id="aCartc526e3ba83cc4cd99f52e1e980a370a1" onclick="Delete(event,'c526e3ba83cc4cd99f52e1e980a370a1');">删除</span></div>
+                </li><!--
+                <input id="cartId_c526e3ba83cc4cd99f52e1e980a370a1" class="cartId" value="c526e3ba83cc4cd99f52e1e980a370a1" type="hidden">
+                <input id="ProductId_c526e3ba83cc4cd99f52e1e980a370a1" value="null" type="hidden"><input id="concession_c526e3ba83cc4cd99f52e1e980a370a1" value="0" type="hidden">
+                <input id="IsRX_c526e3ba83cc4cd99f52e1e980a370a1" type="hidden" value="0"><input id="ProductType_c526e3ba83cc4cd99f52e1e980a370a1" type="hidden" value="undefined">
+                -->
+            </ul>
+            <span>合计：¥</span>
+            <p class="total-price kad_notRx_total_price" id="total-price">204.00</p>
+        </div>
+    </div>
+    <!--END主体-->
+    <div id="loadingCart" style="display:none">
+        <p style="text-align: center; line-height: 60px; background: url(image/loading.gif) no-repeat left center; padding-left: 20px; width: 175px; margin: 0 auto;">
+            正在加载购物车,请稍候...
+        </p>
+    </div>
+
+
+    <!--结算-->
+    <div class="settle-0accounts">
+        <p class="clearfix">
+            <label for="">
+                <i>
+                    <input type="checkbox" id="full-chose-input-end" name="" class="check-box-input" />
+                </i>全选
+            </label>
+            <span class="delte-full-btn" onclick="removeSelect();">批量删除</span> <span class="without-pay">
+             <i></i><span>还差{0}元包邮</span>
+            </span>
+        </p>
+        <div class="clearfix go-pay-box">
+            <span class="go-back">
+                <i></i><a href="javascript:void()" onclick="_gaq.push(['_trackEvent', '新订单流程跟踪20120823', '购物车-继续购买-按钮', '0', 0]);location.href='http://www.360kad.com'">
+                继续购物
+            </a>
+            </span> <span class="cart-msg ">
+                <span class="go-pay-btn">
+                    <a href="javascript:GoToOrder()"
+                       id="btnAccount"></a><a href="javascript:void(0)" id="btnLoading" style="display: none; background: url(http://res2.360kad.com/theme/default/img/user/2015/loading.gif) no-repeat; line-height: 38px; padding-left: 26px; text-indent: 0; text-decoration: none; color: #666;">订单提交中...</a>
+                </span><span class="product-total-price">¥0.00</span><span class="fr">已选择<span class="product-nums">0</span>件商品&nbsp;&nbsp;商品总价（不含运费）：</span>
+            </span>
+        </div>
+    </div>
+    <!--END结算-->
+    <!--无商品-->
+    <div id="cart-nothings" style="display: none;">
+        <div class="cart-nothings">
+            <p class="title">
+                您的购物车还是空的，您可以
+            </p>
+            <p>
+                查看 <a href="http://user.360kad.com/Order?Type=0">购买过的商品</a>
+            </p>
+            <p>
+                查看 <a href="http://user.360kad.com/Favorite/Index">我的收藏</a>
+            </p>
+            <p>
+                去 <a href="http://www.360kad.com">首页</a> 抢购
+            </p>
+        </div>
+        <div class="kad-search-box clearfix">
+            <!--部件开始:www_search_header,分组:通用部件-->
+            <div class="header_r">
+                <form  name="search" id="searchForm" action="http://search.360kad.com?pageText=" method="get">
+                    <div class="header_search" id="txtSearchbox1">
+                        <input id="pageText" name="pageText" class="stxt"  onfocus="SearchText(this,'txtSearchbox1')"  autocomplete="off"  />
+                        <input type="submit" class="sbtn" value="搜索"   id="BtnSearchProdut">
+                        <div class="search_history">
+                            <div class="search_history_l">
+                                <div class="y_history">
+                                    <p class="search_history_t">历史记录：<span><a href="javascript:;" id="his_clearAll" style="display:none;" onclick="delSeacHislist()">清空</a></span></p>
+                                    <ul class="s_historylist" id="s_historylist"></ul>
+                                    <div class="no_history">
+                                        <p><img src="http://res.360kad.com/theme/default/img/search/no-history.jpg" alt=""/></p>
+                                        <p>亲，您还没有历史记录哦</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search_history_r">
+                                <p>正在热搜中：</p>
+                                <div id="s_history_r">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header_search_fine">
+                        <a href="http://www.360kad.com/dymhh/selfhelp.shtml" target="_blank">自助找药</a>
+                    </div>
+                </form>
+                <p class="header_r_d">
+                    <a class="header_r_d_a1" target="_blank" href="http://www.360kad.com/product/100908.shtml?kzone+ssl_wz1">中药补气调理</a> |
+                    <a class="header_r_d_a2" target="_blank" href="http://www.360kad.com/product/100911.shtml?kzone+ssl_wz2">便秘中药调理</a> |
+                    <a class="header_r_d_a3" target="_blank" href="http://www.360kad.com/product/100912.shtml?kzone+ssl_wz3">补肾中药养护</a> |
+                    <a class="header_r_d_a4" target="_blank" href="http://www.360kad.com/product/100910.shtml?kzone+ssl_wz4">三高中药调理</a> |
+                    <a class="header_r_d_a5" target="_blank" href="http://www.360kad.com/product/100921.shtml?kzone+ssl_wz5">应酬多者中药调理</a> |
+                    <a class="header_r_d_a6" target="_blank"  href="http://www.360kad.com/product/100918.shtml?kzone+ssl_wz6">中药护肠助消化</a>
+                </p>
+            </div>
+
+            <style>
+                /* 历史记录 */
+                .search_history{width:456px;display:none; position:absolute;z-index:3;border: 1px solid #e6e6e6; left: -1px; top: 32px;background-color:#fff;height:270px;z-index:99}
+                .search_history_l{width:230px;float:left;border-right:solid 1px #e6e6e6;padding-top:5px;height:266px}.s_historylist li{cursor: pointer; font-size: 12px; line-height: 24px; height: 24px; padding: 0px 10px; color:#000;}
+                .s_historylist li span,.search_history_t span{float:right;color:#767676;font-weight:bold;cursor:pointer;}.s_historylist li span{display:none;}
+                .search_history_t{padding:0 10px;line-height:22px;color:#959595}.search_history_t span a{text-decoration:underline;color:#767676;font-weight:normal;}.s_historylist li a,#findContent li a{color:#000;}.s_historylist li a:hover,#findContent li a:hover{color:#000;text-decoration:none;}
+                .search_history_r{width:215px;float:left;padding:8px 0px 8px 10px;height:254px;overflow:hidden}.search_history_r a{display:inline-block;height:24px;line-height:24px;margin-bottom:9px; padding:2px 5px;border:solid 1px #cfcfcf;white-space: nowrap; font-weight:normal;color:#000; margin-right:5px;}.search_history_r a:hover{color:#ff0000;border:solid 1px #ff0000;text-decoration:none;}
+                .search_history_r p{color:#959595;padding-bottom:15px}.s_historylist label{cursor:pointer;}
+                .no_history{color:#767676;text-align:center;padding-top:25px}.s_historylist li a{width:190px;display:inline-block;}
+                /*  右侧倒计时 */
+                .header {
+                    position: relative;
+                }
+                .header_rtime {
+                    display: none;
+                    background:url(http://res.360kad.com/theme/default/img/activity/search_r_kh201602.png) no-repeat bottom;
+                    width: 237px;
+                    height: 67px;
+                    position: absolute;
+                    right: -38px;
+                    top: 0px;
+                    padding: 45px 0 0 82px;
+                    font-family: "微软雅黑";
+                    color: #fff;
+                }
+                .header_rtime:hover{color:#fff;}
+                .header_rtime span {
+                    float: left;
+                    padding-right:25px;
+                    font-size: 10px;
+                    width: 24px;
+                    text-align: center;
+                    margin-top:37px;
+                }
+            </style>
+            <a href="http://www.360kad.com/zhuanti/kainiandacu.shtml" class="header_rtime" id="Countdown" target="_blank">
+                <span>00</span><span>00</span><span>00</span><span style="padding-right:0;">00</span>
+            </a>
+            <script>
+                ;(function(){
+                    if($('#Countdown').parents().find('.header').width() == 980) return;
+                    // 倒计时
+                    var $hotTime = new Date('2016/2/23 18:00:00').getTime(),
+                            $crazyTime = new Date('2016/2/25 18:00:00').getTime(),
+                            $readyTime = new Date('2016/2/25 18:00:00').getTime(),
+                            $endTime = new Date('2016/2/26 23:59:59').getTime(),
+                            $nowTime = new Date().getTime(),
+                            time = $crazyTime - $nowTime, //结束时间减去当前时间  剩余
+                            time1 = $hotTime - $nowTime,
+                            time2 = $readyTime - $nowTime, //距离开始时间 小于0开始
+                            $timebox = document.getElementById("Countdown"),
+                            day, hours, min, sec;
+                    var $btnSwitch = 0;//初始值
+                    if(time2 < 0){
+                        time = $endTime - $nowTime;
+                    }
+                    function timeShow(){
+                        /*if (time2 < 0 && $btnSwitch == 0) {
+                         $timebox.style.display = 'block';
+                         $btnSwitch = 1;
+                         };*/
+                        if(time < 0) return;
+                        //   day = checktime(Math.floor(time/1000/60/60/24)),
+                        hours = checktime(Math.floor(time/1000/60/60)),
+                                min = checktime(Math.floor(time/1000/60%60)),
+                                sec = checktime(Math.floor(time/1000%60));
+                        msec = checktime(Math.floor(time / 100 % 10));
+                        $timebox.innerHTML = '<span>' + hours + '</span><span>' + min + '</span><span>' + sec + '</span><span style="padding-right:0;">' + msec + '</span>';
+                        time -= 100;
+                        setTimeout(timeShow, 100)
+                    }
+                    function checktime(t){
+                        if(t < 10){
+                            t = "0" + t
+                        }
+                        return t
+                    }
+                    if (time1 < 0 && $btnSwitch == 0 && time > 0) {
+                        $timebox.style.display = 'block';
+                        $btnSwitch = 1;
+                        var timeshow = timeShow();
+                    };
+                })();
+            </script>
+            <script type="text/javascript">
+                var search_Form = document.getElementById('searchForm');
+                var page_Text = document.getElementById('pageText');
+                search_Form.onsubmit = function(){
+                    if(!page_Text.value) return false;
+                }
+                $(function () {
+                    var curTime = new Date(); //获取当前的时间戳
+                    if (curTime.getTime() >= new Date("2015/12/12 23:59:59").getTime()) {
+// $(".header_r_d_a4").attr("href", "http://search.360kad.com/?pageText=%E4%B8%9C%E9%98%BF%E9%98%BF%E8%83%B6+&kzone+ssl_wz4"); 
+                        // $(".header_r_d_a4").text("东阿阿胶");
+                        $(".avt_t01").css("background","url(http://res.360kad.com/theme/default/img/atv_tbg.jpg) no-repeat;");
+                    }
+                    if ($("#s_history_r").length > 0) {
+                        $.ajax({
+                            url: urlConfig.search + "/Home/GetHotKeyWords",
+                            type: "Get",
+                            dataType: "jsonp",
+                            jsonp: "callback",
+                            success: function (data) {
+                                if (data.length > 0) {
+                                    for (var i = 0; i < data.length; i++) {
+                                        if(i==10){return}
+                                        var a=$("<a>").attr({ href: urlConfig.search + "/?pageText=" + encodeURIComponent(data[i])+"&kzone=resou", title: data[i]}).text(data[i]);
+                                        $("#s_history_r").append(a);
+                                    }
+                                }
+                            }
+                        });
+                    }
+                });
+            </script>
+            <!--部件结束:www_search_header-->
+
+        </div>
+    </div>
+    <!--END无商品-->
+    <!--买了的人还买了-->
+    <div class="buy-other-things" style="display: none;">
+        <h4>
+            买了的人还买了
+        </h4>
+        <div class="buy-pro-list">
+            <div class="pro-box">
+                <ul>
+                    <li>
+                        <p class="product-pic">
+                            <a href="##" target="_blank">
+                                <img src="http://res.360kad.com/theme/default/img/user/2015/pic_07.jpg"  />
+                            </a>
+                        </p>
+                        <p class="product-title clearfix">
+                            <i class="icon01"></i><a href="##" target="_blank" title="同仁堂 阿胶 31.25g*16块门店活动：下单即获取阿胶">
+                            同仁堂 阿胶 31.25g*16块门店活动：下单即获取阿胶
+                        </a>
+                        </p>
+                        <p class="product-price">
+                            ¥139.00
+                        </p>
+                    </li>
+                    <li>
+                        <p class="product-pic">
+                            <a href="##" target="_blank">
+                                <img src="http://res.360kad.com/theme/default/img/user/2015/pic_07.jpg"  />
+                            </a>
+                        </p>
+                        <p class="product-title clearfix">
+                            <i class="icon01"></i><a href="##" target="_blank" title="同仁堂 阿胶 31.25g*16块门店活动：下单即获取阿胶">
+                            同仁堂 阿胶 31.25g*16块门店活动：下单即获取阿胶
+                        </a>
+                        </p>
+                        <p class="product-price">
+                            ¥139.00
+                        </p>
+                    </li>
+                    <li>
+                        <p class="product-pic">
+                            <a href="##" target="_blank">
+                                <img src="http://res.360kad.com/theme/default/img/user/2015/pic_07.jpg"  />
+                            </a>
+                        </p>
+                        <p class="product-title clearfix">
+                            <i class="icon01"></i><a href="##" target="_blank" title="同仁堂 阿胶 31.25g*16块门店活动：下单即获取阿胶">
+                            同仁堂 阿胶 31.25g*16块门店活动：下单即获取阿胶
+                        </a>
+                        </p>
+                        <p class="product-price">
+                            ¥139.00
+                        </p>
+                    </li>
+                    <li>
+                        <p class="product-pic">
+                            <a href="##" target="_blank">
+                                <img src="http://res.360kad.com/theme/default/img/user/2015/pic_07.jpg"  />
+                            </a>
+                        </p>
+                        <p class="product-title clearfix">
+                            <i class="icon01"></i><a href="##" target="_blank" title="同仁堂 阿胶 31.25g*16块门店活动：下单即获取阿胶">
+                            同仁堂 阿胶 31.25g*16块门店活动：下单即获取阿胶
+                        </a>
+                        </p>
+                        <p class="product-price">
+                            ¥139.00
+                        </p>
+                    </li>
+                    <li>
+                        <p class="product-pic">
+                            <a href="##" target="_blank">
+                                <img src="http://res.360kad.com/theme/default/img/user/2015/pic_07.jpg"  />
+                            </a>
+                        </p>
+                        <p class="product-title clearfix">
+                            <i class="icon01"></i><a href="##" target="_blank" title="同仁堂 阿胶 31.25g*16块门店活动：下单即获取阿胶">
+                            同仁堂 阿胶 31.25g*16块门店活动：下单即获取阿胶
+                        </a>
+                        </p>
+                        <p class="product-price">
+                            ¥139.00
+                        </p>
+                    </li>
+                    <li>
+                        <p class="product-pic">
+                            <a href="##" target="_blank">
+                                <img src="http://res.360kad.com/theme/default/img/user/2015/pic_07.jpg"  />
+                            </a>
+                        </p>
+                        <p class="product-title clearfix">
+                            <i class="icon01"></i><a href="##" target="_blank" title="同仁堂 阿胶 31.25g*16块门店活动：下单即获取阿胶">
+                            同仁堂 阿胶 31.25g*16块门店活动：下单即获取阿胶
+                        </a>
+                        </p>
+                        <p class="product-price">
+                            ¥139.00
+                        </p>
+                    </li>
+                    <li>
+                        <p class="product-pic">
+                            <a href="##" target="_blank">
+                                <img src="http://res.360kad.com/theme/default/img/user/2015/pic_07.jpg"  />
+                            </a>
+                        </p>
+                        <p class="product-title clearfix">
+                            <i class="icon01"></i><a href="##" target="_blank" title="同仁堂 阿胶 31.25g*16块门店活动：下单即获取阿胶">
+                            同仁堂 阿胶 31.25g*16块门店活动：下单即获取阿胶
+                        </a>
+                        </p>
+                        <p class="product-price">
+                            ¥139.00
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <span class="prev-btn" id="prev-btn"></span><span class="prev-btn next-btn" id="next-btn">
+            </span>
+        </div>
+    </div>
+    <!--买了的人还买了-->
+    <!--活动推荐部分-->
+    <!--部件开始:cart_reccomm_act_r,分组:广告部件-->
+    <div class="act_r">
+        <h3>活动推荐</h3>
+        <div class="act_list">
+            <ul class="clearfix">
+                <li class="">
+                    <a href="http://www.360kad.com/product/69947.shtml?kzone=activity">
+                        <img title="欧洁 医用碘伏棉球" alt="" src="http://image.360kad.com/group1/M00/09/59/CgAgEVWjj9yAYNwPAAA0nxYJAKU062.jpg">Kad.Web.Core.AdEntity.
+                    </a>
+                </li>
+                <li class="">
+                    <a href="http://www.360kad.com/product/29651.shtml?kzone=activity">
+                        <img title="999 感冒灵颗粒" alt="" src="http://image.360kad.com/group1/M00/09/59/CgAgEFWjkAiACWupAAA-slnvV7I534.jpg">Kad.Web.Core.AdEntity.
+                    </a>
+                </li>
+                <li class="">
+                    <a href="http://www.360kad.com/product/37847.shtml?kzone=activity">
+                        <img title="香雪 板蓝根颗粒" alt="" src="http://image.360kad.com/group1/M00/09/59/CgAgEVWjkCaAK7qoAAA2KZW7E28039.jpg">Kad.Web.Core.AdEntity.
+                    </a>
+                </li>
+                <li class="">
+                    <a href="http://www.360kad.com/product/38756.shtml?kzone=activity">
+                        <img title="云南白药创可贴" alt="" src="http://image.360kad.com/group1/M00/09/59/CgAgEFWjkEmAMNezAAA5iOSqw4I309.jpg">Kad.Web.Core.AdEntity.
+                    </a>
+                </li>
+                <li class="">
+                    <a href="http://www.360kad.com/product/8170.shtml?kzone=activity">
+                        <img title="慢严舒柠 清喉利咽颗粒" alt="" src="http://image.360kad.com/group1/M00/09/59/CgAgEFWjkHKAfq8OAAA6E5n6aH0418.jpg">Kad.Web.Core.AdEntity.
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--部件结束:cart_reccomm_act_r-->
+
+    <!--部件开始:cart_reccomm_banner,分组:广告部件-->
+    <div class="banner" >
+        <a href="http://www.360kad.com/zhuanti/weixin2015.shtml?kzone=activity" target="_blank">
+            <img title="注册会员" alt="" src="http://image.360kad.com/group1/M00/2B/F3/CgAgEFci9T2ADWkKAACcr0r0Gyw128.jpg">
+        </a>
+    </div>
+    <!--部件结束:cart_reccomm_banner-->
+
+</div>
+<input type="hidden" id="cartIds" />
+<input type="hidden" id="h_isLogin" value='0' />
+<input type="hidden" id="h_totalPrice" value='0' />
+<input type="hidden" id="h_CartCount" value="0" />
+<!-- 登录/注册start -->
+<div id="showLogOrReg" class="showLogOrReg" style="display: none;">
+    <div class="wright">
+        <p class="wright_t">
+            <span class="selthis">登录康爱多</span><a href="javascript:void(0)" class="go_close" id="closeLog"
+                                                 onclick="popClose('showLogOrReg',1);"></a>
+        </p>
+        <form method="post" action="" onsubmit="return false;">
+            <input type="hidden" value="false" name="IsCartLogin" />
+            <div class="wright_m">
+                <p class="LoginError" id="LoginError">
+                    <span data-valmsg-replace="true" data-valmsg-for="LoginError" class="field-validation-valid">
+                    </span>
+                </p>
+                <div class="import_class">
+                    <div class="txtClass">
+                        <p class="pt10">
+                            登录名 <span class="Register_ps">
+                                没有账户？ <a onclick="checkLoginUser()" href="http://user.360kad.com/Register/Mobile"
+                                         target="_blank">快速注册</a>
+                            </span>
+                        </p>
+                        <div id="pUserEmail" class="p_input">
+                            <input type="text" autocomplete="off" data-val="true" data-val-regex="请输入正确格式的登录名！"
+                                   data-val-required="登录名不能为空！" data-val-regex-pattern="([\u4e00-\u9fa5]|[a-zA-Z0-9]|_)|([\w.\-]+@([\w\-]+\.)+[\w\-]+)|(^(13[0-9]|15[7-9]|153|156|18[7-9])[0-9]{8}$)"
+                                   value="18606991608" class="text pb5" onblur="txtblur(this);" onkeydown="" onfocus="txtfocus(this);"
+                                   name="UserEmail" id="UserEmail"><i class="txt_icon" style=""></i>
+                        </div>
+                    </div>
+                    <div class="txtError" data-valmsg-for="UserEmail" id="txtError">
+                        <span class="field-validation-valid" data-valmsg-for="UserEmail" data-valmsg-replace="true">
+                        </span><span class="txtError_ico"></span>
+                    </div>
+                    <!--<div class="txtWarn" data-warnmsg-for="UserName" id="PasswordWarn" style="display: none;">请输入正确格式的登录名！</div>-->
+                </div>
+                <div style="z-index: 1;" class="import_class">
+                    <div class="txtClass">
+                        <p class="pt10">
+                            密码 <span class="forget_ps">
+                                <a href="javascript:void(0)" target="_blank" onclick="location.href = 'http://user.360kad.com/Login/ForgetPassword'; return false;">
+                                    忘记密码
+                                </a>
+                            </span>
+                        </p>
+                        <p class="p_input">
+                            <!--<span class="UserPasswordtxt" onclick="passwordtxtfocus(this);">6—20位字母、数字或字符的组合，不建议用纯数字/纯字母</span>-->
+                            <input type="password" data-val="true" data-val-length="密码长度应在6-20位之间！" data-val-length-max="20"
+                                   data-val-length-min="6" data-val-required="请输入您的密码！" value="" name="UserPassword"
+                                   class="pl5" id="UserPassword" onblur="txtblur(this);" onfocus="$('#LoginError').html('');txtfocus(this);"
+                                   onkeydown="isEnterKey(event,this,1);">
+                            <i class="txt_icon"></i>
+                        </p>
+                    </div>
+                    <div class="txtError" data-valmsg-for="UserPassword" id="PasswordErr">
+                        <span class="field-validation-valid" data-valmsg-for="UserPassword" data-valmsg-replace="true">
+                        </span><span class="txtError_ico"></span>
+                    </div>
+                    <!--<div class="txtWarn" data-warnmsg-for="UserPassword" id="PasswordWarn">
+                                请输入密码，长度应在6-20位之间！
+                          </div>-->
+                </div>
+                <div class="cbxClass">
+                    <label for="IsRemberName">
+                        <input type="checkbox" id="IsRemberName" name="IsRemberName" checked="checked" value="true"
+                               class="inputcheck">
+                        记住我的登录名
+                    </label>
+                </div>
+                <div class="btnclass">
+                    <input type="hidden" id="ReturnUrl" name="ReturnUrl" value="/Cart">
+                    <input type="button" value="登 录" name="LoginButton" id="LoginButton" class="btncss"
+                           onclick="UserLogin();">
+                    <!--
+                          <input id="ReturnUrl" type="hidden" name="ReturnUrl" value="">
+                          <input type="button" value="登 录" name="LoginButton" id="LoginButton" class="btncss" >-->
+                </div>
+                <p class="more_login">
+                    您还可以使用合作网站账号登录康爱多：
+                </p>
+                <p class="log_user_other">
+                    <span>
+                        <a class="l_weChat" onclick="location.href = 'http://user.360kad.com/login/WeChatLogin?ReturnUrl=' + document.URL; return false;"
+                           href="javascript:void(0)" title="微信登录"></a>
+                    </span>
+                    <span>
+                        <a class="l_qq" onclick="location.href = 'http://user.360kad.com/login/QzoneLogin?ReturnUrl=' + document.URL; return false;"
+                           href="javascript:void(0)" title="QQ登录"></a>
+                    </span>
+                    <span>
+                        <a class="l_xinlang" onclick="location.href = 'http://user.360kad.com/login/SinaLogin?ReturnUrl=' + document.URL; return false;"
+                           href="javascript:void(0)" title="新浪微博登录"></a>
+                    </span><span>
+                               <a class="l_alipay" onclick="location.href = 'http://user.360kad.com/Login/AlipayLogin?ReturnUrl=' + document.URL; return false;"
+                                  href="javascript:void(0)" title="支付宝登录"></a>
+                    </span><span>
+                               <a class="l_taobao" onclick="location.href = 'http://user.360kad.com/login/TaobaoLogin?ReturnUrl=' + document.URL; return false;"
+                                  href="javascript:void(0)" title="淘宝登录"></a>
+                    </span><span>
+                               <a class="l_ebaolife" onclick="location.href = 'http://user.360kad.com/login/EbaolifeLogin?ReturnUrl=' + document.URL; return false;"
+                                  href="javascript:void(0)" title="医卡通登录"></a>
+                    </span>
+                </p>
+                <p class="log_help">
+                    如紧急，请拨打<b>400-8811-020</b>咨询。
+                </p>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- 登录/注册end -->
+<!--部件开始:NewLoginRegFooter,分组:页脚部件-->
+<!--footer-->
+<div class="wrap_footer">
+    <!--康爱多掌上药店-->
+    <div class="item01 item02">
+        <div class="width980 clearfix">
+            <div class="lside">
+                <div class="appCode">
+                    <p class="title">手机购药</p>
+                    <p class="code"></p>
+                    <p class="clearfix pl8">
+                        <span class="ios"><a href="http://um0.cn/2Vawnt/" target="_blank"></a></span>
+                        <span class="line"></span>
+                        <span class="android"><a target="_blank" href="http://res.360kad.com/app/k/kad.apk"></a></span>
+                    </p>
+                </div>
+                <div class="weixinCode">
+                    <p class="title">微信购药</p>
+                    <p class="code"></p>
+                    <p class="title02">扫一扫  领红包</p>
+                </div>
+            </div>
+            <div class="mside">
+                <ul class="clearfix">
+                    <li>
+                        <p class="title">
+                            新手指南
+                        </p>
+                        <p>
+                            <a href="http://help.360kad.com/Shopping/shopWm" target="_blank" rel="nofollow">购物流程</a>
+                        </p>
+                        <p>
+                            <a href="http://help.360kad.com/Novice/VipClass" target="_blank" rel="nofollow">会员介绍</a>
+                        </p>
+                        <p>
+                            <a href="http://help.360kad.com/Novice/IntegralDesc" target="_blank" rel="nofollow">积分说明</a>
+                        </p>
+                        <p>
+                            <a href="http://help.360kad.com/Pay/Coupon" target="_blank" rel="nofollow">优惠券使用</a>
+                        </p>
+                        <p>
+                            <a href="http://help.360kad.com/Novice/Question" target="_blank" rel="nofollow">常见问题</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="title">
+                            配送方式
+                        </p>
+                        <p>
+                            <a href="http://help.360kad.com/Delivery/Freight" target="_blank" rel="nofollow">配送说明</a>
+                        </p>
+                        <p>
+                            <a href="http://help.360kad.com/Delivery/Privsend" target="_blank" rel="nofollow">隐私配送</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="title">
+                            支付方式
+                        </p>
+                        <p>
+                            <a href="http://help.360kad.com/Pay/OnlinePay" target="_blank" rel="nofollow">在线支付</a>
+                        </p>
+                        <p>
+                            <a href="http://help.360kad.com/Pay/BankTrans" target="_blank" rel="nofollow">银行转账</a>
+                        </p>
+                        <p>
+                            <a href="http://help.360kad.com/Pay/Cash" target="_blank" rel="nofollow">货到付款</a>
+                        </p>
+                        <p>
+                            <a href="http://help.360kad.com/Pay/Mention" target="_blank" rel="nofollow">上门自提</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="title">
+                            售后服务
+                        </p>
+                        <p>
+                            <a href="http://help.360kad.com/MyKad/MyOrder" target="_blank" rel="nofollow">订单查询</a>
+                        </p>
+                        <p>
+                            <a href="http://help.360kad.com/SaleAfter/ReturnsFlow" target="_blank" rel="nofollow">退换商品</a>
+                        </p>
+                        <p>
+                            <a href="http://help.360kad.com/SaleAfter/RefundFlow" target="_blank" rel="nofollow">退款说明</a>
+                        </p>
+                        <p>
+                            <a href="http://help.360kad.com/SaleAfter/ContactSer" target="_blank" rel="nofollow">联系客服</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="title">
+                            特色服务
+                        </p>
+                        <p>
+                            <a href="http://help.360kad.com/Feature/DrugDecla" target="_blank" rel="nofollow">用药咨询</a>
+                        </p>
+                        <p>
+                            <a href="http://help.360kad.com/Novice/PrivacyDec" target="_blank" rel="nofollow">隐私声明</a>
+                        </p>
+                        <p>
+                            <a href="http://user.360kad.com/Custom/Proposedinteractive?type=0"
+                               target="_blank" rel="nofollow">投诉建议</a>
+                        </p>
+                        <p>
+                            <a href="http://help.360kad.com/Novice/Disclaimer" target="_blank" rel="nofollow">
+                                免责声明
+                            </a>
+                        </p>
+                    </li>
+                    <li class="phonePic">
+                        <p>
+                            <img src="http://res.360kad.com/theme/default/img/user/2015/kadPhoneBg.png"  />
+                        </p>
+                        <p class="pt4">
+                            订购服务时间：9：00—23：00
+                        </p>
+                        <p>
+                            售后服务时间：9：00—22：30
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--END康爱多掌上药店-->
+</div>
+<div class="footer_list">
+    <div class="width980">
+        <!--关于康爱多网上药店-->
+        <p class="aboutKadList">
+            <a rel="nofollow" href="http://help.360kad.com/about/kankan" target="_blank">关于我们</a>
+            | <a href="http://www.360kad.com/zhuanti/kad_zsyd.shtml" target="_blank" rel="nofollow">
+            掌上药店
+        </a> | <a rel="nofollow" href="http://help.360kad.com/about/entitygz" target="_blank">
+            实体药店
+        </a> | <a rel="nofollow" href="http://help.360kad.com/About/Recruitment"
+                  target="_blank">加入康爱多</a> | <a href="http://help.360kad.com/About/CallUs" target="_blank"
+                                                 rel="nofollow">联系我们</a> | <a href="http://www.360kad.com/Supplier" target="_blank"
+                                                                              rel="nofollow">商务合作</a> | <a href="http://help.360kad.com/About/Authen" rel="nofollow"
+                                                                                                           target="_blank">经营认证</a> | <a rel="nofollow" href="http://help.360kad.com/About/FriendlyLink"
+                                                                                                                                         target="_blank">友情链接</a> | <a href="http://www.360kad.com/TagList.aspx" target="_blank">
+            TAG列表
+        </a> | <a href="http://www.360kad.com/SiteMap.shtml" target="_blank">网站地图</a>
+            | <a href="http://cps.360kad.com/" target="_blank">CPS联盟</a>
+        </p>
+        <p class="diploma_list">
+            <a class="pr8" rel="nofollow" title="互联网药品交易服务资格证书" target="_blank" href="http://help.360kad.com/about/AuthenBusiness">
+                互联网药品交易服务资格证书
+            </a>| <span class="bottomPadding01">
+                      <a rel="nofollow" title="互联网药品信息服务资格证书"
+                         target="_blank" href="http://help.360kad.com/About/AuthenInfo">
+                          互联网药品信息服务资格证书
+                      </a>
+            </span>| <span class="bottomPadding01">
+                         <a rel="nofollow" title="执业药师证"
+                            target="_blank" href="http://help.360kad.com/About/AuthenManage">执业药师证</a>
+            </span>| <span class="bottomPadding02">
+                         <a rel="nofollow" title="药品经营许可证" target="_blank"
+                            href="http://help.360kad.com/About/AuthenManage">药品经营许可证</a>
+            </span>| <span class="bottomPadding02">
+                         <a rel="nofollow" title="食品流通许可证" target="_blank" href="http://help.360kad.com/About/AuthenLiuTong">
+                             食品流通许可证
+                         </a>
+            </span>| <span class="bottomPadding02">
+                         <a rel="nofollow" title="公司营业执照"
+                            target="_blank" href="http://help.360kad.com/About/Authen">公司营业执照</a>
+            </span>| <span>
+                         <a rel="nofollow" title="GSP认证证书" target="_blank" href="http://help.360kad.com/About/AuthenGSP">
+                             GSP认证证书
+                         </a>
+            </span>| <span>
+                         <a href="http://help.360kad.com/About/AuthenTeleservice"
+                            target="_blank" rel="nofollow">增值电信业务经营许可证 &nbsp;</a>
+            </span>
+        </p>
+        <!--END关于康爱多网上药店-->
+        <!--行业认证-->
+        <p class="bottom" style="font-family: " 宋体";">
+        &copy; 2010-2016 广东<a href="http://www.360kad.com">康爱多网上药店</a> 版权所有，并保留所有权利
+        </p>
+        <!--END行业认证-->
+    </div>
+</div>
+<!--ENDfooter-->
+<!--部件结束:NewLoginRegFooter-->
+
+<link href="http://res.360kad.com/theme/default/css/pop/pop.css" rel="stylesheet" type="text/css"/>
+<script src="http://res3.360kad.com/script/pop/poplayer.js" type="text/javascript"></script>
+<!--部件开始:pc_pop_show,分组:通用部件-->
+<!--删除弹窗-->
+<div class="kad-delete-pop" id="kad-delete-pop">
+    <div class="pop-main">
+        <p class="pop-title">
+            温馨提示 <i class="kad-delte-closeBtn" id="kad-delte-closeBtn"></i>
+        </p>
+        <p class="pop-txt">
+            <span class="icon err_icon01">确定从购物车中删除此商品？</span></p>
+        <p class="pop-btn-box">
+            <a href="javascript:void(0);" class="pop-btn-cancel" id="pop-btn-cancel" onclick="popClose('kad-delete-pop', 1);">
+            </a><a href="javascript:void(0);" class="pop-btn-right" onclick="popClose('kad-delete-pop', 1);">
+        </a>
+        </p>
+    </div>
+</div>
+<!--部件结束:pc_pop_show-->
+
+<!--网站统计-->
+<!--部件开始:WebmasterStatistics,分组:通用部件-->
+<div style="display:none">
+    <!-- 谷歌统计 start -->
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-3051632-5']);
+        _gaq.push(['_setDomainName', '.360kad.com']);
+        _gaq.push(['_setAllowHash', false]);
+        _gaq.push(['_addOrganic', 'soso', 'w']);
+        _gaq.push(['_addOrganic', 'youdao', 'q']);
+        _gaq.push(['_addOrganic', 'sogou', 'query']);
+        _gaq.push(['_addOrganic', '360', 'q']);
+        _gaq.push(['_addOrganic', 'baidu', 'word']);
+        _gaq.push(['_addOrganic', 'baidu', 'q1']);
+        _gaq.push(['_addOrganic', 'so.com', 'q']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+    <!-- 中国站长 统计 start -->
+    <script src="http://s9.cnzz.com/stat.php?id=2913503&web_id=2913503"  language="JavaScript"></script>
+    <!--百度0628 -->
+    <script type="text/javascript">
+        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F7a942c91de8533c33ddabdacba23065b' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <!--百度再营销0416 -->
+    <script type="text/javascript">
+        <!--
+        var bd_cpro_rtid="nHRvPjm";
+        //-->
+    </script>
+    <script type="text/javascript"  src="http://cpro.baidu.com/cpro/ui/rt.js"></script>
+    <noscript>
+        <div style="display:none;">
+            <img height="0" width="0" style="border-style:none;" src="http://eclick.baidu.com/rt.jpg?t=noscript&rtid=nHRvPjm" />
+        </div>
+    </noscript>
+</div>
+<!--部件结束:WebmasterStatistics-->
+
+
+
+</body>
+</html>
+

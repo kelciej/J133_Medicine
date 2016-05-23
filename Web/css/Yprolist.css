@@ -1,0 +1,166 @@
+@charset "utf-8";
+/* CSS Document */
+/*公共按钮样式*/
+a.btn001{ background: #4a9bef; color: #fff; border-radius: 2px; width: 76px; height: 30px; display: inline-block; line-height: 30px; text-align: center;}
+a:hover.btn001{background: #62a8f0; text-decoration: none;}
+/*a.ico_sc{background: url(http://res.360kad.com/theme/default/img/2014NewWeb/ico_tb.jpg) 0px -46px no-repeat; padding-left: 26px; display: inline-block; line-height: 22px; }*/
+a.ico_sc{background: url(../image/ico_tb.jpg) 0 -46px no-repeat; padding-left: 26px; display: inline-block; line-height: 22px; }
+/*药品标示*/
+/*.ico_otc, .ico_otcl, .ico_rx, .ico_baoj{ background: url(http://res.360kad.com/theme/default/img/2014NewWeb/ico_tb.jpg) 0px -141px; width: 34px; margin: 2px 5px 0px 0px; height: 16px; display: inline-block; text-indent: -10em; overflow: hidden; float: left;}*/
+.ico_otc, .ico_otcl, .ico_rx, .ico_baoj{ background: url(../image/ico-133.png) 0px -568px; width: 34px; margin: 2px 5px 0px 0px; height: 16px; display: inline-block; text-indent: -10em; overflow: hidden; float: left;}
+
+.ico_otcl{ background-position:  0px -544px; }
+.ico_rx{ background-position: 0 -463px;  }
+.ico_baoj{ background-position: 0px -520px;}
+
+.h20{ height: 20px; clear: both;}
+.Ywrap{ width: 1200px;}
+/*above5.4*/
+
+.Yleft{ width: 180px; float: left;}
+.Yleft .Ytit{ background: #f3f3f2; border-bottom: 1px solid #ccc; color: #666666; height: 38px; line-height: 38px; padding: 0 10px;}
+.Yleft .Ywrapk{ border: 1px solid #ccc; margin-bottom: 10px;}
+.Yleft .YLinkList{ padding: 0px 10px;}
+.Yleft .YLinkList li{ border-bottom: 1px dotted #ccc; line-height: 32px; height: 32px; overflow: hidden;}
+.Yleft .YLinkList li:nth-last-child(1){ border-bottom: none;}
+.Yleft .YLinkList li a{}
+.Yleft .YproList{ margin: 0px 10px;}
+.Yleft .YproList li{ border-bottom: 1px dotted #cfcfcf; line-height: 20px; padding: 10px;}
+.Yleft .YproList li:nth-last-child(1){ border-bottom: none;}
+.Yleft .YproList .Yimg{text-align: center;}
+.Yleft .YproList .Yimg img{height: 90px; width: 90px;}
+.Yleft .YproList .Yname, .Yleft .YproList .Yadv{ height: 22px; overflow: hidden;}
+.Yleft .YproList .Yname .Yspec{ padding-left: 5px;}
+.Yleft .YproList .Yadv{ color: #666;}
+.Yleft .YproList .Ypri{color: #ff0000; font-size: 14px; font-weight: bold; text-align: center;}
+
+.Yright{ width: 990px; float:left;padding-left: 100px}
+.Yright .Ywrapk{ border: 1px solid #ccc;}
+.Yright .Ywrapk .Ytit{background: #f3f3f2; border-bottom: 1px solid #0066d4; color: #666666; height: 38px; line-height: 38px; padding: 0 10px;}
+.Yright .YproList{}
+.Yright .YproList ul li{ border: 2px solid #fff;}
+.Yright .YproList ul li>div{ border-bottom: 1px dotted #ccc;margin: 0px 10px; padding:10px 0;overflow:hidden;}
+.Yright .YproList ul li .Ypic{ float: left; width: 270px; text-align: center; padding-top: 10px;}
+.Yright .YproList ul li .Ypic img{ width: 240px; height: 240px;}
+.Yright .YproList ul li .Yinfo{ float: left; width: 550px; padding-top: 40px;}
+.Yright .YproList ul li .Yinfo .Yname{ border-bottom: 1px dotted #ccc; padding: 0px 0px 5px; margin-bottom: 5px;}
+.Yright .YproList ul li .Yinfo .Yname a{ font-family: "微软雅黑"; font-size: 18px; font-weight: bold; color: #000;}
+.Yright .YproList ul li .Yinfo .Yname span{ margin-top: 7px;}
+.Yright .YproList ul li .Yinfo .Yadv{ font: 16px/20px "微软雅黑"; color: #ff3f3f; padding-top: 5px;}
+.Yright .YproList ul li .Yinfo .Yinfolist2{ line-height: 22px; color: #666;}
+
+.Yright .YproList ul li .Ybtnsbox{ float: left; padding: 80px 10px 0px;}
+.Yright .YproList ul li .Ybtnsbox a.btn001{ display: block; margin-bottom: 10px;}
+.Yright .YproList ul li .Ybtnsbox .ico_sc{}
+
+/*产品列表2*/
+.Yright .YproList2{ overflow: hidden; width: 990px;}
+.Yright .YproList2 ul{ line-height: 18px; color: #666666; width: 1000px;}
+.Yright .YproList2 ul a{ color: #666666;}
+.Yright .YproList2 ul li{ float: left; padding:0px 10px 10px 0px; width: 240px;}
+.Yright .YproList2 ul li>div{border:2px solid #fff; padding:10px 8px 0px; height: 328px; width: 220px;}
+.Yright .YproList2 ul li.on>div{ border-color: #ff0000;}
+.Yright .YproList2 ul li .Ypic{ text-align: center; width: 220px; height: 220px; position: relative;}
+.Yright .YproList2 ul li .Ypic a img{ width: 220px;}
+.Yright .YproList2 ul li .Yname{ padding-top: 8px; height: 20px; overflow: hidden;}
+.Yright .YproList2 ul li .Yname .ico_otc{ float: left; margin-right: 10px;}
+.Yright .YproList2 ul li .Yname .Yspec{ padding-left: 5px;}
+.Yright .YproList2 ul li .Yadv{ clear: both; padding-top: 5px; height: 18px; overflow: hidden;}
+.Yright .YproList2 ul li .Ypribox{ padding-top: 5px;}
+.Yright .YproList2 ul li .Ypribox span{ float: left; color: #ff3f3f;  font: 16px/18px "微软雅黑";}
+.Yright .YproList2 ul li .Ypribox i{ font-style: normal; float: right; text-decoration: line-through;}
+.Yright .YproList2 ul li .Yhave{ padding-top: 5px; clear: both;}
+
+/*以下都是广告除了stock*/
+.Yright .YproList2 ul li .Ypic .yin_ico { display: none; position: absolute; right: 10px; top: 8px;}
+.Yright .YproList2 ul li .Ypic span.icon_promotion1{
+    background:url("http://res.360kad.com/theme/default/img/iconimg/list/producticon_1.png") no-repeat 0;
+    height:60px;width:60px; top:5px;display: block;position: absolute;
+}
+.Yright .YproList2 ul li .Ypic span.icon_promotion2 {
+    background:url("http://res.360kad.com/theme/default/img/iconimg/list/producticon_2.png") no-repeat 0;
+    height:60px;width:60px; top:5px;display: block;position: absolute;
+}
+.Yright .YproList2 ul li .Ypic span.icon_promotion3 {
+    background:url("http://res.360kad.com/theme/default/img/iconimg/list/producticon_3.png") no-repeat;
+    height:60px;width:60px; top:5px;display: block;position: absolute; left:3px;
+}
+.Yright .YproList2 ul li .Ypic span.icon_promotion4{background:url("http://res.360kad.com/theme/default/img/iconimg/list/producticon_4.png") no-repeat;
+    height:60px;width:60px; top:5px;display: block;position: absolute; left:3px;}
+.Yright .YproList2 ul li .Ypic span.icon_promotion5{background:url("http://res.360kad.com/theme/default/img/iconimg/list/producticon_5.png") no-repeat;
+    height:60px;width:60px; top:5px;display: block;position: absolute; left:3px;}
+.Yright .YproList2 ul li .Ypic span.icon_promotion6{background:url("http://res.360kad.com/theme/default/img/iconimg/list/producticon_6.png") no-repeat;
+    height:60px;width:60px; top:5px;display: block;position: absolute; left:3px;}
+.Yright .YproList2 ul li .Ypic span.icon_promotion8{background:url("http://res.360kad.com/theme/default/img/iconimg/list/producticon_8.png") no-repeat;
+    height:60px;width:60px; top:5px;display: block;position: absolute; left:3px;}
+.Yright .YproList2 ul li .Ypic span.icon_promotion9{background:url("http://res.360kad.com/theme/default/img/iconimg/list/producticon_9.png") no-repeat;
+    height:60px;width:60px; top:5px;display: block;position: absolute; left:3px;}
+.Yright .YproList2 ul li .Ypic span.icon_StockLesstrue {
+    background:url(../image/store_emergency.png) no-repeat;
+    height:48px;width:180px; bottom:0; display: block;position: absolute; left:0;
+}
+
+
+.YbproList{ width: 1198px; clear: both; border:1px solid #e0e0e0;}
+.YbproList .Ytit{ background: #f3f3f2; border-bottom: 1px solid #0066d4; color: #666666; height: 38px; line-height: 38px; padding: 0 10px; font-size: 14px; font-weight: bold;}
+.YbproList .Ytit span{ font-size: 12px; font-weight: normal; cursor: pointer;}
+
+.YbproList .Ycon{ position: relative; }
+.YbproList .YLicon{ overflow: hidden; width: 1164px;}
+.YbproList .YLicon ul{ width: 1500px; margin-left: 0px;}
+.YbproList .YLicon li{ float: left; width: 180px; border:2px solid #fff; padding: 0px 5px; }
+.YbproList .YLicon li.on{ border-color: #ff0000;}
+.YbproList .YLicon li .Ypic {}
+.YbproList .YLicon li .ico_otc{ float: left; margin-right: 10px;}
+.YbproList .YLicon li .Yname { line-height: 18px; padding-top: 5px; height: 36px; overflow: hidden;}
+.YbproList .YLicon li .Yname a{}
+.YbproList .YLicon li .Ypri{ color: #ff0000; font: 16px/20px "微软雅黑"; text-align: center; padding: 5px;}
+.YbproList .Ycon .Ylt, .YbproList .Ycon .Ygt{ position: absolute; width: 21px; height: 50px; background: #b2b2b2; color: #fff; text-align: center; line-height: 50px; font-size: 24px; cursor: pointer; top: 96px;}
+.YbproList .Ycon .Ygt{ right: 0; }
+
+/*分页old5.4*/
+.pager{ height: 40px; padding-top: 10px;clear:both;}
+.pager .pagecss{line-height: 28px; font-size: 14px; float: right; color: #959595;}
+.pager .pagecss i{ background: url(../image/ico_sj.jpg) repeat-x; display: inline-block; height: 10px;}
+.pager .pagecss .Yfirst{ padding-right: 10px;}
+.pager .pagecss .Yfirst i{ width: 10px; background-position: 0px -56px; margin-right: 5px;}
+.pager .pagecss .Ypre i{ width: 5px; background-position: 0px -56px; margin-right: 5px;}
+.pager .pagecss .Ynext i{ width: 5px; background-position: 0px -38px; margin-left: 5px;}
+.pager .pagecss .Ylast i{ width: 10px; background-position: 0px -38px; margin-left: 5px;}
+.pager .pagecss .numlist{ padding-right: 10px;}
+.pager .pagecss .numlist a:hover{ padding-right: 10px;background-color: #ff7575;color: #FFFFFF}
+.pager .pagecss .numlist span strong{color: #ff0000; border:1px solid #ff0000; height: 26px; display: inline-block; line-height: 26px; padding: 0 10px; border-radius: 2px; cursor: default;}
+.pager .pagecss a{color:#959595; border:1px solid #e0e0e0; height: 26px; display: inline-block; line-height: 26px; padding: 0 10px; border-radius: 2px;}
+.pager .pagecss .end select{border: 1px solid #ccc; font-size: 14px; height: 26px; line-height: 24px; margin: 0 3px;  width: 54px;}
+
+/*分页*/
+.YPagebox{ height: 40px; padding-top: 10px;}
+.YPagebox .YPage{line-height: 28px; font-size: 14px; float: right; color: #959595; }
+.YPagebox .Yp_tol{ float: left; padding-right: 10px;}
+.YPagebox .Yp_num{ float: left;}
+.YPagebox .Yp_num a{ color:#ff7575; border:1px solid #e0e0e0; height: 26px; display: inline-block; line-height: 26px; padding: 0 10px; border-radius: 2px;}
+.YPagebox .Yp_num i{ background: url(../image/ico_sj.jpg) repeat-x; display: inline-block; height: 10px;}
+.YPagebox .Yp_num .disable{ cursor: default; color: #959595;}
+.YPagebox .Yp_num a:hover.disable{ color: #959595;}
+.YPagebox .Yp_num .on{ color: #ff0000; border-color: #ff0000;  cursor: default;}
+.YPagebox .Yp_num a:hover{ text-decoration: none; color: #ff0000;}
+.YPagebox .Yp_num a.Yfirst{ border:none;}
+.YPagebox .Yp_num a.Ypre{ }
+.YPagebox .Yp_num a.Ynext{ }
+.YPagebox .Yp_num a.Ylast{ border:none;}
+.YPagebox .Yp_num a.Yfirst i{ width: 10px; background-position: 0px -56px; margin-right: 5px;}
+.YPagebox .Yp_num a.Ypre i{ width: 5px; background-position: 0px -56px; margin-right: 5px;}
+.YPagebox .Yp_num a.Ynext i{ width: 5px; background-position: 0px -38px; margin-left: 5px;}
+.YPagebox .Yp_num a.Ylast i{ width: 10px; background-position: 0px -38px; margin-left: 5px;}
+.YPagebox .Yp_num a.Yfirst.disable i, .YPagebox .Yp_num a.Ypre.disable i{background-position: 0px -18px;}
+.YPagebox .Yp_num a.Ynext.disable i, .YPagebox .Yp_num a.Ylast.disable i{background-position: 0px 1px;}
+.YPagebox .Yp_tolp{ float: left;}
+.YPagebox .Yp_skip{ float: left; padding-left: 10px;}
+.YPagebox .Yp_skip em { float: left; font-size: 14px; line-height: 28px; font-style: normal;}
+.YPagebox .Yp_skip .input-txt { float: left;  border: 1px solid #ccc; font-size: 14px; height: 26px; line-height: 24px; padding: 0px 5px; margin: 0 3px; text-align: center; width: 24px;}
+/*底部搜索*/
+.Ybotsearch{ clear: both; padding-top: 10px; height: 77px;}
+.Ybotsearch .Ysl{ float: left; width: 360px; text-align: right; font-size: 14px; line-height: 36px; font-weight: bold; padding-right: 10px; color: #666666;}
+.Ybotsearch .Ysr{ float: left;}
+
+

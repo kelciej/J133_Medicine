@@ -1,0 +1,519 @@
+@charset "utf-8";
+.nav_r{*width:83px;}.swidth1200 .nav_r{*width:303px;}
+/* 面包屑导航 */
+.crumb b{font-size:14px;}.crumb{text-align:left;line-height:35px;clear:both;}
+/* end 面包屑导航 */
+.txtSearch_bg{position:relative;z-index:5;}
+/* 左边部分 */
+.sidebar_left{width:198px;float:right;text-align:left;padding-bottom: 10px;}
+.sidebar_left .m{width:196px;overflow:hidden;color:#666;margin-bottom:10px;border:1px solid #dadada;border-top: 0;}
+.sidebar_left .mt h2{color:#fff;height:39px;line-height:39px;font-size:14px;width:212px;text-align:center;float:left;background:url(http://res.360kad.com/theme/default/img/search/newSea_Btns.png) -1px -1px no-repeat;}
+.sidebar_left .item{width:212px;float:left;}
+.sidebar_left .item h3{width:212px;background:#f3f3f3;border-bottom:1px solid #dadada;height:35px;line-height:35px;font-weight:normal; cursor:pointer;font-size:14px}
+.sidebar_left .item h3 b{width:16px;height:16px;display:block;float:left;background:url(http://res.360kad.com/theme/default/img/search/newSea_Btns.png) -216px 0;margin:10px 9px 0 10px;}
+.sidebar_left .item ul{padding:10px;line-height:24px;display:none}
+.sidebar_left .hover ul{display:block;}
+.sidebar_left .item ul li{padding-left: 26px;height:24px;border-bottom: 1px dashed #dadada;}
+.sidebar_left .item ul li a{color:#333;}
+.sidebar_left .mb{line-height:28px;text-align:right;padding-right:10px}
+.sidebar_left .mb a{color:#760000;font-size:14px;font-weight:bold;}
+.sidebar_left .item a:hover,.sidebar_left .item a.txtD4{color:#d40000;}
+.sidebar_left .item h3.wBor{border-bottom: 0;}
+.sidebar_left .hover h3 b{background:url(http://res.360kad.com/theme/default/img/search/newSea_Btns.png) no-repeat -234px 0;}
+.sidebar_left .m_up{border:1px solid #dadada;color:#333;}
+.wrap .prolist{line-height:20px;}
+.m_up .prolist li{border-bottom:1px dashed #e3e3e3;float:left;margin: 0 20px 10px 20px;padding:0 0 10px 0px;text-align: left;line-height:20px}
+.m_up .prolist li.last,.record_views .last{border-bottom:none;}
+.prolist li .t a{color:#666;}
+.prolist .t span a{color:#666;font-weight:normal;}.m_up .prolist .pic{width:152px;height:151px;text-align:center;margin-bottom:5px;line-height:150px;}.m_up .prolist .pic a:hover{display:block;}.m_up .prolist .pic img{vertical-align:middle;height:150px;width:150px;}.m_up .title{font-size:14px;font-weight:bold;line-height:40px; padding:0px 10px; border-bottom:1px solid #dadada;background-color:#f5f5f5}.prolist .adv{color:#e98707}
+.prolist .Vprice{font:bold 14px 宋体;color:#fe0000;margin-right:15px;}
+.prolist .price_Box{float:left;}
+.prolist .price_Box .price{color:#666;}
+.prolist .price_Box .price{color:#ff0000; float:right;font-size:16px; font-weight:bold; font-family:'Arial';}
+.prolist .price_m{float:right;text-decoration:line-through;margin-left:18px;display:inline;}
+.record_views{width:212px;border:1px solid #dadada;margin-top:10px;}
+.record_views1{float:left;}
+.record_views h3{padding:0 14px 0 16px;border-bottom:1px solid #dadada;height:28px;line-height:28px;}
+.record_views h3 .right,.record_views h3 .right1{margin-left:92px;color:#999;font-size:12px;font-weight:normal;cursor:pointer;_cursor:hand;}
+.record_views .Main_tips{padding:8px 0 8px 10px;line-height:26px;}
+.record_views .Main_tips a{color:#9a0909;}
+.views_box{float:left;padding:14px 0 10px;margin:0 6px;display:inline;line-height:20px;width:200px;border-bottom:1px dashed #dcdcdc;}
+.views_box .pro_pic{width:60px;height:51px;margin-top:5px;float:left;}
+.views_box .pro_title{width:120px;margin-top:8px;display:block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.views_box .pro_title,.views_box .pro_price{float:left;width:120px;margin-left:10px;display:inline;}
+.views_box .pro_price .left{color:#fe0000; }
+.views_box .pro_price .right{color:#999; margin-left:6px;display:inline;text-decoration:line-through;}
+/* end 左边部分 */
+
+/* 右边部分5.1 */
+.sidebar_right{width:988px;float:left}
+.searchNone{border:1px solid #edd28b;background: #fffceb;padding:16px 18px;font-size:14px;color:#666;font-weight: bold;}
+.searchNone b.search-result-txt{color:#d40000;}
+.search_nav{padding-left:13px;height:36px;line-height:36px;}
+.search_nav p span{color:#666666;}
+.searchCondition .sr_t{padding-bottom:10px;line-height:24px;}
+.searchCondition .sr_t span{float:left;color:#666;margin-right:10px;}
+.searchCondition .sr_t label{float:right;}
+.searchCondition .sr_t div strong{font-size:14px;float:left; margin-right:10px;}
+.searchCondition .sr_t div{width:840px;float:left;}
+.sr_t label a{padding:0px 8px;display:inline-block;margin-left:15px;text-align:center;color:#999;border:solid 1px #dadada;font-size:12px;font-weight:normal;margin-bottom:10px}
+.sr_t label a:hover{text-decoration:none;}.sr_t label i{font-style:normal;line-height:20px;vertical-align:top;margin-left:2px;}.sr_t label .pdr4{padding-right:4px;}
+/*
+.sidebar_right h2.sr_t{height: 30px;border-top:2px solid #2d8ef3;background:#f3f3f3;}
+.sidebar_right h2.sr_t,.sidebar_right div.sr_t{text-align:left;padding-left:15px;font-size:14px;line-height:30px;color:#760000;}
+
+.sidebar_right div.sr_t{color:#dadada;font-size: 12px;padding-top:5px;border-left:1px solid #dadada;border-right:1px solid #dadada;}
+.sidebar_right h2.sr_t{color:#333;border-left:1px solid #dadada;border-right:1px solid #dadada;} */
+
+/*5.1*/
+.sidebar_right span.searchR{color:#d40000;}
+.searchCondition{border-top:0;margin-bottom: 10px;}
+.dialogbox{overflow:hidden;clear:both;text-align:left;margin-bottom:10px;}
+.swidth1200 .dialogbox{ width:980px; }
+.dialogbox .chosebox span.choiceed{float:left;border:0;color:#999;  text-align: right;  width: 70px;}
+/*.pp_list{float:left;height:17px; float:left;line-height:17px;padding:5px 8px;margin:0 8px 5px 0;position:relative; z-index:1; border: 1px solid #dadada;}
+*/
+.pp_list:hover{cursor:pointer}
+#clearAll{cursor:pointer}
+.pp_list a:hover{text-decoration:none;}
+.swidth980 .pp_list{width: 580px;}
+.pp_list li{height:17px; float:left;line-height:17px;padding:5px 8px;margin:0 8px 5px 0;position:relative; z-index:1; border: 1px solid #ff8800;}
+.pp_list li a.title{margin-right:15px;display: inline-block;max-width:122px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.pp_list li font{ color: #ff0000;}
+.pp_list li samp{width:15px;height:14px;background:url(http://res.360kad.com/theme/default/img/search/newSea_Btns.png) no-repeat -232px -24px;z-index:2;/*display:block;*/position:absolute;right:5px;top:6px; font-size: 24px; cursor:pointer;_cursor:hand;}
+.pp_list li i{width:15px;height:14px; font-style: normal; font-weight: bold; position:absolute;right:5px;top:6px; cursor:pointer;_cursor:hand;}
+
+
+.cl_full{font-size:12px;color:#666;float:right;padding-right:14px;}
+.cl_full a{height: 16px;background: url(http://res.360kad.com/theme/default/img/search/newico.png) no-repeat -180px 0px; padding:2px 0px 2px 26px;}
+.cl_full a:hover{color:#d40000;}
+
+/*5.1*/
+.dialogbox dl{border-top:1px dotted #dadada;border-left:1px solid #dadada;border-right:1px solid #dadada;position:relative;width:1200px;float:left;line-height:34px;background-color:#f3f3f3;}
+.swidth980 .dialogbox dl{width:743px;}
+.border0{border-bottom:1px solid #dadada;float:left;}
+.dialogbox dl.yellowDl{background: #f0f9ff;padding-bottom: 4px;}
+
+
+.chInput{width: 12px;height: 12px;float:left;margin:11px 0px 0 0; vertical-align: middle; visibility: hidden;}
+.yesOrno{margin:0 auto;clear:both;padding:5px 0;display: none;text-align: center;}
+/*search1确认清除按钮*/
+.btn_selPri {  float:left;display: block;}
+.btn_selPri .noBtn {  background-position: 0 -230px;  background: linear-gradient(#FFFFFF, #eeeeee); width: 44px; height:20px;border-radius: 5px ;border-color: #dadada;
+    border-style: solid;border-width:1px;}
+.btn_selPri .noBtn:active{ color:#ff7575}
+.btn_selPri .yesBtn{  background-position: 0 -230px;  background: linear-gradient(#FFFFFF, #eeeeee); width: 44px; height:20px;border-radius: 5px ;border-color: #dadada;
+    border-style: solid;border-width:1px;}
+.btn_selPri .yesBtn:active{ color:#ffffff;background: linear-gradient(#ff8800, #ff3535);}
+.dialogbox dl dt{background-color: #f3f3f3;color:#999999;float:left;text-align: right; width: 120px;padding-right: 10px;}
+.dialogbox dl .retractSpec{position:absolute;right:15px;top:0;color:#666;cursor:pointer;_cursor:hand;float:left;}
+.dialogbox dl dd.retractSpec2{float:right;}
+.dialogbox dl dd.retractBrand{color:#666;cursor:pointer;_cursor:hand;float:left;}
+.dialogbox dl dd.retractBrand2{float:right;}
+.pps-box{  float: left;margin-right: 30px;display: inline;}
+/**/
+.dialogbox dl dd a.moreChoices{width: 30px;padding-left:14px;height: 18px;line-height:18px;text-align:center;border:1px solid #dadada;background: url(http://res.360kad.com/theme/default/img/search/moreCho_btn.png) no-repeat 3px center #f7f7f7;margin:4px 0;color:#333;}.dialogbox dl dd a{line-height: 34px;color: #2d8ef3;display: block;float: left;white-space: nowrap;padding: 0 4px;}
+.dialogbox dl dd a:hover{color:#d40000;}
+.dialogbox dl dd.retractSpec a:hover{color:#333;text-decoration: none;}
+.dialogbox dl dd a.sr_t{padding:0px;}
+.dialogbox dl dd a.moreLinks{width: 39px;height: 24px;display:block;position:relative;color:#333;margin-right: 10px;display: inline;}
+
+.moreLinks i.icon1{width:7px;height:5px;background: url(http://res.360kad.com/theme/default/img/search/newSea_Btns.png) no-repeat -16px -75px;position: absolute;right:5px;top:12px;}
+.moreLinks i.icon2{background-position:-24px -75px ;top:10px;}
+
+.dialogbox .chosebox{padding-bottom:5px;float:left;width:963px;}
+.swidth980 .dialogbox .chosebox{width:743px;}
+.dialogbox .chosebox span{border:solid 1px #9a0909;padding:2px 3px;margin-right:10px;color:#333;}
+.dialogbox .chosebox span a{color:#333;}.dialogbox .chosebox span a:hover{color:#333;text-decoration:none;}.dialogbox .chosebox span s{color:#fff;font-size:12px;text-decoration:none;background-color:#9a0909;padding:2px 1px 0px;cursor:pointer}
+.fk_btn span{cursor:pointer;_cursor:hand;}
+.bSpecLists{float:left;width:840px;height:34px;padding-left:15px;background-color:#fff;overflow:hidden;}
+.bSpelists_l{float:left;width:900px;}
+.swidth980 .bSpecLists{width:588px;}
+
+
+
+.price-right{width: 158px;float:left;padding-top: 4px;}
+.price-range{width: 42px;height: 19px;line-height: 19px;border:1px solid #dcdcdc;float:left;display: block;}
+.price-right i{width: 4px;height: 1px;background: #dcdcdc;float:left;margin:12px 4px;overflow: hidden;}
+.btn-price-range{width:48px;height:22px;background: url(http://res.360kad.com/theme/default/img/search/newico.png) no-repeat 0px -23px;float: left;border:0;margin-left: 4px;display: inline;cursor: pointer;_cursor: hand}
+.advanced-attr{height:30px;line-height:20px;padding:10px 20px 0 30px;border: 1px solid #dadada; border-top-color:#fff;margin:auto;position: relative;z-index: 1;top:-1px; display:inline-block;_zoom:1;*display: inline;}
+.advanced-attr-b{clear:both;width:980px;text-align: center;}
+.attr-extra{color:#666;cursor: pointer;_cursor: hand;margin: auto;text-align: center;}
+.swidth980 .advanced-attr{margin:-1px 0 0 270px;}
+.advanced-attr .attr-extra span{float:left;}
+.advanced-attr .attr-extra i.add-icon1{width:9px;height:6px;background: url(http://res.360kad.com/theme/default/img/search/newSea_Btns.png) no-repeat 0 -75px;float:left;margin:7px 0 0 10px;}
+.advanced-attr .attr-extra i.add-icon2{background-position:0 -88px;}
+.kinds_attrs01{display: none;}
+
+/* 列表续5.1 */
+.sidebar_right .prolist ul{margin-top:15px;padding-bottom:5px; text-align:center;}
+.sidebar_right .prolist{width:988px;float:left;}
+.swidth980 .sidebar_right .prolist{width:760px;}
+.compare_price{width:190px;float:left;height: 22px;}
+.sidebar_right .prolist .t{width:190px;height:42px;text-align:left;overflow:hidden; }
+.sidebar_right .prolist li{width:190px;float:left;height:325px;margin:0 15px;padding:8px;display:inline;}
+.swidth980 .sidebar_right .prolist li{margin:0 20px;}
+.sidebar_right .prolist .btn a{display:block;float:left;margin-right:5px}
+.sidebar_right .prolist .btn{margin:5px 0;float:left;width:190px;position:relative;}
+.sidebar_right .prolist .btn_1{width:100px;padding-left: 100px;}
+.sidebar_right .prolist .btns{margin:5px 0;float:left;width:190px;position:relative;z-index:16;}
+.sidebar_right .prolist .btn .rd{width:17px;height:16px;background:url(http://res.360kad.com/theme/default/img/search/sp_bg.png) no-repeat -25px -91px;padding-left:5px;margin-top:5px;cursor:pointer;_cursor:hand;}
+.sidebar_right .prolist .btn .rd_hover{width:17px;height:16px;background:url(http://res.360kad.com/theme/default/img/search/rd_hover.png) no-repeat;padding-left:5px;margin-top:5px;cursor:pointer;_cursor:hand;}
+.sidebar_right .prolist .pic{width:182px;height:182px;line-height:18px;position:relative;z-index:0;}
+.sidebar_right .prolist .pic .yin_ico,.M_product .yin_ico{position:absolute;top:8px;left:10px;display:none;z-index:4;}
+.sidebar_right .prolist .pic .p_img{width:180px;height:180px;}
+.sidebar_right .prolist .pic a{border:solid 1px #fff;display:block;height:180px;}
+
+.sidebar_right .prolist .btn .add{width:17px;height:16px;background:url(http://res.360kad.com/theme/default/img/search/sp_bg.png) no-repeat -48px -91px;margin:5px 8px 0 8px;cursor:pointer;_cursor:hand;}
+.sidebar_right .prolist .btn .add_cart{width:84px;height:26px;background:url(http://res.360kad.com/theme/default/img/search/sp_bg.png) no-repeat 0 -39px;text-indent:-999em;margin-right:0;}
+.sidebar_right .prolist .btn .view_product{width:84px;height:26px;background:url(http://res.360kad.com/theme/default/img/search/view_bg.png) no-repeat 0 0;text-indent:-999em;margin-right:0;}
+.sidebar_right .prolist .btn .level_p{height:26px;margin-right: 0;text-indent: -999em;width: 84px;background:url(http://res.360kad.com/theme/default/img/search/level_p.png) no-repeat;position:relative;z-index:10;}
+.sidebar_right .prolist .btn .level_p2{height:26px;margin-right: 0;text-indent: -999em;width: 84px;background:url(http://res.360kad.com/theme/default/img/search/cancl_hover.png) no-repeat;position:relative;z-index:10;}
+.sidebar_right .prolist .btn .level_p1{background:url(http://res.360kad.com/theme/default/img/search/aa_hover.jpg) no-repeat;}
+.sidebar_right .prolist .btn .got_message{width:84px;height:26px;text-indent:-999em;background:url(http://res.360kad.com/theme/default/img/search/got_message.png) no-repeat;margin-right:15px;display:inline;position:relative;z-index:9;}
+.hover_box{width:84px;float:left;height:30px;position:relative;}
+.level_box{width:231px;float:left;z-index:12;position:absolute;top:30px;right:0;display:none;}
+.level_box .top{background:url(http://res.360kad.com/theme/default/img/search/level_top.png) no-repeat;width:231px;height:18px;}
+.level_box .center{background:url(http://res.360kad.com/theme/default/img/search/level_c.png) repeat-y;width:231px;float:left;line-height:20px;}
+.level_box .center .tit{width:224px;font-weight:bold;color:#666;height:33px;line-height:33px;border-bottom:1px solid #d0d0d0;}
+.level_box .center .small_box{width:215px;margin:8px;padding-bottom:11px;display:inline;text-align:left;float:left;border-bottom:1px dashed #d0d0d0;}
+.level_box .center .small_box .small_P{width:54px;height:53px;float:left;border:1px solid #d2d2d2;overflow:hidden;}
+.level_box .center .small_intor{width:154px;margin-left:5px;display:inline;float:left;}
+.level_box .center .small_intor p a{width:140px;height:40px;overflow:hidden;display:block;}
+.level_box .center .v_price{font-size:14px;color:#fe0000;margin-right:12px; font-family:"微软雅黑";}
+.level_box .center .m_price{ text-decoration:line-through;color:#999;}
+.hover_box .bott{background:url(http://res.360kad.com/theme/default/img/search/level_b.png) no-repeat;width:231px;height:5px;float:left;}
+.nav_hover{display:block;}
+/*特卖*/
+.tj_icon_1{width:53px;height:52px;background:url(http://res.360kad.com/theme/default/img/search/icon_bg.png) no-repeat -120px 0;display:block;position:absolute;top:0;right:0;z-index:5;}
+/*爆款*/
+.tj_icon_2{width:55px;height:80px;background:url(http://res.360kad.com/theme/default/img/search/icon_bg.png) no-repeat 0 0;display:block;position:absolute;top:-10px;right:7px;z-index:5;}
+/*疯抢*/
+.tj_icon_3{width:61px;height:61px;background:url(http://res.360kad.com/theme/default/img/search/icon_bg.png) no-repeat 0 -81px;display:block;position:absolute;top:0;right:0;z-index:5;}
+/*品牌*/
+.tj_icon_4{width:59px;height:52px;background:url(http://res.360kad.com/theme/default/img/search/icon_bg.png) no-repeat -55px 0;display:block;position:absolute;top:0;right:0;z-index:5;}
+.tj_icon_5{width:68px;height:68px;background:url(http://res.360kad.com/theme/default/img/search/icon_bg.png) no-repeat -69px -63px;display:block;position:absolute;top:0;right:0;z-index:5;}
+/*橱窗展示*/
+.prolist_top{height:38px;line-height:38px;background:#f3f3f3;border-top:2px solid #2d8ef3;}
+.sidebar_right .prolist_top dl{padding:0 20px;}
+.sidebar_right .prolist_top dl dt{float:left;width:190px;display:none;}
+.sidebar_right .prolist_top dl dt span{width:50px;float:left;display:block;cursor:pointer;_cursor:hand;}
+.wind_1{width:19px;height:19px;float:left;margin:10px 8px 0 0;display:inline;background:url(http://res.360kad.com/theme/default/img/search/sp_bg.png) no-repeat -18px -67px;}
+.wind_2{width:19px;height:19px;float:left;margin:10px 8px 0 0;display:inline;background:url(http://res.360kad.com/theme/default/img/search/sp_bg.png) no-repeat -40px -67px;}
+.wind_bg1{background:url(http://res.360kad.com/theme/default/img/search/sp_bg.png) no-repeat -69px -91px;}
+.wind_bg2{background:url(http://res.360kad.com/theme/default/img/search/sp_bg.png) no-repeat -92px -91px;}
+.sidebar_right .prolist_top dl dd{float:left;}
+.sidebar_right .prolist_top dl dd strong{float:left; font-weight:normal;color:#666;}
+
+.wind_4{width:40px;height:20px;line-height:20px;padding:0 5px;float:left;margin:7px 7px 0 3px;background: #fff;border:1px solid #d2d2d2;display:inline;cursor:pointer;_cursor:hand;text-align:center;}
+/*向下灰色*/
+.wind_3{width:40px;height:20px;line-height:20px;padding:0 5px;float:left;margin:7px 7px 0 3px;background: url(http://res.360kad.com/theme/default/img/search/jt1.png) no-repeat 34px 4px #fff;border:1px solid #d2d2d2;display:inline;cursor:pointer;_cursor:hand;}
+/*向上金色*/
+.sidebar_right .prolist_top dl dd .wind_bg{width:40px;height:20px;line-height:20px;padding:0 5px;float:left;margin:7px 7px 0 3px;border:1px solid #efa700;display:inline;cursor:pointer;_cursor:hand;background: url(http://res.360kad.com/theme/default/img/search/jt2.png) no-repeat 34px 4px #fff;}
+/*向下金色*/
+.sidebar_right .prolist_top dl dd .jt3{width:40px;height:20px;line-height:20px;padding:0 5px;float:left;margin:7px 7px 0 3px;border:1px solid #d2d2d2;display:inline;cursor:pointer;_cursor:hand;background: url(http://res.360kad.com/theme/default/img/search/jt3.png) no-repeat 34px 4px #fff;border-color:#efa700;}
+/*end向下金色*/
+
+.compare_price .Vip_price{font-size:16px;color:#fe0000;float:left; font-family:"微软雅黑";}
+.compare_price .Market_price{float:right;margin-left:15px;display:inline;text-decoration:line-through;font-size:14px;}
+.add_input{width:38px;height:22px;line-height:22px;text-align:center;border:1px solid #a8a8a8;float:left;}
+.prom_at{float:left;}
+.Product_Show{margin-left:20px;display:inline;border-bottom:1px dashed #dcdcdc;float:left;}
+.Pages{float:right;padding-right: 5px;}
+.Pages-left{float:left;font-size:14px;height:36px;line-height:36px;border-right: 1px solid #cfcfcf;padding-right:10px;margin-top: 1px;}
+.Pages-left b{color:#d40000;}
+.Pages-right{float:left;border-left: 1px solid #fff;padding-left:10px;margin-top: 1px;}
+.Pages label{float:left;display:block;}
+.Pages label font{ color: #ff0000;}
+.Pages .prev,.Pages .next,.Pages .noprev,.Pages .nonext{width:10px;height:19px;background:url(http://res.360kad.com/theme/default/img/search/newico.png) no-repeat -84px -41px;float:left;margin:8px 5px 0 5px;display:inline;}
+.Pages .next{ background-position: -104px -25px;}
+.Pages .noprev{ background-position: -84px -25px; cursor: not-allowed;}
+.Pages .nonext{ background-position: -104px -41px; cursor: not-allowed}
+/*橱窗展示end*/
+/* 分页 */
+.fk_text{width:345px;float:left;color:#1264ba;}
+.fk_text a,.fk_text a:hover{color:#1264ba; text-decoration: none;}
+.fk_l{float:left;padding-left:45px;}
+.fk_btn{width:40px;float:left;position:relative;z-index:6;}
+.fk_box{width:452px;position:absolute;top:20px;left:0;z-index:11;display:none;}
+.fk_box .fk_t{background:url(http://res.360kad.com/theme/default/img/search/qw.png) no-repeat;width:452px;height:9px;overflow:hidden;}
+.fk_box .fk_c{width:442px;padding:4px 4px 9px 4px;border:1px solid #ea9500;border-top:0;float:left;background:#fff;overflow:hidden;z-index:12;}
+.fk_box .fk_c .title{padding:4px 6px 0 9px;height:28px;line-height:24px;color:#666;font-size:14px;text-align:left;background:#fff3df;}
+.fk_box .fk_c .title strong{float:left;}
+.fk_box .fk_c .title .close_Btn{background:url(http://res.360kad.com/theme/default/img/search/sp_bg.png) no-repeat 0 -89px;width:20px;height:20px;display:block;float:right;text-indent:-999em;cursor:pointer;_cursor:hand;}
+/*反馈end*/
+/*建议*/
+.fk_box .fk_c form{padding:0 20px;float:left;}
+.form_l{width:196px;margin-top:6px;text-align:left;padding-bottom:20px;line-height:24px;float:left;border-right:1px dashed #ea9500;}
+.form_l .no_m{color:#ff0000;margin:3px 0;}
+.form_l p input{margin-right:2px;_margin-right:0;}
+.form_r{border-right:0;padding-left:64px;width:132px;}
+.sub_title{float:left;width:300px;text-align:left;margin:10px 0 3px;color:#ff0000;font-size:12px;}
+.leave_ms{width:392px;height:82px;border:1px solid #c7c7c7;}
+.submit_btn{width:64px;height:26px;border:none;margin-top:3px;background:url(http://res.360kad.com/theme/default/img/search/sp_bg.png) no-repeat -221px 0;cursor:pointer;_cursor:hand;float:left;}
+
+/*建议end*/
+.pager{width:980px;float:left;text-align:center;margin:25px 0;}
+.swidth980 .pager{width: 760px;}
+.pager .page{float:right;padding-right:20px;line-height:26px;}
+.page a{width:20px;height:23px;border:solid 1px #c7c7c7;color:#333;float:left;margin-right:5px;}
+.page a:hover{color:#ea9500;text-decoration:none;font-weight:bold;border:1px solid #ea9500;background:#fff3df;}
+.page a:active{background:#fff;font-weight:bold;}
+.page .active{color:#ea9500;background:#fff;font-weight:bold;border:1px solid #ea9500;}
+.page span{color:#ee9f15;width:25px;height:20px;float:left;}.page .prev,.page .next{background:url(../../Content/images/search_bg.png) no-repeat 0 -50px;width:61px;height:21px;display:block;float:left;border:none;margin-right:10px}.page select{float:left;height:20px;line-height:18px;margin:0 5px;}.page label{float:left;margin:0 5px}.page .prev:hover,.page .next:hover{color:#ee9f15}
+.page .p_up{background:#e8e8e8;border:none;margin-right:5px;position:relative;}
+.page .p_down{background:#e8e8e8;border:none;position:relative;}
+.up_icon{width:5px;height:9px;background:url(http://res.360kad.com/theme/default/img/search/sp_bg.png) no-repeat -226px -77px;position:absolute;top:9px;left:9px;}
+.down_icon{width:5px;height:9px;background:url(http://res.360kad.com/theme/default/img/search/sp_bg.png) no-repeat -234px -77px;position:absolute;top:9px;right:9px;}
+.page .p_up,.page .p_down{width:75px;border:1px solid #c7c7c7;height:23px;cursor:pointer;_cursor:hand;}
+/* end 分页 */
+
+/* 重新搜索5.1 */
+.search_again{clear:both;padding:0px 0px 20px 100px;margin:0px auto;line-height:35px;height:40px;}
+.search_again label{float:left;}
+.search-others{clear: both;color:#666;overflow: hidden;}
+.search-others a{color:#666;}
+/* 无搜索结果 */
+.no_search{width:310px;padding-top:20px;text-align:left;float:left;}.no_search dt{float:left;width:65px;}.no_search dd{float:left;width:235px;text-align:left;color:#760000;}.no_search dd p{padding-left:15px;}
+
+/* 搜索类型 */
+.txtsearch_ico{width:52px;display:block;float:left;position:relative;z-index:166;padding-top:3px}.txtsearch_ico a{display:block;width:40px;height:29px;background:url(../../../Content/V3/images/txtsearch_ico.png) no-repeat;padding-left:12px;line-height:28px;}.txtsearch_ico a:hover{text-decoration:none;color:#920400;}.txtsearch_ico a.ico2{background-position:0 -57px;position:absolute;z-index:166;top:28px;display:none; line-height:26px;}.txtsearch_ico a.selIco1{background-position:0 -30px;}
+.txtSearch_bg input.w212{width:212px;}.swidth1200 .txtSearch_bg input.w212{width:322px;}
+
+/* 商品热卖 2012-08-24 */
+.right-extra{ width:758px; border:1px solid #d82323; overflow:hidden;margin-bottom:15px; }
+.swidth1200 .right-extra{ width:978px; height:178px; }
+.right-extra .hotsale{ float:left; width:505px; padding-left:10px; overflow:hidden;} .swidth1200 .right-extra .hotsale{ width:725px;}
+.right-extra .hotsale h2{ height:30px; line-height:30px; margin-bottom:9px; }
+.right-extra .hotsale h2 span{ float:left; width:60px; color:#fff; padding-left:22px; background:url(../../Content/images/search_bg_02.png) 0 0px;}
+.right-extra .hotsale h2 i{  display:block; float:left; width:10px; background:url(../../Content/images/search_bg_02.png) -30px 0px; }
+.hotsale ul li{ float:left; width:230px; margin-right:10px; overflow:hidden; }.hotsale ul li.none980{ display:none;}.swidth1200 .hotsale ul li.none980{ display:block;}
+.hotsale .hottop{ width:228px; height:97px; border:1px solid #fff; margin-bottom:8px;}.hotsale .hottophover{ border-color:#d82323;}
+.hotsale .hottop p.pic{ width:95px; float:left;}.hotsale .hottop img{ width:90px; height:90px;}
+.hotsale .hottop p.info{ float:right; width:130px; }
+.hotsale .hottop p.info span{ display:block; line-height:20px;}
+.hotsale .hottop p.info span.num{ color:#333;} .hotsale .hottop p.info span.adv{ color:#e98707;}
+.hotsale .hottop p.info span.price{ color:#666; }.hotsale .hottop p.info span.price label{ color:#9a0909; font-weight:bold;}
+.hotbottom .btn{ padding-left:30px;}
+.hotbottom .btn a{color:#fff;width:78px;height:25px; line-height:22px; text-align:center; background:url(http://res.360kad.com/theme/default/img/search/search_bg.png) no-repeat 0 -96px; display:block;float:left;margin-right:5px; padding-left:5px; cursor:pointer;}
+.hotbottom .btn .alink_info{background-position: 0 -70px;}
+.marketnews{ float:right; width:226px; padding-left:12px; height:165px; margin:5px 0 8px 0; border-left:1px solid #e71f19; overflow:hidden;}
+.marketnews h2{ padding-left:12px; height:25px; line-height:25px; color:#e43804;}
+.marketnews ul li{ height:24px; line-height:22px; overflow:hidden;} .marketnews ul li a{ margin-right:5px;}
+/*购物车右侧*/
+.wrp{width:127px;position:fixed;right:0;bottom:0;z-index:14;display:none;}
+
+*html .wrp{position:absolute;cursor:pointer;right:0;top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight)-62+"px")}
+.cart_product{width:127px;height:58px;background:url(http://res.360kad.com/theme/default/img/search/cart_a.png) no-repeat 3px 14px;position:relative;z-index:20;}
+.p_num{display:block;width:17px;height:16px;padding-top:2px;background:url(http://res.360kad.com/theme/default/img/search/num_bg1.png) no-repeat;color:#fff;text-align:center; vertical-align:middle;}
+.p_num_box{width:226px;background:url(http://res.360kad.com/theme/default/img/search/p_numg.png) no-repeat center bottom;position:absolute;top:-22px;right:20px;}
+.p_num_box .p_num_c{width:224px;border:1px solid #d0d0d0;line-height:24px;overflow:hidden;background:#fff;border-bottom:0;position:absolute;top:-100px;}
+/*商品展示购物车*/
+.p_num_box .p_num_c ul{float:left;padding:4px 0;margin:0 15px;width:194px;border-bottom:1px dashed #e3e3e3;}
+.p_num_pic{width:54px;height:53px;float:left;border:1px solid #d6d6d6;margin-right:5px;display:inline;}
+.p_num_intor{width:133px;float:left;display:inline;}
+.pd_title{width:103px;float:left;}
+.pd_num{float:right;font-weight:bold;}
+.pc_pr{color:#fe0000;font-weight:bold;}
+.pc_cancel{font-weight:normal;color:#999;}
+.Go_cart{color:#fff;margin:15px 0 0 58px;display:block;}
+.cart_product a:hover{color:#fff;}
+/*产品列表页*/
+.prolist .result_lists{width:980px;float:left;border:1px solid #d4d4d4;border-left:0;border-right:0;border-bottom:0;}
+.prolist .result_lists li{width:962px;height:116px;margin:0;border:1px solid #d4d4d4;border-top:0;}
+.prolist .result_lists li dl dt{width:106px;float:left;position:relative;}
+.result_title{width:336px;padding:45px 65px 0 70px;float:left;text-align:left;}
+.result_at{color:#919191;}
+.result_price{width:60px;float:left;padding-top:33px;}
+.result_price .result_v{color:#ff0000;font-size:16px; font-family:"微软雅黑";}
+.result_price .result_m{color:#666; text-decoration:line-through;}
+.result_cart{width:110px;margin-top:30px;float:right;}
+.hover_box1{margin-top:10px;position:relative;}
+.t_1{width:44px;height:65px;background:url(http://res.360kad.com/theme/default/img/search/sp_bg.png) no-repeat 0 -157px;display:block;position:absolute;top:0;right:-20px;}
+.t_2{width:48px;height:41px;background:url(http://res.360kad.com/theme/default/img/search/sp_bg.png) no-repeat -49px -168px;}
+.t_3{width:42px;height:43px;background:url(http://res.360kad.com/theme/default/img/search/sp_bg.png) no-repeat -106px -169px;}
+.t_4{width:49px;height:49px;background:url(http://res.360kad.com/theme/default/img/search/sp_bg.png) no-repeat 0 -225px;}
+.t_5{width:54px;height:56px;background:url(http://res.360kad.com/theme/default/img/search/sp_bg.png) no-repeat -55px -217px;}
+.t_6{width:50px;height:50px;background:url(http://res.360kad.com/theme/default/img/search/sp_bg.png) no-repeat -114px -219px;}
+.t_7{width:49px;height:56px;background:url(http://res.360kad.com/theme/default/img/search/sp_bg.png) no-repeat -165px -168px;}
+.prolist li .t a:hover,.Product_Show li .t a:hover {color:#d40000; text-decoration:none;}
+
+.sidebar_right .prolist .btn .cart_hover{background:url(http://res.360kad.com/theme/default/img/search/cat_hover.png) no-repeat;}
+
+
+
+/* 购物车*/
+/*加入购物车提示*/
+#payshopcart{position:absolute; left:-1px; top:-1px; }
+.lookshopcart{ width:533px;border:solid 1px #0080d5; text-align:left; background:#FFF; display:none; padding:5px 10px 20px 10px; overflow:hidden; clear:both; z-index:10000; }
+.cart_yes{ width:191px;height:97px;float:left;}
+.cart_info{color:#404040; padding-left:20px; line-height:27px;width:310px; float:left;}.cart_title{font-size:14px; font-weight:bold}
+#lookshopcart .cart_info a{background:url(http://res.360kad.com/theme/default/img/search/p_btn_bg08.gif) no-repeat 0px 0px; display:block;width:86px;height:26px;float:left; margin-top:7px;}
+.lookshopcart b{font-size:14px} .look_close{height:20px; text-align:right;} .look_close a{color:#a0a0a0;}
+#payshopcart .cart_info a{background:url(http://res.360kad.com/theme/default/img/search/p_btn_bg08.gif) no-repeat 0px -26px;width:98px; display:block;height:26px;float:left; margin-top:7px;}
+
+.alsobuy_cart{ width:520px; overflow:hidden;  border-top:1px dotted #666666; margin-top: 6px; padding-top: 6px;}.alsobuy_cart h3{height:26px; overflow:hidden;}
+.alsobuy_cart ul li{  float:left; margin-right:13px; width: 90px;}  .alsobuy_cart ul li img{ width:88px;border: 1px solid #E3E3E3;}
+.alsobuy_cart ul li p.title,.alsobuy_cart ul li p.num{ height:20px;line-height:20px;  overflow:hidden;}
+.alsobuy_cart ul li p.price{ color: #f00; font-family: "Lucida Grande",Arial,Lucida,Verdana,Helvetica,"宋体",sans-serif; }
+/*end 加入购物车提示*/
+
+
+/*解决背景图片闪动和重复加载的IE6BUG*/
+html { zoom: expression(function(ele){ ele.style.zoom = "1"; document.execCommand("BackgroundImageCache", false, true); }(this)); }
+
+/*2015-5-6*/
+/*药品标示*/
+.ico_otc, .ico_otcl, .ico_rx, .ico_baoj{ background: url(http://res.360kad.com/theme/default/img/search/ico-kad.png) 0px -568px; width: 34px; margin: 2px 5px 0px 0px; height: 16px; display: inline-block; text-indent: -10em; overflow: hidden; float: left;}
+.ico_otcl{ background-position: 0px -544px; }
+.ico_rx{ background-position: 0 -463px; }
+.ico_baoj{ background-position: 0px -520px; }
+
+.sidelink{width:214px;overflow:hidden;color:#666;margin-bottom:10px;}
+.sidelink .sidet{ background: #2d8ef3; border-bottom: 1px solid #247edb; color: #fff; height: 38px; line-height: 38px; padding: 0px 15px;}
+.sidelink .sidec{ border: 1px solid #dadada; border-top: none;}
+.sidelink .sidec_t{ background: #f3f3f3; cursor: pointer; height: 36px; line-height: 36px; padding: 0px 15px; border-top: 1px solid #dadada; position: relative;}
+.sidelink .sidec_t_on{ cursor: auto;}
+.sidelink .sidec_t i{ font-style: normal; position: absolute; right: 15px; width: 16px; height: 16px; margin-top: 10px; background: url(http://res.360kad.com/theme/default/img/search/newico.png) no-repeat -80px 0px;}
+.sidelink .sidec_t_on i{ background-position: -57px 0px;}
+.sidelink .sidec_d{ display: none; border-top: 1px solid #dadada; padding: 5px 15px; line-height: 24px;}
+.sidelink .sidec_d li{}
+.sidelink .sidec_d li.on a,
+.sidelink .sidec_d li.on a span{ color: #ff0000;}
+.sidelink .sidec_d a{ color: #333;}
+.sidelink .sidec_d a span{ color: #999;}
+.sidelink .sidec_d a:hover,
+.sidelink .sidec_d a:hover span{ color: #ff0000;}
+
+.hislist{}
+.hislist li{ clear: both; padding: 10px 0px; height: 64px; border-bottom: 1px dotted #dcdcdc; margin: 0px 10px;}
+.hislist .pic{ width: 64px; height: 64px; overflow: hidden; float: left; margin-right: 10px;}
+.hislist .pic img{ width: 64px;}
+.hislist .t{ padding: 10px 0px; height: 14px; overflow: hidden; white-space: nowrap; text-overflow:ellipsis;}
+.hislist .price{ color: #ff0000;}
+
+
+.sidebar_right .prolist .pic a{border:0;}
+.prolist_top_nav{background: none;border-top:0;height:36px;line-height: 36px;}
+.prolist_top_nav a{width: 117px;height: 36px;display: inline;float:left;margin-right:4px;text-align: center; font:bold 14px/36px '';}
+span.otc_txt,span.rx_txt{width: 27px;color:#176300;font:bold 14px '';}
+span.otc_txt{color:#d40000;}
+a.nobg{background: url(http://res.360kad.com/theme/default/img/search/otc_nav.png) no-repeat;color:#333;}
+a.bg{background: url(http://res.360kad.com/theme/default/img/search/otc_active_nav.png) no-repeat;color:#fff;}
+
+.sxuan{ padding-left: 20px;}
+.sxuan .radio-moni{ line-height: 16px; margin-top: 10px; margin-right: 10px; height: 16px; }
+.sxuan .radio-moni i,
+.sxuan .radio-moni i.on{background: url(http://res.360kad.com/theme/default/img/search/newico.png) no-repeat; width: 16px; height: 16px;}
+.sxuan .radio-moni i.on{ background-position: -28px 0px;}
+
+/*5.1*/
+.Productlist{ float: left; padding-top: 10px;}
+.Productlist li{ width: 243px; height: 340px;border: 2px solid #fff;margin-bottom: 10px;float: left; position: relative;}
+/*.Productlist li.hover{ border: 2px solid #ff3f3f;}*/
+.Productlist .ico_adv{ position: absolute; left:15px; top: 15px;z-index:3}
+.Productlist .pic{ text-align: center; margin:30px 0 8px 0;}
+.Productlist .plist_n {  line-height: 19px;  margin-bottom: 3px;  height: 20px;  overflow: hidden  }
+.Productlist .plist_s { margin-bottom: 5px;}
+.Productlist .plist_store {  height: 28px;  overflow: hidden;  line-height: 28px; float: left }
+.Productlist .plist_chufang{ height: 28px;  overflow: hidden;  line-height: 28px; float: right;}
+.Productlist .plist_store span {  float: left;  }
+.Productlist .pri{ color: #ff0000; font-size: 20px; font-family: Arial,Verdana,"宋体";}
+.Productlist .ico_zp,
+.Productlist .ico_by{ background: #ff8800; padding: 2px 5px; color: #fff; margin: 5px 0px 0px 5px;}
+.Productlist .ico_by{ background: #ff8800;}
+.Productlist .priceMarket {  clear: both;  color: #999;  padding-top: 3px;  text-decoration: line-through;  }
+.Productlist .des2{ clear: both;}
+
+
+
+.Surveydiv{ clear: both; padding: 30px 10px 0px; margin-bottom: 20px;}
+.Survey{ line-height: 30px;}
+.Survey dt,
+.Survey dd{ float: left; padding-right: 10px; position: relative;}
+.btn_bai{ border: 1px solid #ccc; border-radius: 3px; padding:7px 10px;}
+.btn_manyi{}
+.manyi_tips{ display: none; height: 40px; line-height: 40px; margin-left: -50px; margin-top: -42px; position: absolute; text-align: center; top: 0; width: 146px; background: url(http://res.360kad.com/theme/default/img/search/tips_bg.jpg) no-repeat; color: #666666;}
+
+.side_ad{ margin-bottom: 10px;}
+.side_ad img{ vertical-align: top;}
+
+.seach_ltPrice{color:#fff;font-size:12px;background: #f28310;line-height: 24px;padding: 0 5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius:5px;margin-left:7px}
+
+.YPagebox .YPage {width: 460px;float: inherit; }
+.sameProlist{border:solid 1px #dadada;line-height:40px;padding:0 18px;color:#999;margin-bottom:10px;} .sameProlist a{color:#666;margin-left:20px;}.sameProlist a:hover{color:#ff0000}
+
+/*筛选样式5.1*/
+.dialogbox_top span.searchR{color:#d40000}
+.dialogbox dl dd a{color:#ff7575}
+.Productlist .plist_li{border:solid 3px #fff;width:237px;position:absolute;top:0;left:0;z-index:1;}
+.plist_li .plist_li_i{border:solid 1px #fff;padding:0 20px 20px 20px;background-color:#fff;overflow:hidden}
+.Productlist .pri{color:#f00}
+.Productlist li.plistOn .plist_li{border:solid 3px #fafafa;position:absolute;top:0;left:0;z-index:2}
+li.plistOn .plist_li .plist_li_i{border:solid 1px #eaeaea}
+.Productlist li.plistOn .plist_li .t{height:auto;min-height:40px}
+.searchwrap{width:1200px;overflow:hidden;overflow:hidden;padding-bottom:20px}
+.kinds_attrs dd{padding-left:15px;float:left}.YPagebox{clear:both}
+.plist_b {  float: left ;width: 60%;}
+.font{color:#f00}
+
+
+.ad_search{margin-bottom:10px}
+.ad_search{margin-top:10px}
+.ad_search span{margin-right:7px;border:1px solid #dadada;display:inline-block}
+.ad_search span img{width:288px;height:118px}
+.s_findlist{border:solid 1px #dadada;overflow:hidden;margin-bottom: 10px;}
+.s_findlist .sfind_t{border-bottom:1px solid #dadada;font:300 16px/36px 微软雅黑;padding:0 15px;background-color:#f8f8f8}
+.sfind_t span{float:right}
+.sfind_t img{vertical-align:middle;margin-right:10px}
+.s_findlist ul li img{width:155px;height:155px}
+.s_findlist ul li{width:170px;float:left;margin-left:25px;text-align:center;padding:15px 0}
+.s_findlist .t{white-space:nowrap;text-overflow:ellipsis;overflow:hidden;text-align:left;line-height:22px}
+.s_findlist .price{color:#f00;font:600 16px/24px Arial}
+.no-search{width:1198px;background-color:#f8f8f8;border:1px solid #ddd;margin-bottom:10px;clear:both}
+.red{color:#f00;font-weight:bold}
+.no-searchinfo{width:760px;padding:80px 0;line-height:22px;overflow:hidden}
+.no-search-l{width:170px;float:left;display:block}
+.no-search-r{width:590px;float:left;padding-top:12px}
+.no-search-r strong{font-size:14px}
+.no-search-r a{color:#4484db;text-decoration:underline}
+
+/*重新搜索*/
+.search_again .txt_search{width:545px;border:1px solid #ddd;height:38px;line-height:38px;border-right:0;margin-top:0;background-color:#fff}
+.search_again input.btn_search{background-color:#ff3535;height:40px;line-height:40px;color:#fff;font-size:18px;border:0;width:94px;}.search_again{padding-top:20px}.spnCom{line-height:38px;padding-left:25px}.search_again{width:1188px}.search-ad{margin-bottom:10px}
+.list li{width:220px;float:left;margin:0 16px 16px 0;border:solid 3px #fff;}.list .plist_li_i{border:solid 1px #fff;padding:20px;}
+div .list .li_on{border:solid 3px #f9f9f9;}div .list .li_on .plist_li_i{border:solid 1px #eaeaea;}
+.list li.item4,.list li.item9{margin-right:0}.list .pimg img{width:180px;height:180px}
+.list .title{line-height:18px;height:48px;padding-top:20px}.list .price{color:#f00;font:bold 16px/24px Arial}
+.search-title{font:300 24px/36px 微软雅黑;padding:10px 0;color:#333}
+.ag_title{margin-right:10px;margin-left:5px; line-height:38px;font-size:12px}
+.dialogbox dl.kinds_attr0{border-top:1px solid #dadada}
+.plist_numtop dl{border:solid 1px #dadada;height:40px;background-color:#f8f8f8}
+.plist_numtop dd{width:80px;float:left;line-height:40px;border-right:1px solid #dadada;text-align:center}
+.plist_numtop dd i{font-style:inherit;vertical-align:top;line-height:36px;margin-left:5px;display:inline-block;width:14px;padding-top:5px}
+.plist_numtop dt{width:660px;float:left}
+.plist_numtop .selPri{width:160px;float:left;padding:8px 0 8px 22px}
+.selPri .txtPri{width:44px;height:22px;line-height:22px;border:solid 1px #dadada;padding:0 5px}
+.countList span{margin:0 20px 0 30px}
+.countList {  float: right;  width: 200px;  line-height: 40px;  text-align: right;padding-right: 10px;  }
+
+
+/*5.1*/
+.plist_numtop dd.on{background-color:#fff}
+.plist_numtop dd.on a{color:#2d8ef3}.plist_numtop dd a:hover{color:#2d8ef3;text-decoration:none}
+.plist_numtop_b{border:1px solid #dadada;border-top:0;line-height:40px;color:#666}
+.plist_numtop_b span{margin-left:20px;margin-right:10px}
+.plist_numtop_b span input{margin-right:3px;vertical-align:text-top;border-color:green;background:#ebebeb}
+.btn_selPri .noBtn{background-position:0 -230px}
+.btn_selPri input{margin:10px 12px 0 0}
+.plist_numtop .selPri_on{border:solid 1px #dadada;position:absolute;background-color:#fff;filter:progid:DXImageTransform.Microsoft.Shadow(color=#ddd,direction=120,strength=4);-moz-box-shadow:1px 1px 12px 1px #ddd;-webkit-box-shadow:1px 1px 12px 1px #ddd;box-shadow:1px 1px 12px 1px #ddd}
+.plist_numtop .selPri_on .btn_selPri{display:block}
+#showTxtPri{display:none}
+.plist_numtop_b span.plist_numtop_b_r{float:right;padding-right:20px}
+.plist_numtop_b span.plist_numtop_b_r input{border:solid 1px #ddd;height:22px;padding:0 5px;background-color:#fff; vertical-align:middle;}
+.plist_numtop_b span input.btnblueG{height:24px;border:solid 1px #ddd;background-color:#FF0000;border-radius:5px;color:#fff;text-align:center;line-height:20px;padding:0 12px;}
+#plist_numtop_show{position:fixed;z-index:999;top:0px;background-color:#fff;display:none;}
+
+
+.no_searchInfo{width:515px;padding-top:90px;line-height:100px;}.no_searchInfo img{vertical-align:middle; margin-right:20px;}
+div .itmes_wrap .leftSide{z-index:999}

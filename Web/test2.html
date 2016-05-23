@@ -1,0 +1,276 @@
+<!DOCTYPE HTML>
+<html lang="UTF-8">
+<head>
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/jquery-latest.min.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>【计133班网上药店】133号药铺欢迎你！</title>
+    <link href="css/baseM3.css" rel="stylesheet" type="text/css"/>
+    <link href="css/headFooter.css" rel="stylesheet" type="text/css"/>
+    <link href="css/index.css" rel="stylesheet" type="text/css"/>
+    <link href="css/css/newKad_indexM3.css" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+<div class="header_top">
+    <div class="header_t">
+        <div class="header_t_l">
+            <div class="YnewNoLogin">
+                欢迎来到133号药铺 ！
+                <a href="Login.html">[请登录]</a>
+                <a href="Register.html">[免费注册]</a>
+            </div>
+            <ul class="YnewYesLogin">
+                <li>欢迎回来！</li>
+                <li class="YUserName"></li>
+                <li class="Yout"></li>
+            </ul>
+        </div>
+        <div class="header_t_r">
+            <ul class="hNavList">
+                <li class="YService">
+                    <span class="Ycen"></span><span class="Yico_dian"></span><span class="tlast">客户服务</span>
+                    <div class="Ytopnavdiv">
+                        <dl class="Ytopnavdl">
+                            <dd><a href="help">帮助中心</a></dd>
+                            <dd><a href="ContactSer">联系客服</a></dd>
+                            <dd><a href="Complaint">投诉建议</a></dd>
+                        </dl>
+                    </div>
+                </li>
+                <li class="ttel" ><a href="tel:＋8618321873524">+86 &nbsp; 183-2187-3524</a></li>
+                <li class="tcart">购物车<a href="#">0</a>件</li>
+                <li class="Ymyorder ">
+                    <span class="Ycen"></span><span class="Yico_dian_a"></span><a href="order" class="tlast">我的订单</a>
+                    <div class="Ytopnavdiv">
+                    </div>
+                </li>
+                <li class="Yaccount ">
+                    <span class="Ycen"></span><span class="Yico_dian"></span><a href="user" class="tlast">我的账户</a>
+                    <div class="Ytopnavdiv">
+                        <dl class="Ytopnavdl">
+                            <dd><a href="#">我的处方</a></dd>
+                            <dd><a href="#">收货地址</a></dd>
+                        </dl>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="header">
+    <div class="header_l">
+        <div class="header_logo">
+            <a href="index.html"><img src="image/j133_logo.png" alt="Logo" title="Logo"></a>
+        </div>
+    </div>
+    <!--部件开始:www_search_header3,分组:通用部件-->
+    <div class="header_r">
+        <ul id="myTab" class="nav nav-tabs" style="height: 22px; background-color:#ffffff;">
+            <li class="active"><a href="#productsearch" data-toggle="tab">药品</a></li>
+            <li><a href="#shopsearch" data-toggle="tab">店铺</a></li>
+        </ul>
+        <div id="myTabContent" class="tab-content">
+            <!--药品搜索-->
+            <div class="tab-pane in active" id="productsearch">
+                <form  name="search" id="searchForm" action="#" method="get">
+                    <div class="header_search" id="txtSearchbox1">
+                        <!--搜索框-->
+                        <input  id="pageText" name="pageText" value="" class="stxt"  onfocus="SearchText(this,'txtSearchbox1')"  autocomplete="off"  />
+                        <!--搜索按钮-->
+                        <button  type="submit" class="sbtn" value="搜索"  id="BtnSearchProdut"></button>
+                    </div>
+                </form>
+            </div>
+            <!--药店搜索-->
+            <div class="tab-pane" id="shopsearch">
+                <form  name="search" id="searchForm" action="#" method="get">
+                    <div class="header_search" id="txtSearchbox1">
+                        <!--搜索框-->
+                        <input  id="pageText" name="pageText" value="" class="stxt"  onfocus="SearchText(this,'txtSearchbox1')"  autocomplete="off"  />
+                        <!--搜索按钮-->
+                        <button  type="submit" class="sbtn" value="搜索"  id="BtnSearchProdut"></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--搜索栏下面的药品名称-->
+        <p class="header_r_d">
+            <a class="header_r_d_a1" target="_blank" href="＃">药品一</a>
+            <a class="header_r_d_a2" target="_blank" href="＃">药品二</a>
+            <a class="header_r_d_a3" target="_blank" href="＃">药品三</a>
+            <a class="header_r_d_a4" target="_blank" href="＃">药品四</a>
+            <a class="header_r_d_a5" target="_blank" href="＃">药品五</a>
+            <a class="header_r_d_a6" target="_blank" href="＃">药品六</a>
+            <a class="header_r_d_a7" target="_blank" href="＃">药品七</a>
+        </p>
+    </div>
+</div>
+
+<div class="nav">
+    <div class="navc  itmes_wrap">
+        <!--分类-->
+        <div class="categorys">
+
+            <h2><a href="#" target="_blank">全部分类</a></h2>
+            <!--运营类目-->
+            <div class="leftSide">
+                <ul id="kinds_lists" class="kinds_lists">
+                    <li class="bg1">
+                        <a href="#" target="_blank" style="color: #FFFFFF;padding-left:54px;">专科用药</a>
+                        <i class="potiner_h" style="display: block;color:#ff0000">></i>
+
+                        <samp class="Line"></samp>
+
+                        <samp class="redLine"></samp>
+
+                        <div class="sideBox" style="top: -1px; background: rgb(255, 255, 255);">
+                            <!--专科用药左侧-->
+                            <div class="nodeLists nodeLists-zxL">
+                                <div class="top">
+                                    <div class="topL">
+                                        <h3 class="ml20">
+                                            <span class="title"><a href="＃" target="_blank">分类一</a></span> <i></i>
+                                        </h3>
+                                        <p>
+                                            <a class="bigTitle" target="_blank" href="＃">细分一</a>
+                                            <span class="sub-nodeList">
+                                                <a target="_blank" href="#">药品一</a>
+                                                <a target="_blank" href="#">药品一</a>
+                                                <a target="_blank" href="#">药品一</a>
+                                                <a target="_blank" href="#">药品一</a>
+                                                <a target="_blank" href="#">药品一</a>
+                                                <a target="_blank" href="#">药品一</a>
+                                            </span>
+                                        </p>
+                                        <p>
+                                            <a class="bigTitle" target="_blank" href="＃">细分二</a>
+                                            <span class="sub-nodeList">
+                                                <a target="_blank" href="＃">药品二</a>
+                                                <a target="_blank" href="＃">药品二</a>
+                                                <a target="_blank" href="＃">药品二</a>
+                                            </span>
+                                        </p>
+                                        <p>
+                                            <a class="bigTitle" target="_blank" href="＃">更多&gt;&gt;</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li class="bg2">
+                        <a href="#" target="_blank" style=" color:rgb(255, 255, 255);padding-left:54px;">家庭用药</a>
+                        <i class="potiner_h" style="display: block;color:#ff0000">></i>
+                        <samp class="Line"></samp>
+                        <!-- <samp class="whiteLine"></samp> -->
+                        <samp class="blueLine"></samp>
+                        <div class="sideBox" style="top: -41px;">
+                            <!--家庭用药左侧-->
+                            <div class="nodeLists nodeLists-zxL">
+                                <div class="top">
+                                    <div class="topL">
+                                        <h3 class="ml20">
+                                            <span class="title"><a href="#" target="_blank">分类二</a></span> <i></i>
+                                        </h3>
+                                        <p>
+                                            <a class="bigTitle" target="_blank" href="#">细分一</a>
+                                            <span class="sub-nodeList">
+                                                <a target="_blank" href="#">药品一</a>
+                                                <a target="_blank" href="#">药品一</a>
+                                                <a target="_blank" href="#">药品一</a>
+                                                <a target="_blank" href="#">药品一</a>
+                                                <a target="_blank" href="#">药品一</a>
+                                                <a target="_blank" href="#">药品一</a>
+                                            </span>
+                                        </p>
+                                        <p>
+                                            <a class="bigTitle" target="_blank" href="#">细分二</a>
+                                            <span class="sub-nodeList">
+                                                <a target="_blank" href="#">药品二</a>
+                                                <a target="_blank" href="#">药品二</a>
+                                                <a target="_blank" href="#">药品二</a>
+                                                <a target="_blank" href="#">药品二</a>
+                                                <a target="_blank" href="#">药品二</a>
+                                                <a target="_blank" href="#">药品二</a>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--主体-->
+<style>
+
+
+    /*轮播4.24*/
+    .mainBody .itmes_wrap .middleSide {background-color: #f0f0f0}
+    #scroll_container {z-index:5;  width: 1200px;  height: 400px;  position: relative;  overflow: hidden;  }
+    #scroll_container ul.list {  background-color:#ff7575; padding: 0;  margin: 0;  list-style: none;  position: absolute;  width: 9999px;  height: 100%;  }
+    #scroll_container ul.list li {  float: left;  width: 1200px;  height: 100%;  }
+    #scroll_container .list img{  width: 100%;  height: 100%;  border: 0;  }
+    #scroll_container ul.playerControl {  margin: 0;  padding: 0;  list-style: none;  position: absolute;  bottom: 5px;  right: 5px;  height: 14px;  }
+    #scroll_container ul.playerControl li {  float: left;  width: 23px;  height: 14px;  cursor: pointer;  margin: 0px 2px;  background: url(../image/ctl.png) no-repeat 0 0;  }
+    #scroll_container ul.playerControl li.current {  background-position: -23px 0;  }
+</style>
+<div class="mainBody">
+    <div class="itmes_wrap clearfix">
+        <!--轮播-->
+        <div class="middleSide" style="width: 100%;">
+            <div class="scroll_container" id="scroll_container" style="position:relative; ">
+                <!--部件开始:www_home_HeadSlides2,分组:广告部件-->
+                <!--幻灯片 1200＊400px--><ul class="list">
+                <li style="background-color:#fff3ee">
+                    <a href="#" target="_blank" class="fadeBox"><img src="" alt="幻灯片一"></a>
+                </li>
+                <li  style="background-color:#ffe6d9" >
+                    <a href="#" target="_blank" class="fadeBox"><img src="" alt="幻灯片二"></a>
+                </li>
+                <li style="background-color:#ffdac8" >
+                    <a href="#" target="_blank" class="fadeBox"><img src="" alt="幻灯片三"></a>
+                </li>
+                <li style="background-color:#ffcbb3">
+                    <a href="#" target="_blank" class="fadeBox"><img src="#" alt="幻灯片四"></a>
+                </li>
+                <li style="background-color:#ffdddd" >
+                    <a href="#" target="_blank" class="fadeBox"><img src="" alt="幻灯片五"></a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer_list">
+    <div class="width980" >
+        <!--关于康爱多网上药店-->
+        <p class="about133List">
+            <a rel="nofollow" href="Recruitment"
+               target="_blank">加入133号药铺</a> |
+            <a href="tel:＋8618321873524" target="_blank" rel="nofollow">全国热线</a>
+            | <a href="mailto:liu120945561@163.com" target="_blank" rel="nofollow">邮件联系</a>
+        </p>
+        <p class="bottom" style="font-family: " 宋体";">
+        &copy; 2016-2017 华东理工大学<a href="index.html">133号药铺</a> 版权所有，并保留所有权利
+        </p>
+        <!--END行业认证-->
+    </div>
+</div>
+<!--ENDfooter-->
+<!--部件结束:NewLoginRegFooter-->
+</body>
+</html>
+
+
+
+
