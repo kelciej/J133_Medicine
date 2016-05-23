@@ -1,0 +1,2437 @@
+<!DOCTYPE HTML>
+<html lang="UTF-8">
+<head>
+
+    <!--
+    <script language="javascript" type="text/javascript" src="http://res.360kad.com/script/envconfig.js"></script>
+    <script language="javascript" type="text/javascript" async="async" src="http://ctr.360kad.com/ctrjs/ctr_v2.js"></script>
+    <!--布局:www_productdetails_layout_rx0-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="css/headFooter.css" rel="stylesheet" type="text/css"/>
+    <link href="css/baseM3.css" rel="stylesheet" type="text/css"/>
+    <script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <link href="css/medicine.css" rel="stylesheet" type="text/css"/>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.jqzoom.js" type="text/javascript"></script>
+    <title>药品名称</title>
+<!--
+    <script src="http://res2.360kad.com/script/uaredirect2.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        uaredirect("http://m.360kad.com/product/102618.shtml");
+    </script>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <link href="http://res2.360kad.com/theme/default/css/www/web2014/Yproduct2016.css" rel="stylesheet" type="text/css"/>
+
+
+    <script src="http://res2.360kad.com/script/web2014/newCommonJs2.js" type="text/javascript"></script>
+    <script src="http://res.360kad.com/script/jquery.lazyload.min.js" type="text/javascript"></script>
+    <script src="http://res3.360kad.com/script/web2014/publicsearch.js" type="text/javascript"></script>
+    <script src="http://res3.360kad.com/script/web2014/parabola.js" type="text/javascript"></script>
+    <script src="http://res.360kad.com/script/jquery.cookie.js" type="text/javascript"></script>
+    <script src="http://res.360kad.com/script/web2014/rightFixedBar3.js" type="text/javascript"></script>
+    <script src="http://res4.360kad.com/script/Yproduct.js?201602" type="text/javascript"></script>
+    <script src="http://res.360kad.com/script/Tictac.js" type="text/javascript"></script>
+
+    <style>
+        .avtrx .avt_t01 {
+            background-position: 0 -0px;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function () {
+            $(".Ypro_deta img").lazyload({ placeholder: "http://res4.360kad.com/theme/default/img/grey.gif)", threshold: 200, effect: "fadeIn" });
+        });
+        window.onload = function () {
+            //加入购物车生成小图
+            var $t = $("#bybuy").offset().top - 10;
+            var $l = $("#bybuy").offset().left + 70;
+            var cloneImg = $("#minPicScroll li a").eq(0).clone();
+            cloneImg.attr("id", "cloneImg").css({ marginLeft: 0, marginTop: 0, position: "absolute", left: $l, top: $t, zIndex: 9999, display: "none" });
+            cloneImg.children("img").css({ width: 30, height: 30 });
+            cloneImg.appendTo($("#bybuy"));
+        }
+
+    </script>-->
+    <script>
+        /*放大镜使用jqzoom*/
+        $(function () {
+            $("#Product_BigImage").jqueryzoom({
+                xzoom: 400,
+                yzoom: 400,
+                offset: 10,
+                position: "right",
+                preload: 1
+            });
+        });
+
+        String.format = function () {
+            if (arguments.length == 0)
+                return null;
+            var str = arguments[0];
+            for (var i = 1; i < arguments.length; i++) {
+                var re = new RegExp('\\{' + (i - 1) + '\\}', 'gm');
+                str = str.replace(re, arguments[i]);
+            }
+            return str;
+        };
+    </script>
+</head>
+
+<!--部件开始:www_head_check,分组:页头部件-->
+
+
+<body class="w980">
+<!--头部-->
+<div class="header_top">
+    <div class="header_t">
+        <div class="header_t_l">
+            <div class="YnewNoLogin">
+                欢迎来到133号药铺 ！
+                <a href="Login.html">[请登录]</a>
+                <a href="Register.html">[免费注册]</a>
+            </div>
+            <!--登陆推出-->
+            <ul class="YnewYesLogin">
+                <li>欢迎回来！</li>
+                <li class="YUserName"></li>
+                <li class="Yout"></li>
+                <a href="#">[退出]</a>
+            </ul>
+        </div>
+        <div class="header_t_r">
+            <ul class="hNavList">
+                <li class="Ywebnav">
+                    <span class="Ycen"></span>
+                    <span class="Yico_dian"></span>
+                    <span class="tlast">网站导航</span>
+                    <div class="Ytopnavdiv">
+                        <dl>
+                            <dt>专科用药</dt>
+                            <dd><a href="#" target="_blank">肝胆科</a></dd>
+                            <dd><a href="#" target="_blank">肠胃科</a></dd>
+                        </dl>
+                        <dl class="d2">
+                            <dt>家庭用药</dt>
+                            <dd><a href="" target="_blank">感冒发烧</a></dd>
+                            <dd><a href="#" target="_blank">消炎清热</a></dd>
+                            <dd><a href="#" target="_blank">日常护理</a></dd>
+                        </dl>
+                        <dl>
+                            <dt>健康热点</dt>
+                            <dd><a href="http://jf.360kad.com/" target="_blank">减肥瘦身</a></dd>
+                            <dd><a href="http://sex.360kad.com/" target="_blank">两性健康</a></dd>
+                        </dl>
+                    </div>
+                </li>
+                <li class="YService">
+                    <span class="Ycen"></span><span class="Yico_dian"></span><span class="tlast">客户服务</span>
+                    <div class="Ytopnavdiv">
+                        <dl class="Ytopnavdl">
+                            <dd><a href="help">帮助中心</a></dd>
+                            <dd><a href="ContactSer">联系客服</a></dd>
+                            <dd><a href="Complaint">投诉建议</a></dd>
+                        </dl>
+                    </div>
+                </li>
+                <li class="ttel" ><a href="tel:＋8618321873524">+86 &nbsp; 183-2187-3524</a></li>
+                <li class="tcart">购物车<a href="#">0</a>件</li>
+                <li class="Ymyorder ">
+                    <span class="Ycen"></span><span class="Yico_dian_a"></span><a href="order" class="tlast">我的订单</a>
+                </li>
+                <li class="Yaccount">
+                    <span class="Ycen"></span><span class="Yico_dian"></span><a href="user" class="tlast">我的账户</a>
+                    <div class="Ytopnavdiv">
+                        <dl class="Ytopnavdl">
+                            <dd><a href="#">我的处方</a></dd>
+                            <dd><a href="#">收货地址</a></dd>
+                        </dl>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--END头部-->
+<script>
+    window.onresize = function () {
+        if (document.body.offsetWidth < 1200) {
+            $(".mainBody").css("width", "1200px"); $(".header_top").css("width", "1200px"); $(".wrap_footer").css("width", "1200px"); $(".nav").css("width", "1200px"); $(".Main_nav").css("width", "1200px"); $(".middleSide").css("width", "1200px"); $(".footer_list").css("width", "1200px"); $(".ZKbanner").css("width", "1200px"); $(".ZKnav").css("width", "1200px"); $(".sortBox").css("width", "1200px");
+        } else { $(".mainBody").css("width", "100%"); $(".header_top").css("width", "100%"); $(".wrap_footer").css("width", "100%"); $(".nav").css("width", "100%"); $(".Main_nav").css("width", "100%"); $(".middleSide").css("width", "100%"); $(".footer_list").css("width", "100%"); $(".ZKbanner").css("width", "100%"); $(".ZKnav").css("width", "100%");$(".sortBox").css("width", "100%"); }
+    }
+</script>
+<div class="header">
+    <div class="header_l">
+        <div class="header_logo">
+            <a href="index.html"><img src="image/j133_logo.png" alt="Logo" title="Logo"></a>
+        </div>
+    </div>
+    <!--部件开始:www_search_header3,分组:通用部件-->
+    <div class="header_r">
+        <form  name="search" id="searchForm" action="" method="get">
+            <div class="header_search" id="txtSearchbox1">
+                <input id="pageText" name="pageText" value="" class="stxt"  onfocus="SearchText(this,'txtSearchbox1')"  autocomplete="off"  />
+                <input  type="submit" class="sbtn" value="搜索"   id="BtnSearchProdut">
+            </div>
+        </form>
+        <!--搜索栏下面的药品名称-->
+        <p class="header_r_d">
+            <a class="header_r_d_a1" target="_blank" href="＃">药品一</a>
+            <a class="header_r_d_a2" target="_blank" href="＃">药品二</a>
+            <a class="header_r_d_a3" target="_blank" href="＃">药品三</a>
+            <a class="header_r_d_a4" target="_blank" href="＃">药品四</a>
+            <a class="header_r_d_a5" target="_blank" href="＃">药品五</a>
+            <a class="header_r_d_a6" target="_blank" href="＃">药品六</a>
+            <a class="header_r_d_a7" target="_blank" href="＃">药品七</a>
+        </p>
+    </div>
+</div>
+<!--部件结束-->
+
+<div class="nav">
+    <div class="navc  itmes_wrap">
+        <!--部件开始:category_www_ProAll_liu,分组:频道部件-->
+        <script type="text/javascript" src="js/11.js"></script>
+<!--
+        <div class="categorys">
+            <h2><a href="#" target="_blank">全部分类</a></h2>
+        </div>
+        -->
+        <ul class="navclist">
+            <li><a href="index.html" target="_blank">首页</a>
+            </li>
+            <li style="margin-top: 5px"><img src="image/rightBorder.png"><br><img src="image/rightBorder.png"></li>
+        </ul>
+        <div style="width:1200px;padding-top:10px;margin-top: 5px;">
+            <br/><br/><br><br>
+                <p>药品监管部门提示：如发现本网站有任何直接或变相销售处方药行为，请保留证据，拨打12331举报，举报查实给予奖励。</p>
+            <br/><br/>
+            <!--
+            <div class="Crumbs">
+                <b><a href="/">首页</a></b> &gt;
+                <a href="#" code="904" class="noIndx" target="_self" title="目录一">目录一</a>
+                >
+                <a href="#" code="15526651" class="noIndx" target="_self" title="目录二">目录二</a>
+                >
+                <a href="#" code="2638" class="noIndx" target="_self" title="目录三">目录三</a>
+                >
+                <span>药品名称</span>
+            </div>
+            -->
+        </div>
+        <!--产品图片 start-->
+        <div class="Yproinfo clearfix">
+            <div class="Yproinfo_l">
+                <div class="Yprobigpicbox">
+                    <div class="img pro_pic_content jqzoom">
+                        <span class="Lpicico" promotionsku="390"></span>
+                        <span style="display:none;" id="goBigPic" title="点击浏览大图"></span>
+                        <a id="jqzoomPic" href="javascript:void(0)">
+                            <div id="Product_BigImage" class="jqzoom"> <img id="productPhoto" src="" width="350px" height="350px"> </div>
+                        </a>
+                    </div>
+                    <div id="lcAdv" style="display:none;">
+                        <div style="display:none;">
+                            <span class="spnT" style="text-align:center;width:30px;" >5.1放价
+                            </span>
+                            <span class="spnInfo">
+                            </span>
+                        </div>
+                    </div>
+                    <div id="minPicScroll" class="minPicScroll">
+                        <a class="prevNo"></a>
+                        <a class="prev"></a>
+                        <div class="minPicScrolldiv">
+                            <ul>
+
+                            </ul>
+                        </div>
+                        <a class="nextNo"></a>
+                        <a class="next"></a>
+                    </div>
+
+                    <script type="text/javascript">
+                        //多大图片展示
+                        var proImg = jQuery("#productPhoto");
+                        var load = jQuery("#loading");
+                        var pathList = ('image/ganmao1.jpg$$$image/ganmao2.jpg$$$image/ganmao3.jpg$$$image/ganmao4.jpg$$$image/ganmao5.jpg$$$image/ganmao6.jpg');
+                        var pathArray = pathList.split('$$$');
+                        var productthumb = '';
+                        var productpic = '';
+                        if (pathArray.length > 0) {
+                            productthumb = pathArray[0];
+                            productpic = pathArray[0];
+                        }
+
+                        //productpic = productpic == "" ? productthumb : productpic;
+                        //productpic = (productpic == ""||productpic=="无" ? "http://res3.360kad.com/theme/default/img/nopic.gif" : productpic);
+
+
+                        var tempHtml = "<li><a class=\"\"><img src='" + productpic + "_100x100.jpg' /></a></li>";
+                        for (var i in pathArray) {
+                            if (i > 0) {
+                                if (pathArray[i] != "") {
+                                    //var tempUrl = uploadUrl;
+                                    var smallImg = pathArray[i]+"_100x100.jpg";//切换成100x100小图
+                                    if (pathArray[i].indexOf('://') > 0) {
+                                        // tempUrl = "";
+                                    }
+                                    tempHtml += "<li><img src='" + smallImg + "' /></li>";
+                                }
+                            }
+                        }
+
+                        jQuery("#minPicScroll ul").html(tempHtml);
+                        jQuery("#minPicScroll .prev").hide();
+                        if (i > 3) {
+                            jQuery("#minPicScroll .nextNo").hide()
+                            jQuery("#minPicScroll .next").click(function () {
+                                jQuery("#minPicScroll li:lt(5)").hide();
+                                jQuery("#minPicScroll .prevNo").hide();
+                                jQuery("#minPicScroll .prev").show();
+                                jQuery("#minPicScroll .next").hide();
+                                jQuery("#minPicScroll .nextNo").show();
+                            })
+                            jQuery("#minPicScroll .prev").click(function () {
+                                jQuery("#minPicScroll li:lt(5)").show();
+                                jQuery("#minPicScroll .prevNo").show();
+                                jQuery("#minPicScroll .prev").hide();
+                                jQuery("#minPicScroll .next").show();
+                                jQuery("#minPicScroll .nextNo").hide();
+                            })
+                        } else {
+                            jQuery("#minPicScroll .next").hide();
+                        }
+                        if ( jQuery("#minPicScroll ul li").length<=5) {
+                            jQuery("#minPicScroll .next").hide();
+                            jQuery("#minPicScroll .nextNo").show();
+                        }
+                        jQuery("#minPicScroll li").mouseover(function () {
+                            jQuery(this).addClass("on").siblings().removeClass("on");
+                            var src = jQuery(this).find("img").attr("src").replace('_100x100.jpg', '');
+                            proImg.attr({ jqimg: src, src: src });
+                        });
+                        jQuery("#minPicScroll li").eq(0).trigger("mouseover");
+                    </script>
+
+                    <div class="Ysharebox">
+         <!--               <p class="Yshare">
+                            <span style="float:left; padding:0px 10px; font-size:14px;">分享</span>
+                            <!--  分享 start--
+                                <span id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+                                    <a class="bds_qzone"></a>
+                                    <a class="bds_tsina"></a>
+                                    <span class="bds_more"></span>
+                                </span>
+                            <script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=6787183"></script>
+                            <script type="text/javascript" id="bdshell_js"></script>
+                            <script type="text/javascript">
+                                document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date() / 3600000)
+                            </script>
+                            <!--  分享 end--
+                        </p>
+                        -->
+                        <p class="Ycollect">
+                            <a class="collection" id="Ycollection" title="收藏该商品" onclick="YCreateFavorite(Ycollection, '102618')" href="javascript:void(0)">收藏商品</a>
+                        </p>
+                    </div>
+                    <p class="picboxtips">
+                        <span>温馨提示：</span>图片均为原品的真实拍摄，仅供参考；请以实物为准。
+                    </p>
+                </div>
+                <div class="Yprodes">
+                    <div class="Yprodes_t clearfix"><!--
+                        <span class="Yico_wai Yico_wai1" title="本品为外用药品，请勿口服！"></span>
+                        <span class="Yico_bj" title="本品为保健食品，具有保健功能；不能替代药物治疗"></span>
+                        -->
+                        <h1>药品名＋规格</h1>
+
+                    </div>
+                    <p class="Yprodes_d">药品简单说明</p>
+        <!--
+                    <div class="cutdown-detail" id="cutdown_main"></div>
+
+                    <!-- 显示价格 start -->
+                    <div class="Yprodes-pricebox">
+                        <dl class="Ypro_dl Yp_r1" id="ActivityMessage">
+                            <dt style="font-size: 24px;">价格</dt>
+                            <dd><span class="YRMB"></span><b></b></dd>
+                        </dl>
+                        <dl class="Ypro_dl Yp_r1 Yhide" id="ActivityMessT"></dl>
+                        <ul class="Yprodes-pricebox-tegong" id="tegongshow">
+                        </ul>
+                    </div>
+                    <div class="Ydrug_info clearfix">
+                        <dl>
+                            <dt>商品编号：</dt>
+                            <dd>XXXX</dd>
+                        </dl>
+                        <dl>
+                            <dt>通用名：</dt>
+                            <dd>XXXX</dd>
+                        </dl>
+                        <dl>
+                            <dt>批准文号：</dt>
+                            <dd>XXXX</dd>
+                        </dl>
+                        <dl>
+                            <dt>剂型：</dt>
+                            <dd>XXXX</dd>
+                        </dl>
+
+                        <dl>
+                            <dt>生产企业：</dt>
+                            <dd>XXXXXXXX</dd>
+                        </dl>
+
+                    </div>
+
+                    <dl class="Ypro_dl Yp_r3 Yp_r4">
+                        <dt>规格：</dt>
+                        <dd>
+                            <div class="Yp_r3c" id="Specifications">
+                                <a class="on">药品规格<span class="Ygx"></span></a>
+                            </div>
+                        </dd>
+                    </dl>
+
+                    <dl class="Ypro_dl Yp_r5">
+                        <dt>数量：</dt>
+                        <dd>
+                            <div class="Yp_r5c">
+                                <input type="button" id="reduceQ_1" onclick="BuyQuantity(-1);" value="-" class="Ydel">
+                                <input id="product_amount" class="Ytxt" type="text" onkeyup="NumModify();" onblur="BuyQuantity(0);" value="1">
+                                <input type="button" id="addQ_1" class="Yadd" onclick="BuyQuantity(1);" value="+">
+                            </div>
+                           <p><span class="status">库存状态：<span id="IsHave"></span>有货</span></p>
+                            <div class="Ydes"></div>
+                        </dd>
+                    </dl>
+        <!--
+                    <div class="Yp_r6 pro_gobuy" id="buycartbutton">
+                        <span class="onloading"></span><!--这个地方是加入购物车的图片-->
+                     <!--  <span id="bybuy"><a class="btnControl Ybtn_gm" id="buycartbutton01" onclick="ctrActionsend('add_to_card');PAddCart_new(jQuery('#product_amount').val(),102618);" title="加入购物车" >&nbsp;</a> <a style="display:none;" class="Ybtn_gm" id="buycartbuttonmore" onclick="ctrActionsend('add_to_card');CreatePackageToCart3($('#hPackageId').val(),$('#product_amount').val())">&nbsp;</a></span>
+
+                    --</div>
+                    <!--
+                    <div class="Yp_r6 arrival_msg">
+                        <span class="btnControl inform-btn" id="btnDaohuo" onclick="poplayer('advances-layer','advClose',true);$('#advances-layer .content').show();$('#advances-layer .success').hide();"></span>
+                    </div>
+                    -->
+                    <!--添加到购物车-->
+                    <br><br><br><br><br>
+                    <div style="margin-top: 5px;"onclick="join_club()">
+                        <input type="hidden" value="" name="" id="" />
+                        <input type="button" class="onloading" style="border-radius: 5px;border: 0px;" id="go_cart" name="go_cart" value="" />
+                    </div>
+                    <!--<div class="Yp_r6 pro_gobuy" id="buycartbutton">
+                        <span class="onloading"></span>
+                        <span id="bybuy">
+                            <a class="Ybtn_gm" id="buycartbutton01" onclick="addCart('102618',jQuery('#product_amount').val(), 0, '')" title="加入购物车">&nbsp;</a>
+
+                            <a style="display:none;" class="Ybtn_gm" id="buycartbuttonmore" onclick="CreatePackageToCart2($('#hPackageId').val(),$('#product_amount').val())">&nbsp;</a>
+                        </span>
+                    </div>
+                    <div class="Yp_r6 arrival_msg">
+                        <span class="inform-btn" onclick="poplayer('advances-layer','advClose',true);$('#advances-layer .content').show();$('#advances-layer .success').hide();"></span>
+                    </div>-->
+        <!--
+                    <div class="cannotbuy">
+                        <span class="cannotbuy_btn"></span>
+                        <p class="Ycalldes">温馨提示：非常抱歉！本商品仅供展示，如需药师帮助，请拨打400-8811-020</p>--
+                    </div>
+                    <!--
+                    <form id="form_CreateOrder_Phone" name="form_CreateOrder_Phone">
+                        <input type="hidden" id="h_ProductId_Phone" name="h_ProductId_Phone" value="">
+                        <input type="hidden" value="" id="txtPhoneCall" name="txtPhoneCall">
+                        <input type="hidden" value="0" id="h_ProductType_Phone" name="h_ProductType_Phone">
+                        <input type="hidden" value="" id="h_CurrentUrl" name="h_CurrentUrl">
+                        <input type="hidden" value="0" id="h_ConAdobe" name="h_ConAdobe">
+                        <input type="hidden" id="compareNum" name="compareNum" value="">
+                        <input type="hidden" id="ocRef_p" name="ocRef_p" value="">
+                        <input type="hidden" id="WareSkuCode" name="" value="102618">
+                        <input type="hidden" id="CartType" value="1">
+                    </form>
+                    <!-- 购物车参数 -->
+                    <!--
+                    <input id="h_rxotc" type="hidden" value='False'>
+                    <input id="h_Price" type="hidden" value='78'>
+                    <input id="h_Quantity" type="hidden" value='1'>
+                    <input id="h_productId" type="hidden" value='102618'>
+                    <input id="h_ProductTitle" type="hidden" value='百合康 百合康牌芦荟软胶囊 500mg/粒*100粒'>
+                    <input id="h_Productadv" type="hidden" value='润肠通便。买就送价值59元的百合康牌B族维生素片，含有丰富的纤维素，有助于肠胃蠕动。'>
+                    <input id="h_ProductSpec" type="hidden" value='500mg/粒*100粒'>
+                    <input id="h_proimg" type="hidden" value='http://image.360kad.com/group1/M00/26/9C/CgAgEVcHbp6ATiyCAAG5BV3pTyY486.jpg_180x180.jpg'>
+                    <input id="h_CourseDate" type="hidden" value=''>
+                    <input id="h_PriceMarket" type="hidden" value='98'>
+                    <input id="h_GoodsId" type="hidden" value='101384000'>
+                    <input id="h_usedDay" type="hidden" value='0'>
+                    <input id="h_UsageDosage" type="hidden" value=''>
+                    <input id="h_SpecialPeople" type="hidden" value=''>
+                    <input id="h_DruggistTalk" type="hidden" value=''>
+                    <input id="hPackageId" type="hidden" value="0">
+                    <input id="hPopVal" type="hidden" value="0" />
+                    <input id="h_Domain" type="hidden" value=''>
+                    <input id="h_salePrice" type="hidden" name="h_salePrice" value='78'>
+                    <input id="h_marketPrice" type="hidden" name="h_marketPrice" value='98'>
+                    <input id="h_SeckillNum" type="hidden" name="h_SeckillNum" value="0">
+                    <input id="h_SeckillPrice" type="hidden" name="h_SeckillPrice">
+                    <input id="h_Pricenum" type="hidden" name="h_Pricenum" value=''>
+                    <input type="hidden" id="Y_xiangou" name="Y_xiangou" value="0">
+                    <input type="hidden" id="Y_hasSongQuan" name="Y_hasSongQuan" value="flase">
+                    <input type="hidden" id="Y_hasMaiZeng" name="Y_hasMaiZeng" value="flase">
+                    <input type="hidden" id="Y_hasMianYou" name="Y_hasMianYou" value="flase">
+                    <input type="hidden" id="Y_NumModify" name="Y_NumModify" value="">
+                    <input type="hidden" id="Y_zxtype" name="Y_zxtype" value="">
+                    <input type="hidden" id="Y_ProMark" name="Y_ProMark" value="" /><!--记录商品类型？ -
+                    <input type="hidden" id="Y_neednum" name="Y_neednum" value="0" />
+                    <input id="ServerTime" type="hidden" value="0" name="ServerTime">
+                    <input id="UnitName" type="hidden" value="瓶" name="UnitName">
+
+
+
+                    <!--end 购物车参数 -->
+                </div>
+            </div><!--
+            <div class="Yproinfo_r">
+                <div class="rightSideicon">
+                    <div class="icon1">
+                        <span></span>
+                        <p>正品保障</p>
+                    </div>
+                    <div class="icon1 icon2">
+                        <span></span>
+                        <p id="79log_before">满39元包邮</p>
+
+                    </div>
+                    <div class="icon1 icon3">
+                        <span></span>
+                        <p>专业药师</p>
+                    </div>
+                    <div class="msg" style="display: none;">
+                        <i class="pointer"></i>
+                        <p class="title">正品保障：</p>
+                        <p>康爱多网上药店是全国首批获国家食药监局批准的合法网上药店，按照GSP经营质量管理规范进行严格的进、销、存管理，专供正规厂家优质药！</p>
+                    </div>
+                    <div class="msg" style="display: none;">
+                        <i class="pointer pointer1"></i>
+                        <p class="title">满39元包邮：</p>
+                        <p>全场订单满39元免运费。不足39元的订单按到货地区收取8-20元邮费。</p>
+
+                        <!-- <p style="float:left"><img src="http://res.360kad.com/theme/default/img/www/www_top_img.jpg"></p>
+                          <p style="float:left;padding-top:15px;padding-left:20px;font-size:16px">微信扫码</p>
+                          <p style="float:left;padding-top:0px;padding-left:20px;font-size:16px;color:red">全场包邮</p> --
+                    </div>
+                    <div class="msg" style="display: none;">
+                        <i class="pointer pointer2"></i>
+                        <p class="title">专业药师咨询：</p>
+                        <p>在康爱多网上药房买药，随时为您提供专业药师在线咨询服务，有疑难，直接在线联系专业药师咨询，更方便，更快捷解决您碰到的难题！</p>
+                    </div>
+                </div>
+                <dl class="Ykf">
+                    <dt>对药品有疑问，请咨询药师</dt>
+                    <dd><a id="tqchatcs" href="/Chat/ToChat?groupId=86&rukou=0&productId=102618" target="_blank" class="Ybtn_kf tq_online" ><img id="imgChat" src="http://res1.360kad.com/theme/default/img/2014NewWeb/product/online_sqkefupic.gif"></a></dd>
+                    <dd><a id="tqchatSH" class="Ybtn_kf tq_cs_box" href="/Chat/ToChat?groupId=61&rukou=1&productId=102618" target="_blank" ><img id="imgChat" src="http://res.360kad.com/theme/default/img/2014NewWeb/product/online_shkefupic.gif"></a></dd>
+                    <script type="text/javascript">
+                        $(function(){
+                            GetChatStatus("86,61")
+                        })
+                    </script>
+
+                </dl>
+                <p><img src="http://res2.360kad.com/theme/default/img/product/2014new/tel.jpg"></p>
+                <dl class="Yp_ewm">
+                    <dd class="Yp_ewm_img"><img style="display:none;" src="/product/ProductQRCode?dataToEncode=http://app.360kad.com/Product/STS?p=102618&size=3&version=7"><img src="http://res.360kad.com/theme/default/img/xqy-erweima20160323.jpg"></dd>
+                    <dd>
+                        <p>
+                            微信扫码关注<br>立领200元优惠券                    </p>
+                    </dd>
+                </dl>
+            </div>
+        -->
+        </div>
+        <!--产品图片 end-->
+        <!--套餐组合 start-->
+        <!--套餐组合 end-->
+        <!--产品介绍 start--
+        <div class="Ywrap">
+            <!--部件开始:product_details_leftv2,分组:产品部件--
+            <script src="http://res3.360kad.com/script/Recomm.js" type="text/javascript"></script>
+
+            <div class="Ywrap_l">
+                <div class="Ywrap_k">
+                    <h5 class="Ywrap_kt">相关疾病/症状</h5>
+                    <ul class="Yside1 clearfix" id="xgzb"></ul>
+                </div>
+
+                <div class="Ywrap_k">
+                    <h5 class="Ywrap_kt">相似功效</h5>
+                    <ul class="Yside2" id="SimilarEffect">
+                    </ul>
+                </div>
+                <div class="Ywrap_k">
+                    <h5 class="Ywrap_kt">你浏览过的商品</h5>
+                    <ul class="Yside3" id="historylist">
+
+                    </ul>
+                </div>
+            </div>
+            <!--部件结束:product_details_leftv2-->
+
+            <!--左end 右start-->
+            <!--部件开始:product_details_boy,分组:产品部件-->
+
+            <!--浮动导航-->
+                <!--
+            <input type="hidden" name="Pic180" id="Pic180" value="http://image.360kad.com/group1/M00/26/9C/CgAgEVcHbp6ATiyCAAG5BV3pTyY486.jpg_180x180.jpg" />
+            <input type="hidden" name="WareName" id="WareName" value="百合康 百合康牌芦荟软胶囊 500mg/粒*100粒" />
+            <input type="hidden" name="SalePrice" id="SalePrice" value="78" />-->
+
+            <div class="Ywrap_r">
+
+                <div class="Ypro_deta">
+                    <ul class="Ytab" id="Ytab">
+                        <li class="active"><a href="#instruction" data-toggle="tab">说明书</a></li>
+                        <li><a href="#delivery" data-toggle="tab">隐私配送</a></li>
+                        <li><a href="#define" data-toggle="tab">经营认证</a></li>
+                    </ul>
+                    <div id="YtabCon" class="Ytabcon">
+                        <div class="Ttab-pane in active" id="instruction">
+                            <div class="YIrd">
+                                <p class="YIrd_p">
+                                    该商品为非处方药，具有批准文号：国食健字G20100398，符合国家食品药品监督管理局对保健食品的注册要求。
+                                </p>
+                                <ul class="YIrd_l clearfix">
+                                    <li>商品名称：</li><li>规格:</li><li>生产企业：</li><li>通用名称：</li><li class="YIrd_l_spec">温馨提示：本品不能代替药物。</li><li>剂型：</li><li>有效期：</li><li>批准文号：</li>
+                                </ul>
+                            </div>
+                            <div class="Ytabcon_Ytit">
+                                <p class="Ytitlogo">合理用药更健康</p>
+                                <h3>药品说明</h3>
+                            </div>
+                            <div class="prodetail06">
+                                <!--部件开始:product_details_Instruction,分组:产品部件-->
+                                 <p>【商品名称】<br />
+                                    【产品介绍】<br />
+                                    【产品规格】<br />
+                                    【主要原料】<br />
+                                    【标志性成份及含量】<br />
+                                    【保健功能】<br />
+                                    【适宜人群】<br />
+                                    【不适宜人群】<br />
+                                    【使用方法及食用量】<br />
+                                    【保质期】<br />
+                                    【注意事项】本品不能代替药物；食用本品后出现腹泻者，请立即停止食用。<br />
+                                    【贮藏方法】密封，置避光干燥处。<br />
+                                    <!--【执行标准】Q/WBH 0069S<br />-->
+                                    【批准文号】<br />
+                                    【生产企业】</p>
+                                <!--部件结束:product_details_Instruction-->
+                            </div>
+                        </div>
+
+                        <div class="Ttab-pane" id="delivery">
+                            <img src="image/flower.jpg"></a>
+                        </div>
+                        <div class="Ttab-pane" id="define">
+                            <img src="image/flower.jpg"></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        <!--
+            <script>
+                //加入购物车漂浮层
+                $(function () {
+                    $(".YpfnavC_r_info").hover(function () {
+                        $(this).css({ "border-left": "solid 1px #ccc", "border-bottom": "solid 1px #ccc" });
+                        $(".YpfnavC_pro").show();
+                    }, function () {
+                        $(this).css("border", "none");
+                        $(".YpfnavC_pro").hide();
+                    })
+                });
+            </script>
+            <!--部件结束:product_details_boy-->
+
+            <!-- 右end-->
+        </div>
+        <!--产品介绍 end-->
+
+        <!-- 购物车结算 -->
+        <div id="payshopcart" class="lookshopcart"style="display: none" >
+            <p class="look_close" onclick="closeCustomer()"><a href="" id=""><b><img style="margin-right:5px;" src="image/cart02_0406.gif" onclick="closeCustomer()"></b>关闭</a></p>
+            <div class="cart_yes" ><img src="image/cart01_0406.gif"></div>
+            <div class="cart_info" >
+                <p class="cart_title">商品已成功添加到购物车！</p>
+                <p>购物车共有<label class="cartCount">0</label> 件,合计：<label class="cartTotal cRed">0</label>元</p>
+                <p>
+                    <img src="image/cart03_0406.png" usemap="#Map_cart">
+                    <map name="Map_cart" id="Map_cart">
+                        <area shape="rect" coords="1,1,110,31" href="#"><!--去购物车-->
+                        <area shape="rect" coords="117,0,218,38" href="＃" id="closethis4"><!--返回购物-->
+                    </map>
+                </p>
+            </div>
+        </div>
+        <script type="text/javascript">
+            function closeCustomer(){
+                document.getElementById("payshopcart").style.display='none';
+            }
+            function join_club()
+            {
+                document.getElementById('payshopcart').style.display = 'block';
+            }
+        </script>
+
+<!--end 购物车结算 -->
+
+<!--
+<script type="text/javascript">
+    var s_account = "gdkad-web-prd";
+    var _wareCode = 102618;
+    var _a = '102618';
+    var _b = '102618';
+    var _c =78;
+    var _d = '101384000';
+    var CommonName = '百合康牌芦荟软胶囊';
+    var passnum = '';
+    var symptom = '';
+
+    var webTitle = '百合康 百合康牌芦荟软胶囊 500mg/粒*100粒价格多少钱,功效作用-康爱多网上药店';
+    var _f = 'http://image.360kad.com/group1/M00/26/9C/CgAgEVcHbp6ATiyCAAG5BV3pTyY486.jpg_180x180.jpg';
+    var _uDy = '0';
+    var sellercode='';
+    if (_uDy == "") { _uDy = 0; }
+    var _pId = "gdkad-web-prd";
+    var _Unit = '';//商品单位
+    var _rxtype = 0;//rx类型？
+
+    //获取客服状态
+    function GetChatStatus(gId) {
+        jQuery.ajax({
+            url: window.urlConfig.multiDomain.pc() +"/Chat/GetGroupState?groupIds=" + gId+"",
+            type: "Get",
+            dataType: "jsonp",
+            json: "callback",
+            success: function (data) {
+                for(var i = 0;i<data.length;i++)
+                {
+                    if (data[i].Status == 1) {
+                        if (data[i].GroupId == 61) {
+                            $("#imgChatsh").attr("src", "http://res.360kad.com/theme/default/img/2014NewWeb/product/inline_shchat.gif")
+                        }
+                        else {
+                            $("#imgChat").attr("src", "http://res.360kad.com/theme/default/img/2014NewWeb/product/inline_sqchat.gif")
+                        }
+                    }
+                    if (data[i].Status == 2) {
+                        if (data[i].GroupId == 61) {
+                            $("#imgChatsh").attr("src", "http://res4.360kad.com/theme/default/img/2014NewWeb/product/outline_shchat.png")
+                        }
+                        else {
+                            $("#imgChat").attr("src", "http://res4.360kad.com/theme/default/img/2014NewWeb/product/outline_sqchat.png")
+                        }
+                    }
+                }
+            }
+        });
+    }
+
+
+    //动态套餐活动2014.6.14
+    /* $(function () {
+     avtYH(12641);
+     avtMZ(12641);
+     pkgDP(12641);
+     pkgLoad("", 12641);
+     });
+
+     //活动列表(2014.2.19)
+     $(function(){
+     if(63 == "95"){$(".online_kefu").css("display","none");}
+     //顶部广告切换
+     });
+     */
+</script>
+
+<!--处方药下单流程2014-->
+<!--需求登记20130907-->
+
+<!--提交登记-->
+
+<!--需求登记end-->
+<!--更换地址-->
+
+<!--更换地址end-->
+<!--需求提交成功-->
+
+<!--需求提交成功end-->
+<!--判断弹出层-->
+<div class="alertDivs clearfix" id="alertDivs">
+    <div class="alertDivs_tips" id="alertDivs_tips"><span class="alertDivs_tips_l">360kad.com  提示</span><a href="javascript:void(0);" onclick="popClose('alertDivs',true);" class="alertDivs_tips_r" id="alertDivs_tips_r">关闭</a></div>
+    <div class="alertTxt">
+        <p class="alertTxt_title">请确认姓名/手机/地址填写完整。</p>
+        <p class="alertTxt_p"><a href="javascript:void(0);" class="alertTxt_btn" onclick="poplayer('needReg_box','needReg_close1',true);;popClose('alertDivs',false);$('#layer').show();"></a></p>
+    </div>
+</div>
+<!--判断弹出层end-->
+<!--咨询登记弹窗20131112--><div class="rdivBox" id="rdivBox">
+    <div class="rdivBoxT clearfix"><span style="float:left;">咨询登记</span><span class="rdivClose" id="rdivClose">关闭</span></div>
+    <div class="rdivBoxB">
+        <p>温馨提示：药师将在10分钟内与您联系，请耐心等候！</p>
+        <div class="rdivBoxList clearfix"><span style="float:left;display:block;padding-top:10px;">联系方式</span><input class="Tel_bot" id="Tel_bot1" name="Tel_bot" onblur="if(this.value==''){this.value='填写手机,药师将联系您';}" onfocus="if(this.value=='填写手机,药师将联系您'){this.value='';}" style="float:left;" type="text" value="填写手机,药师将联系您"> <input class="Tel_bi1b" onclick="PhoneBack($('#Tel_bot1').val());" style="float:left;" type="button"> <input class="Tel_bi1b1" style="float:left;display:none;" type="button"></div>
+    </div>
+</div>
+<!--END咨询登记弹窗20131112-->
+<!-- 电话回拨成功 -->
+<div id="Buy_OrdS" style="display:none;z-index:8888px;">
+    <h4 style="padding-left:10px;"><a href="javascript:void(0)" class="closeClassb" id="closeClassb" onclick="popClose('Buy_OrdS', true);" style="background:none; width:35px;">关闭</a>成功登记</h4>
+    <p style="padding-top:10px; padding-left:10px; font-family:14px;">您的信息已提交，正常在10分钟内会有药师电话回拨为您服务，请您耐心等候！</p>
+    <div style="width:520px; height:25px; border-bottom:1px dotted #666; overflow:hidden;"></div>
+    <p style="padding-top:10px; padding-left:10px; font-family:14px; padding-bottom:10px;">如紧急，请拨打400-8811-020咨询康爱多专业药师。</p>
+    <p style=" padding-left:10px; font-family:12px; color:#666666;">温馨提示：晚上11点后，已提交电话正常在次日早上10点前给您回拔。</p>
+</div>
+<!--end 电话回拨成功 -->
+<!--需求登记20130907end-->
+<!--处方药下单流程20130731END-->
+<!--右侧导航-->
+<!--部件开始:nav_www_home_right,分组:频道部件-->
+<style>
+    .fixed_navigation .cart_box{margin-top:8px}
+    /*更多登录方式*/
+    .kad_more_login{font-size:12px}
+    .kad_login_style{overflow:hidden;margin:10px 0}
+    .kad_login_style ul >li{float:left;width:32px;height:32px;background:url(http://res.360kad.com/theme/default/img/2014newKad/login_style03.png) no-repeat;margin-right:14px}
+    .kad_login_style ul >li a{width:32px;height:32px;display:block}
+    .kad_login_style ul .login_style_wx{background:url(http://res.360kad.com/theme/default/img/2014newKad/login_style01.png) no-repeat;}
+    .kad_login_style ul .login_style_wx:hover{background:url(http://res.360kad.com/theme/default/img/2014newKad/login_style02.png) no-repeat;}
+    .kad_login_style ul .login_style_QQ{background-position:0px -128px}
+    .kad_login_style ul .login_style_QQ:hover{background-position:0px 0px}
+    .kad_login_style ul .login_style_tb{background-position:0px -224px}
+    .kad_login_style ul .login_style_tb:hover{background-position:0px -96px}
+    .kad_login_style ul .login_style_zfb{background-position:0px -192px}
+    .kad_login_style ul .login_style_zfb:hover{background-position:0px -64px}
+    .kad_login_style ul .login_style_wb{background-position:0px -160px}
+    .kad_login_style ul .login_style_wb:hover{background-position:0px -32px}
+    /*左边我的账号图像*/
+    .fixed_navigation .my_Info{background:url(http://res.360kad.com/theme/default/img/2014newKad/my_Info.png) no-repeat;}
+    .my_Info:hover{background-color:#0066d4}
+    .my_Info .my_Info_container{display:none;position:absolute;top:0;right:66px;opacity:0;filter:alpha(opacity=0);width: 104px;height: 32px;line-height: 32px;background:#fd951a;}
+    .my_Info .pointer{position:absolute;top:10px;right:60px;width: 0;height: 0;line-height: 0;font-size:0;border-top: 8px solid transparent;border-bottom: 8px solid transparent;border-left: 8px solid #fd951a;opacity:0;filter:alpha(opacity=0);}
+    .my_Info_container a{color:#fff;text-decoration: none;}
+    .my_Info_container a:hover{color:#fff;text-decoration: none;}
+    /*用户是否登录状态*/
+    .my_Info_isLogin{font-size:14px;display:none}
+    .my_Info_title{height:40px;line-height:40px;font-weight:bold;background:#dadada;color:#666666;text-align:center}
+    .my_Info_hy{border-bottom:1px solid #d3d1d1}
+    .my_Info_hy_ct{padding:20px 12px 10px 10px;}
+    .my_Info_hy_ct span{display:inline-block;vertical-align:middle;}
+    .my_Info_nihao{padding-left:10px}
+    .my_Info_login_red a{color:#f24e4e}
+    .my_Info_myself{overflow:hidden}
+    .my_Info_myself ul >li{float:left;width:70px;height:60px;text-align:center;padding:24px 30px 0 31px}
+    .my_Info_myself ul >li a{width:70px;height:60px;display:block}
+    .already_login{overflow:hidden}
+    .already_login_lf{float:left;padding-right:10px}
+    .already_login_rg{float:left;width:119px; overflow:hidden}
+    .already_lo_rg_hy{padding:8px 0 13px 0;}
+    .zh_safety_level{padding:0 10px 20px 10px;overflow:hidden;font-size:12px}
+    .zh_safety_level span{float:left;display:inline;}
+    .safe_level_bg{width:144px;height:15px;line-height:15px;background:#ffffff;display:inline;float:left;overflow:hidden;margin-right:3px}
+    .safe_level_type{width:66.67%;background:#fe952f;float:left;height:15px;}
+    .is_bangding{padding:0 0 10px 10px;font-size:12px;position:relative}
+    .no_bangding{padding-right:30px}
+    .no_bangding a{color:#2d8ef3}
+    .no_bangding a:hover{color:red}
+    .bangd_achieve{width:200px;height:36px;line-height:36px;text-align:center;background:#fdf8e3; color:#ef363a;  position:absolute; top:25px; left:40px;border:1px solid #f7eabb;font-size:14px;padding-right:15px}
+    .bangd_achieve span{display:block; width:0; height:0; border-width:0 10px 10px; border-style:solid; border-color:transparent transparent #f7eabb;position:absolute; top:-10px; left:22px;/* 三角形居中显示 */}
+    .bangd_achieve em{display:block; width:0;height:0;border-width:0 10px 10px;border-style:solid;border-color:transparent transparent #fdf8e3;position:absolute; top:1px; left:-10px;}
+    .close_bd_tip01{position:absolute;top:4px;right:4px;width:11px;height:11px;display:block;background:url(http://res.360kad.com/theme/default/img/2014newKad/close_tip_isbd01.png) no-repeat;}
+    /*左侧提示是否绑定*/
+    .isbd_mobile{position:absolute;left:-135px;top:208px;padding:10px;width:110px;height:50px;background:#fd951a;color:white;line-height:16px;font-size: 12px;text-align:left;display:none; z-index: 3;}
+    .isbd_out,.isbd_in{display:inline-block;position: absolute;top:12px;right:-10px;width:0;height:0;font-size:0;border:5px solid transparent;_border-style:dashed;border-left-style:solid;border-left-color:#fd951a;}
+    .isbd_in{right:-4px;top:-4px;border:5px solid transparent;_border-style:dashed;border-left-style:solid;border-left-color:#fd951a;font-size:0;width:0;height:0;overflow: hidden;}
+    .close_bd_tip02{position:absolute;top:3px;right:3px;width:9px;height:9px;display:block;background:url(http://res.360kad.com/theme/default/img/2014newKad/close_tip_isbd02.png) no-repeat;}
+    .rightnow_bd{width:56px;height:18px;line-height:18px;color:#fd951a;background:white;display:block;text-align:center;margin-top:3px}
+    .rightnow_bd:hover{color:#fd951a;}
+    /*没有收藏哭的表情*/
+    .without_conetion{display:none;margin-top: 150px;width: 264px;height: 156px;text-align:center}
+    .without_conetion .cryKad_icon {padding-bottom: 14px;width: 114px;height: 112px;background: url(http://res.360kad.com/theme/default/img/2014newKad/kad_cryKid.png) 0 0 no-repeat;}
+</style>
+
+<div class="fixed_navigation" id="fixed_navigation">
+    <div class="isbd_mobile">
+        绑定手机号码即可获取100积分~
+        <a class="close_bd_tip02" href="javascript:void(0)"></a>
+        <a href="http://user.360kad.com/mobile/verification" class="rightnow_bd" target="_blank">立即绑定</a>
+        <i class="isbd_out"><i class="isbd_in"></i></i>
+    </div>
+    <div class="navi_left" style="padding-top: 200px;">
+        <span id="nav_closeBtn"></span>
+        <!--在线客服-->
+        <div class="online_kefu" style="display:none;">
+            <div class="online_kefu_container">
+                <p class="top">客服中心</p>
+                <p class="clearfix p46  pt8">
+                    <a id="tqchatOTC" target="_blank" onclick="ctrTqBoxR();" href="http://help.360kad.com/SaleAfter/ContactSer" style="cursor: pointer;">
+                        <img align="absmiddle" id="tq_float_icoon" src="http://res1.360kad.com/theme/default/img/online_sqkefupic.png" style="float:left;">
+                    </a>
+                </p>
+                <p class="p46">订购热线：</p>
+                <p class="clearfix p46 borB">
+                    <img src="http://res4.360kad.com/theme/default/img/www/phone01.png" alt="">
+                </p>
+                <p class="plr6 clearfix  pt8">
+                    <a onclick="ctrTqBoxR();" id="tqchatOTCSh" target="_blank" href="http://help.360kad.com/SaleAfter/ContactSer" style="cursor: pointer;">
+                        <img align="absmiddle" id="tq_float_icoon" src="http://res4.360kad.com/theme/default/img/online_sqkefupic.png" style="float:left;">
+                    </a>
+                </p>
+                <p class="p46">售后专线：</p>
+                <p class="clearfix p46 w142">
+                    <img src="http://res.360kad.com/theme/default/img/www/phone02.png" alt="">
+                </p>
+            </div>
+            <i class="pointer"></i>
+        </div>
+        <!--我的账号-->
+        <div class="my_Info commonWidth">
+            <p class="my_Info_container" style="right: 66px; opacity: 0; display: none;"><a href="javascript:;" onclick="ctrActionsend('myaccount_right_pc')" title="我的账号">我的账号</a></p>
+            <i class="pointer" style="right: 60px; opacity: 0; display: none;"></i>
+        </div>
+        <!--购物车-->
+        <div class="cart_box commonWidth" id="cart_box">
+            <span id="singleNum" style="display: none;">1</span>
+            <span class="kad-cartNums">0</span>
+        </div>
+        <!--收藏-->
+        <div class="Favorites commonWidth">
+            <p class="Favorites_container"><a href="javascript:;" title="我的收藏">我的收藏</a></p>
+            <i class="pointer"></i>
+        </div>
+        <!--最近浏览-->
+        <div class="view_soon commonWidth">
+            <p class="view_soon_container"><a href="javascript:;" title="最近浏览">最近浏览</a></p>
+            <i class="pointer"></i>
+        </div>
+        <!--最近购买-->
+        <div class="order_current commonWidth">
+            <p class="order_current_container"><a href="javascript:;" title="最近购买">最近购买</a></p>
+            <i class="pointer"></i>
+        </div>
+        <!--我要投诉-->
+        <div class="my-tsBox commonWidth">
+            <a style="display:block;width:36px;height:32px" href="http://help.360kad.com/Feature/TouSuJianYi" target="_blank">&nbsp;</a>
+            <p class="order_current_container" onclick="ctrActionsend('myts_right_pc')">
+                <a style="display:block;" href="http://help.360kad.com/Feature/TouSuJianYi" target="_blank" title="我要投诉"></a>
+                <a href="http://help.360kad.com/Feature/TouSuJianYi" target="_blank" title="我要投诉">我要投诉</a>
+            </p>
+            <i class="pointer"></i>
+        </div>
+        <!--END我要投诉-->
+        <!--问卷调查-->
+        <div class="my-tsBox commonWidth" style="display:none;">
+            <p class="order_current_container"><a href="javascript:;" target="_blank" title="问卷调查">问卷调查</a></p>
+            <i class="pointer"></i>
+        </div>
+        <!--END问卷调查-->
+        <!--扫码下单二维码-->
+        <div class="sm_two_order commonWidth" style="margin-top: 20px;">
+            <div class="sm_two_order_container" style="display: none;">
+                <img src="http://res4.360kad.com/theme/default/img/new_app_picR1.jpg" alt="康爱多APP">
+            </div>
+            <i class="pointer" style="display: none;"></i>
+        </div>
+        <!--top-->
+        <div class="backUp_top commonWidth"></div>
+    </div>
+    <!--右侧信息列表-->
+    <div class="navi_right" style="height: 775px;">
+        <!-- 登录/注册 -->
+        <div class="login_boxs" id="login_boxs">
+            <form action="http://user.360kad.com" method="post">
+                <p>登录名：</p>
+                <p class="p_input"><input type="text" id="userNam_val" value="用户名/邮箱/手机号码" onfocus="if(this.value == '用户名/邮箱/手机号码'){this.value = '';}" onblur="if(this.value == '用户名/邮箱/手机号码'){this.vlaue='';};" onchange="checkUserName();"><span class="errorTxt"></span><i id="error_btn1" class="error_btn"></i></p>
+                <p class="">
+                    登录密码：<span class="forget_ps"><a onclick="location.href = 'http://user.360kad.com/Login/ForgetPassword##'; return false;" href="javascript:void(0)">忘记登录密码？</a></span>
+                </p>
+                <p class="p_input"><input type="password" id="userPsd_val" value="" onchange="$(this).css('color','#515151');checkUserPwd();"><span class="errorTxt"></span><i class="error_btn" id="error_btn2"></i></p>
+                <p class="p_input2"><i class="checked_val1 checked_val2"></i><span class="checked_Txt">记住我的登录信息</span></p>
+                <p class="sub_btn"><input type="button" onclick="UserLogin2();" value="登录"></p>
+                <!--更多登录方式-->
+                <p class="kad_more_login">您还可以使用合作网站账号登录康爱多：</p>
+                <div class="kad_login_style">
+                    <ul>
+                        <li class="login_style_wx"><a title="微信登录" href="javascript:void(0)" onclick="location.href='http://user.360kad.com/login/WeChatLogin?rtnurl=http://user.360kad.com/user';return false;"></a></li>
+                        <li class="login_style_QQ"><a title="QQ登录" href="javascript:void(0)" onclick="location.href='http://user.360kad.com/login/QzoneLogin?rtnurl=http://user.360kad.com/user';return false;"></a></li>
+                        <li class="login_style_tb"><a title="淘宝登录" href="javascript:void(0)" onclick="location.href='http://user.360kad.com/login/TaobaoLogin?rtnurl=http://user.360kad.com/user';return false;"></a></li>
+                        <li class="login_style_zfb"><a title="支付宝登录" href="javascript:void(0)" onclick="location.href='http://user.360kad.com/Login/AlipayLogin?rtnurl=http://user.360kad.com/user';return false;"></a></li>
+                        <li class="login_style_wb"><a title="新浪微博登录" href="javascript:void(0)" onclick="location.href='http://user.360kad.com/login/SinaLogin?rtnurl=http://user.360kad.com/user';return false;"></a></li>
+                    </ul>
+                </div>
+                <!--更多登录方式-->
+                <p class="pl196"><a href="http://user.360kad.com/Register/Index">免费注册</a></p>
+                <input type="hidden" name="" id="wFavorV">
+                <input type="hidden" name="" id="FavorV">
+            </form>
+        </div>
+        <!--end登录/注册-->
+        <!--我的账号未登录/登陆状态-->
+        <div class="my_Info_isLogin" style="display:none">
+            <p class="my_Info_title">我的账号</p>
+            <div class="my_Info_hy">
+                <div class="my_Info_hy_ct no_login" style="display: none;">
+                    <span><a href="javascript:void(0)"  class="plese_login"><img src="http://res.360kad.com/theme/default/img/2014newKad/kad_user_right01.jpg" alt="修改图片" width="112" height="112" /></a></span>
+                    <span class="my_Info_nihao">您好，请</span>
+                    <span class="my_Info_login_red"><a href="javascript:void(0)" class="plese_login">登录</a></span>
+                    <span>！</span>
+                </div>
+                <div style="display:none" class="already_login_box">
+                    <div class="my_Info_hy_ct already_login">
+                        <div class="already_login_lf"><a class="plese_login_img" href="http://user.360kad.com/user"><img src="http://res.360kad.com/theme/default/img/2014newKad/kad_user_right01.jpg" alt="修改图片" width="112" height="112" /></a></div>
+                        <div class="already_login_rg">
+                            <p class="already_lo_rg_hy"><a id="vip_sname" href="javascript:void(0)"></a>，您好！</p>
+                            <p style="color:#737272" id="vip_sign"></p>
+                        </div>
+                    </div>
+                    <div class="zh_safety_level"><span style="color:#737272">账户安全级别：</span><div class="safe_level_bg"><div class="safe_level_type"></div></div><span id="safe_level_list" style="color:#fe952f"></span></div>
+                    <div class="is_bangding">
+                        <span style="color:#737272"><img src="http://res.360kad.com/theme/default/img/user/cell-phone-icon.png" alt="" /> 手机：</span>
+                        <span class="no_bangding"><a href="javascript:void(0)" id="mobile_isbd" target="_blank"></a></span>
+                        <span style="color:#737272"><img src="http://res.360kad.com/theme/default/img/user/email_icon.png" alt="" /> 邮箱：</span>
+                        <span class="no_bangding"><a href="javascript:void(0)" id="yx_isbd" target="_blank"></a></span>
+                        <div class="bangd_achieve">
+                            <span><em></em></span>绑定手机号码可获取100积分~
+                            <a class="close_bd_tip01" href="javascript:void(0)"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my_Info_myself">
+                <ul>
+                    <li><a href="http://user.360kad.com/order" target="_blank" onclick="ctrActionsend('myorder_right_pc')"><i><img src="http://res.360kad.com/theme/default/img/2014newKad/kad_user_right02.png" alt="" /></i><p>我的订单</p></a></li>
+                    <li><a href="http://user.360kad.com/coupon" target="_blank" onclick="ctrActionsend('myyhj_right_pc')"><i><img src="http://res.360kad.com/theme/default/img/2014newKad/kad_user_right03.png" alt="" /></i><p>我的优惠券</p></a></li>
+                    <li><a href="http://user.360kad.com/integral" target="_blank" onclick="ctrActionsend('myjf_right_pc')"><i><img src="http://res.360kad.com/theme/default/img/2014newKad/kad_user_right04.png" alt="" /></i><p>我的积分</p></a></li>
+                    <li><a href="http://user.360kad.com/club" target="_blank" onclick="ctrActionsend('vip_right_pc')"><i><img src="http://res.360kad.com/theme/default/img/2014newKad/kad_user_right05.png" alt="" /></i><p>会员俱乐部</p></a></li>
+                </ul>
+            </div>
+        </div>
+        <!--我的账号未登录/登陆状态-->
+        <!--购物车列表-->
+        <div class="cart_lists_show" id="cart_lists_show">
+            <p class="myCarts" id="myCarts" style="display: none;">我的购物车</p>
+            <!--未加入商品-->
+            <div class="without_favor" style="display: block;">
+                <p class="cryKad_icon"></p>
+                <p>咦，亲购物车还没有添加商品哦！</p>
+            </div>
+            <!--end未加入商品-->
+
+            <div id="scrollBar1" class="scrollBar" style="display: none; height: 367px;">
+                <div id="pc_proLists1" class="pc_proLists">
+                    <ul id="ul1"></ul>
+                    <ul id="ul2"></ul>
+                </div>
+                <div class="bar_box" id="bar_box1" style="display: none;"><div class="bar" id="bar1"></div></div>
+            </div>
+            <!--去结算-->
+            <div class="go_order_box" style="display: none;"></div>
+            <!--end去结算-->
+        </div>
+        <!--end购物车列表-->
+        <!--我的收藏-->
+        <div class="cart_lists_show Favorites_lists_show view_soon_lists_show" id="Favorites_lists_show">
+            <div class="favor_boxs">
+                <!--未浏览-->
+                <div class="without_favor">
+                    <p class="cryKad_icon"></p>
+                    <p>咦，亲还木有收藏过商品哦！</p>
+                </div>
+                <!--end未浏览-->
+                <p class="cart_top"><span style="float:left;">我的收藏</span><span class="favor_num" id="favor_num"></span></p>
+                <div class="without_conetion">
+                    <p class="cryKad_icon"></p>
+                    <p>您还没有收藏东西哦，先去逛逛吧！</p>
+                </div>
+                <div id="scrollBar2" class="scrollBar" style="height: 367px;">
+                    <div id="pc_proLists2" class="pc_proLists">
+
+                    </div>
+                    <div id="bar_box2" class="bar_box"><div id="bar2" class="bar"></div></div>
+                    <span class="favor_success favor_success1">删除成功</span>
+                </div>
+                <div class="go_order_box">
+                    <p><a class="go_nowOr" target="_blank" href="http://user.360kad.com/Favorite/Index">查看全部</a></p>
+                </div>
+            </div>
+        </div>
+        <!--end我的收藏-->
+        <!--最近浏览-->
+        <div class="cart_lists_show view_soon_lists_show" id="view_soon_lists_show">
+            <div class="favor_boxs">
+                <p class="cart_top"><span style="float:left;">最近浏览</span><span class="favor_num" id="view_num"></span><a href="javascript:;" id="favor_clearBtn">清空</a></p>
+                <!--未浏览-->
+                <div class="without_favor">
+                    <p class="cryKad_icon"></p>
+                    <p>您最近可能错过了很多好东西，先去逛逛吧！</p>
+                </div>
+                <!--end未浏览-->
+                <div id="scrollBar3" class="scrollBar" style="height: 367px;">
+                    <div id="pc_proLists3" class="pc_proLists">
+                        <ul class="clearfix proLists"></ul>
+                    </div>
+                    <div id="bar_box3" class="bar_box"><div id="bar3" class="bar"></div></div>
+                    <span class="favor_success favor_success1">收藏成功</span>
+                </div>
+            </div>
+        </div>
+        <!--end最近浏览-->
+        <!--再次购买-->
+        <div class="cart_lists_show go_buyAgain" id="go_buyAgain">
+            <!--未购买-->
+            <div class="without_favor">
+                <p class="cryKad_icon"></p>
+                <p>咦，亲还木有购买过商品哦！</p>
+            </div>
+            <!--end未购买-->
+            <div id="scrollBar4" class="scrollBar" style="height: 367px;">
+                <div id="pc_proLists4" class="pc_proLists">
+                </div>
+                <div id="bar_box4" class="bar_box"><div id="bar4" class="bar"></div></div>
+                <span class="favor_success favor_success1">加入成功</span>
+            </div>
+            <!--去结算-->
+            <div class="go_order_box">
+                <p><a href="http://user.360kad.com/User/Order?Type=0" target="_blank" class="go_nowOr">查看全部</a></p>
+            </div>
+            <!--end去结算-->
+        </div>
+        <!--end再次购买-->
+    </div>
+    <!--end右侧信息列表-->
+    <input type="hidden" name="" id="actInputVal" value="">
+</div>
+<!--部件结束:nav_www_home_right-->
+
+<!--右侧导航END-->
+<!-- 登录/注册start -->
+<div id="showLogOrReg" class="showLogOrReg">
+    <div class="wright">
+        <p class="wright_t">
+            <span class="selthis">登录康爱多</span><a href="javascript:void(0)" class="go_close" id="closeLog"></a>
+        </p>
+        <form method="post" action="http://user.360kad.com/Login">
+            <input type="hidden" value="false" name="IsCartLogin">
+            <div class="wright_m">
+                <p class="LoginError" id="LoginError">
+                    <span data-valmsg-replace="true" data-valmsg-for="LoginError" class="field-validation-valid"></span>
+                </p>
+                <div class="import_class">
+                    <div class="txtClass">
+                        <p class="pt10">
+                            登录名
+                                <span class="Register_ps">
+                                    没有账户？
+                                    <a onclick="location.href='http://user.360kad.com/Register';return false;" href="javascript:void(0)">快速注册</a>
+                                </span>
+                        </p>
+                        <div id="pUserName" class="p_input">
+                            <input type="text" autocomplete="off" data-val="true" data-val-regex="请输入正确格式的登录名！" data-val-required="登录名不能为空！" data-val-regex-pattern="([\u4e00-\u9fa5]|[a-zA-Z0-9]|_)|([\w.\-]+@([\w\-]+\.)+[\w\-]+)|(^(13[0-9]|15[7-9]|153|156|18[7-9])[0-9]{8}$)" value="" class="text pb5" onblur="txtblur(this);" onfocus="txtfocus(this);" name="UserName" id="UserName"><i class="txt_icon" style=""></i><!--<div id="UserName1" class="mailListBox" style="display: none; top: 32px; left: 0px;"></div>-->
+                        </div>
+                    </div>
+                    <div class="txtError" data-valmsg-for="UserName" id="UserNameErr">
+                        <span class="field-validation-valid" data-valmsg-for="UserName" data-valmsg-replace="true"></span>
+                        <span class="txtError_ico"></span>
+                    </div>
+                    <!--<div class="txtWarn" data-warnmsg-for="UserName" id="PasswordWarn" style="display: none;">请输入正确格式的登录名！</div>-->
+                </div>
+                <div style="z-index: 1;" class="import_class">
+                    <div class="txtClass">
+                        <p class="pt10">
+                            密码
+                            <span class="forget_ps"><a href="javascript:void(0)" onclick="location.href='http://user.360kad.com/Login/ForgetPassword';return false;">忘记密码</a></span>
+                        </p>
+                        <p class="p_input">
+                            <!--<span class="UserPasswordtxt" onclick="passwordtxtfocus(this);">6—20位字母、数字或字符的组合，不建议用纯数字/纯字母</span>-->
+                            <input type="password" data-val="true" data-val-length="密码长度应在6-20位之间！" data-val-length-max="20" data-val-length-min="6" data-val-required="请输入您的密码！" value="" name="UserPassword" class="pl5" id="UserPassword" onblur="txtblur(this);" onfocus="$('#LoginError').html('');txtfocus(this);">
+                            <i class="txt_icon"></i>
+                        </p>
+                    </div>
+                    <div class="txtError" data-valmsg-for="UserPassword" id="PasswordErr">
+                        <span class="field-validation-valid" data-valmsg-for="UserPassword" data-valmsg-replace="true"></span>
+                        <span class="txtError_ico"></span>
+                    </div>
+                    <!--<div class="txtWarn" data-warnmsg-for="UserPassword" id="PasswordWarn">
+                          请输入密码，长度应在6-20位之间！
+                    </div>-->
+                </div>
+                <div class="cbxClass">
+                    <input type="checkbox" class="inputcheck" value="true" checked="checked" name="IsRemberName" id="IsRemberName">
+                    <span class="on" onclick="getcheckboxon(this)"></span>
+                    记住我的登录名
+                </div>
+                <div class="btnclass">
+
+                    <input type="hidden" id="ReturnUrl" name="ReturnUrl" value="http://www.360kad.com/">
+                    <input type="button" value="登 录" name="LoginButton" id="LoginButton" class="btncss" onclick="UserLogin();">
+                    <!--
+                    <input id="ReturnUrl" type="hidden" name="ReturnUrl" value="">
+                    <input type="button" value="登 录" name="LoginButton" id="LoginButton" class="btncss" >-->
+                </div>
+                <p class="more_login">您还可以使用合作网站账号登录康爱多：</p>
+                <p class="log_user_other">
+                    <span><a class="l_qq" onclick="location.href = 'http://user.360kad.com/login/QzoneLogin?ReturnUrl=' + document.URL; return false" href="javascript:void(0)" title="登录QQ"></a></span>
+                    <span><a class="l_xinlang" onclick="location.href = 'http://user.360kad.com/login/SinaLogin?ReturnUrl=' + document.URL; return false" href="javascript:void(0)" title="登录新浪微博"></a></span>
+                    <span><a class="l_alipay" onclick="location.href = 'http://user.360kad.com/Login/AlipayLogin?ReturnUrl=' + document.URL; return false" href="javascript:void(0)" title="登录支付宝"></a></span>
+                    <span><a class="l_taobao" onclick="location.href = 'http://user.360kad.com/login/TaobaoLogin?ReturnUrl=' + document.URL; return false" href="javascript:void(0)" title="登录淘宝"></a> </span>
+                </p>
+                <p class="log_help">如紧急，请拨打<b>400-8811-020</b>咨询。</p>
+            </div>
+        </form>
+    </div>
+
+
+</div>
+<!-- 登录/注册end -->
+
+<!--预上架商品-->
+
+<!--END预上架商品-->
+
+
+<div class="PromptBox Box-daohuo" id="advances-layer" style="z-index: 9999; display: none; position: fixed; left: 50%; top: 50%; margin-top: -155px; margin-left: -232px;">
+    <div class="BoxHead">
+        <span class="BoxTitle">到货通知</span>
+        <a class="go_close" id="advClose" href="javascript:void(0)">×</a>
+    </div>
+    <form id="form-txt" class="form-txt">
+        <div class="BoxBody clearfix">
+            <p class="Bdes">一旦商品在30日内到货，您将收到我们的邮件或短信通知，届时请留意查收。</p>
+            <dl class="Blist">
+                <dt>手机号码：</dt>
+                <dd>
+                    <input id="phone-input" type="text" name="" onblur="if(this.value==''){this.value='请输入您的电话号码'};$(this).css('color','#999');" onfocus="if(this.value=='请输入您的电话号码'){this.value=''};$(this).css('color','#333');" value="请输入您的电话号码" style="color: rgb(153, 153, 153);">
+                    <span class="BoxErrorTips"><i></i>请先输入正确的手机号码！</span>
+                </dd>
+                <dt>邮箱地址：</dt>
+                <dd>
+                    <input id="mail-input" type="text" name="" onblur="if(this.value==''){this.value='请输入您的邮箱地址'};$(this).css('color','#999');" onfocus="if(this.value=='请输入您的邮箱地址'){this.value=''};$(this).css('color','#333');" value="请输入您的邮箱地址" style="color: rgb(153, 153, 153);">
+                </dd>
+                <dt>验证码：</dt>
+                <dd>
+                    <input id="input1" type="text" onfocus="$(this).css('color','#333');" onblur="$(this).css('color','#999');" maxlength="4" style="color: rgb(153, 153, 153);">
+                    <input id="checkCode" class="code" type="text" style="width: 55px" readonly="readonly" value="9527">
+                    <a onclick="createCode();return false;" href="javascript:void(0);">换一张</a>
+                </dd>
+            </dl>
+        </div>
+        <div class="Box-operate clearfix">
+            <a href="javascript:void(0);" class="btn-blue" onclick="GoodsChecked();">确定<i></i></a>
+        </div>
+    </form>
+    <!--订阅成功-->
+    <div class="success" style="display:none;">
+        订阅成功！
+    </div>
+    <!--END订阅成功-->
+</div>
+<!--提示框 START-->
+<div class="PromptBox Box-tips" id="showPrompt">
+    <div class="BoxHead">
+        <span class="BoxTitle">温馨提示</span>
+        <a class="go_close" href="javascript:void(0)" onclick="javascript:closets(this,true);">&times;</a>
+    </div>
+    <div class="BoxBody clearfix">
+        <p class="Bcon clearfix">
+        </p>
+    </div>
+    <div class="Box-operate clearfix">
+        <a href="javascript:void(0);" class="go_Cancel btn-White" onclick="closets(this)" >取消<i></i></a>
+        <a href="javascript:void(0);" class="go_sure btn-blue" onclick="closets(this,true)" >确定<i></i></a>
+    </div>
+</div>
+<script>
+    $(function(){
+        $("#go_close_fixed").click(function(){
+            $("#showPrompt-fixed,#layer").hide();
+        });
+    })
+</script>
+<!--提示框 ENDjavascript:$('#go_Cancel_fixed').trigger('click');-->
+<div class="PromptBox Box-tips" id="showPrompt-fixed">
+    <div class="BoxHead">
+        <span class="BoxTitle">温馨提示</span>
+        <a id="go_close_fixed" class="go_close" href="javascript:void(0);">×</a>
+    </div>
+    <div class="BoxBody clearfix">
+        <p class="Bcon clearfix">
+        </p>
+    </div>
+    <div class="Box-operate clearfix">
+        <a href="javascript:void(0);" class="go_Cancel btn-White" id="go_Cancel_fixed">取消<i></i></a>
+        <!--删除购物车按钮-->
+        <a href="javascript:void(0);" class="go_sure btn-blue" onclick="DeleteCartAct();" id="go_sure_cart">确定<i></i></a>
+        <!--删除购物车按钮-->
+        <a href="javascript:void(0);" class="go_sure btn-blue" onclick="DeleteFavorAct();" id="go_sure_fav" style="display:none;">确定<i></i></a>
+        <!--收藏按钮-->
+        <a href="javascript:void(0);" class="go_sure btn-blue" onclick="rCreateFavoriteAct();" id="go_sure_isFav" style="display:none;">确定<i></i></a>
+    </div>
+</div>
+<!--部件开始:product_www_needReg,分组:产品部件-->
+
+<div class="PromptBox needReg_box" id="needReg_box">
+    <div class="BoxHead">
+        <span class="BoxTitle">需求登记</span>
+        <a class="go_close" href="javascript:void(0)" id="needReg_close1">&times;</a>
+    </div>
+    <script type="text/javascript">
+        function SyncHidRegArea() {
+            //套餐列表存在选中的套餐
+            if ($("#txtYtaozc a").hasClass("on")) {
+                $("#set_mealList li a").each(function (i, a) {
+                    if ($(a).html() == $("#txtYtaozc a.on").text()) {
+                        $(a).parent().addClass("addLi_hover");//设置选中样式
+                        $("#ViperPrice .ViperPrice_num").html('￥' + $("#ActivityMessT #pricenumber").html());//设置显示总价
+                        return false;
+                    }
+                });
+            }
+
+            //疗程装列表存在选中的疗程装
+            if ($("#txtYliaoc a").hasClass("on")) {
+            }
+
+            //如果都没有选中套餐,或者选中疗程装;样式添加在一件体验装
+            if (!$("#txtYliaoc a").hasClass("on") && !$("#txtYtaozc a").hasClass("on")) {
+                $("#tobuyone").click();
+            }
+        }
+        $(function () {
+            $('#needReg_close1').bind('click', function () {
+                GetNeedRegList(_a);
+
+                if (!$("#txtYliaoc a").hasClass("on")) {
+                    if (!$("#txtYtaozc a").hasClass('on')) {
+                        $('#hidden_ProductId').val(_a);//只有选中疗程装才重置编码为当前编号
+                        $('#h_ProductType').val(0);
+                    } else {
+                        $('#h_ProductType').val(1);
+                    }
+                    $('#addNumber').val(1);
+                    $('#product_amount').val(1);
+                } else {
+                    $('#hidden_ProductId').val(_a);//只有选中疗程装才重置编码为当前编号
+                    $('#h_ProductType').val(0);
+                    //重置价格栏显示
+                    var _Ynum = $("#txtYliaoc a.on .Ynum").text()
+                    var _Yprice = $("#txtYliaoc a.on .Yprice").text()
+                    var _saleprice = parseFloat($('#h_Price').val()).ToMoney();
+                    var _Yprice1 = parseFloat(_Yprice).ToMoney();
+                    var _Ylisheng = parseFloat((_saleprice - _Yprice1) * _Ynum).ToMoney();
+                    var _totalYprice = parseFloat(_Ynum * _Yprice).ToMoney();
+
+                    $('#ActivityMessage #pricenumber').html(_Yprice);
+                    $('#ActivityMessage label').html("满" + _Ynum + "盒总价：￥" + _totalYprice + "&nbsp;&nbsp;共省：￥");
+                    $('#ActivityMessage .Ylisheng').html(_Ylisheng);
+                    $('#product_amount').val(_Ynum);
+                    $('#addNumber2').val(_Ynum);
+                    $('#Y_NumModify').val(_Ynum);
+                    $('#ActivityMessage dd b').html(_Yprice1);
+
+                }
+                //$("#txtYtaozc a").removeClass("on");
+                //$("#Yliaoc a").removeClass("on");
+                if (!$("#txtYtaozc a").hasClass('on')) {
+                    $('#ActivityMessage').css('display', 'block');
+                    $('#ActivityMessT').css('display', 'none');
+                }
+                $('#buycartbutton01').show()
+                $('#buycartbuttonmore').hide()
+                SyncHidRegArea();
+            });
+        })
+    </script>
+    <div class="needReg_form">
+        <p class="warmTips">温馨提示：提交登记后，康爱多药店药师将在10分钟内致电与您确认！</p>
+        <input type="hidden" id="SingleProductNum" name="SingleProductNum" value="0">
+        <form action="" id="form_CheckOrder" name="form_CheckOrder" style="float:left;position:relative;">
+            <input type="hidden" id="hidden_ProductId" name="hidden_ProductId" value="" />
+            <input type="hidden" id="ocRef" name="ocRef" value="" />
+            <input type="hidden" name="Department" id="Department" value="家庭药箱" />
+            <!--套餐-->
+            <div class="set_meal clearfix">
+                <p class="ViperPrice" id="ViperPrice"><span class="set_mealTitle">门店价：</span><span class="ViperPrice_num"></span></p>
+                <!--   **************************   增加了 style="display:none;" 用来代替被隐藏的函数功能  ******************************          -->
+                <div class="newNeedF" style="display:none;">
+                    <span class="set_mealTitle">套餐：</span>
+                    <ul class="set_mealList" id="set_mealList"></ul>
+                </div>
+                <!--数量-->
+                <div class="set_meal_num">
+                    <span class="num_title">数量：</span><a href="javascript:void(0);" onclick="BuyQuantity2(-1);return false;" class="reduce_icon" id="reduce_icon"></a>
+                    <input type="text" class="addNumber addinput_hover" value="1" id="addNumber" name="addNumber" onkeyup="NumModify2();" onblur="BuyQuantity2(0);">
+                    <a href="javascript:void(0);" onclick="BuyQuantity2(1);return false;" class="reduce_icon add_icon" id="add_icon"></a><input type="hidden" value="0" id="h_ProductType" name="h_ProductType" />
+                </div>
+            </div>
+            <div class="person_infors clearfix">
+                <!--登录名未登录-->
+                <div class="login_name"><span class="login_nameTile">登录名：</span><a href="javascript:void(0);" onclick="popClose('needReg_box',false);poplayer('showLogOrReg','',true);return false;" class="get_person_address">已注册会员请快速登录，获取曾用地址</a></div>
+                <!--登录后登录名-->
+                <div class="logined_name"><span class="login_nameTile">登录名：</span><span class="longined_data" id="txtUserName"></span><a href="javascript:void(0);" class="fixed_address" onclick="UserAddressList();">更改地址</a></div>
+                <!--姓名手机-->
+                <div class="usersName">
+                    <span class="usersName_l">姓名：</span><input type="text" class="usersName_txt" maxlength="40" id="txtConsignee" value="必填" onfocus="if(this.value=='必填'){this.value=''}" onblur="if(this.value==''){this.value='必填'}" name="txtConsignee" />
+                    <span class="users_phone">手机：</span><input type="text" class="users_phone_txt" maxlength="11" id="txtMobilephone" name="txtMobilephone" value="必填" onfocus="if(this.value=='必填'){this.value=''}" onblur="if(this.value==''){this.value='必填'}" /><input type="hidden" id="h_AddressId" name="h_AddressId" value="0" />
+                </div>
+                <div class="usersAddress clearfix">
+                    <span class="usersAddress_l">地址：</span> <span>
+                        <select id="RegionProvince" name="RegionProvince" class="select" onchange="GetRegionCity();">
+                            <option value="-1">---请选择所属的省--</option>
+                        </select>
+                    </span><span id="div_RegionList3">
+                        <select id="RegionCity" name="RegionCity" style="display:none" class="select" onchange="GetRegionArea();"></select>
+                    </span><span id="div_RegionList4">
+                        <select id="RegionArea" name="RegionArea" style="display:none" class="select"></select>
+                    </span><span id="showMessage"></span>
+                    <input type="text" value="必填 街道名及编号、楼宇名及房间号" class="stree_txt" id="txtAddress" maxlength="50" name="txtAddress" onblur="if(this.value==''){this.value='必填 街道名及编号、楼宇名及房间号'}" onfocus="if(this.value=='必填 街道名及编号、楼宇名及房间号'){this.value=''}">
+                </div>
+                <div class="remarks"><span class="remark_l">备注：</span><textarea class="stree_txt remarks_txt" value="" id="txtRemark" onpaste="return false" name="txtRemark"></textarea></div>
+            </div>
+            <!--提交登记$('#btnCheckOrder').attr('disabled', 'true');-->
+            <div class="submitReg"><span class="submitReg_l">如紧急，请拨打<samp>400-8811-020</samp>咨询。</span></div>
+            <div class="Box-operate clearfix">
+                <a href="javascript:void(0)" class="btn-blue" onclick="CheckOrderSubmit();" id="btnCheckOrder" class="demand_registration">确定<i></i></a>
+            </div>
+        </form>
+    </div>
+</div>
+<!--需求登记end-->
+<!--更换地址-->
+<div class="PromptBox needReg_box needReg_box_1 " id="needReg_box_1" style="display:none;">
+    <div class="BoxHead">
+        <span class="BoxTitle">更换地址</span>
+        <a class="go_close" href="javascript:void(0)" id="needReg_close2">&times;</a>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            $('#needReg_close2').bind('click', function () {
+                popClose('needReg_box_1', false);
+                poplayer('needReg_box', 'needReg_close1', true);
+            });
+        })
+    </script>
+    <div class="addNew_address clearfix">
+        <ul id="addNew_addressUl"></ul>
+        <!--确认更改-->
+        <div class="rightFixed clearfix"><a href="javascript:void(0);" class="rightFixed_l" onclick="UpdateAddressId();return false;"></a><a href="javascript:void(0);" class="rightFixed_r" onclick="returnPrevLayer();"></a><a href="javascript:void(0);" class="rightFixed_m" onclick="returnPrevLayer();"></a></div>
+        <!--确认更改end-->
+    </div>
+</div>
+<!--更换地址end-->
+<!--需求提交成功-->
+<div class="PromptBox submitReg_success needReg_box" id="submitReg_success" style="display:none;">
+    <div class="BoxHead">
+        <span class="BoxTitle">需求提交成功</span>
+        <a class="go_close" href="javascript:void(0)" id="needReg_close_succ">&times;</a>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            $('#needReg_close_succ').bind('click', function () {
+                if ($("#txtYliaoc a").hasClass("on")) {
+                    var _Yprice = $("#txtYliaoc a.on .Yprice").text();
+                    $('#pricenumber').html(_Yprice);
+                } else {
+                    $('#pricenumber').html($('#h_Price').val());
+                }
+            });
+        })
+    </script>
+    <div class="congrats_box">
+        <div class="congrats_box_top">
+            <h3 class="mainTitle">恭喜您，需求已成功提交！</h3>
+            <p>康爱多药店药师将在10分钟内致电与您确认！</p>
+        </div>
+        <div class="congrats_box_bottom">
+            <p>温馨提示：晚上11点后提交的需求登记将在次日早上10点前给您回拔。</p>
+            <p>如紧急，请拨打<span>400-8811-020</span>咨询。</p>
+        </div>
+    </div>
+</div>
+<!--需求提交成功end-->
+<!--判断弹出层-->
+<!--提示框 START-->
+<div class="PromptBox Box-tips" id="alertDivs">
+    <div class="BoxHead">
+        <span class="BoxTitle">温馨提示</span>
+        <a class="go_close" onclick="popClose('alertDivs',true);" id="alertDivs_tips_r" href="javascript:void(0)">&times;</a>
+    </div>
+    <div class="BoxBody clearfix">
+        <p class="Bcon clearfix">
+            <i class="ico-tipsExc"></i>
+            请确认姓名/手机/地址填写完整。
+        </p>
+    </div>
+    <div class="Box-operate clearfix">
+        <a href="javascript:void(0);" class="btn-blue" onclick="poplayer('needReg_box','needReg_close1',true);;popClose('alertDivs',false);$('#layer').show();">确定<i></i></a>
+    </div>
+</div>
+<!--提示框 END-->
+<!--咨询登记弹窗20131112--><div class="rdivBox" id="rdivBox">
+    <div class="rdivBoxT clearfix"><span style="float:left;">咨询登记</span><span class="rdivClose" id="rdivClose">关闭</span></div>
+    <div class="rdivBoxB">
+        <p>温馨提示：药师将在10分钟内与您联系，请耐心等候！</p>
+        <div class="rdivBoxList clearfix"><span style="float:left;display:block;padding-top:10px;">联系方式</span><input class="Tel_bot" id="Tel_bot1" name="Tel_bot" onblur="if(this.value==''){this.value='填写手机,药师将联系您';}" onfocus="if(this.value=='填写手机,药师将联系您'){this.value='';}" style="float:left;" type="text" value="填写手机,药师将联系您" /> <input class="Tel_bi1b" onclick="PhoneBack($('#Tel_bot1').val());" style="float:left;" type="button" /> <input class="Tel_bi1b1" style="float:left;display:none;" type="button" /></div>
+    </div>
+</div>
+<!--END咨询登记弹窗20131112-->
+<!--电话成功登记 START-->
+<div class="PromptBox Box-tips" id="Buy_OrdS">
+    <div class="BoxHead">
+        <span class="BoxTitle">成功登记</span>
+        <a class="go_close" id="closeClassb" href="javascript:void(0)">&times;</a>
+    </div>
+    <div class="BoxBody clearfix">
+        <p class="Bcon clearfix">
+            <i class="ico-tipsDui"></i>
+            您的信息已提交，正常在10分钟内会有药师电话回拨为您服务，请您耐心等候！<br>
+            如紧急，请拨打400-8811-020咨询康爱多药店药师。<br>
+            温馨提示：晚上11点后，已提交电话正常在次日早上10点前给您回拔。
+        </p>
+    </div>
+</div>
+<input id="h_RegionCity" type="hidden" value="">
+<!--电话成功登记 END-->
+
+<script type='text/javascript'>
+    function CheckOrderSubmit() {
+        if (!CheckOutMsg())//校验姓名/手机/地址
+        {
+            if (IsLogin()) { InitCheckOrderMsg(); }
+            return;
+        }
+        //判断购买数量限购
+        var compareNum = parseInt($('#compareNum').val());
+        if (parseInt($('#compareNum').val()) != 0 && parseInt($('#addNumber').val()) > compareNum) { alert('你所订购的商品超过最大限购数' + compareNum + '件'); return false; }
+
+        //$("#btnCheckOrder").hide();
+        var curHrefs = window.location.href;
+        if (curHrefs.indexOf('?ref=kadsearch') > -1) {
+            $("#ocRef").val("kadsearch");
+        }
+        var _zmCheckOrder = $("#form_CheckOrder").serialize();
+        //_zmCheckOrder = decodeURIComponent(_zmCheckOrder,true);
+        $.ajax({
+            url: "/Order/CreateCheckOrder",
+            data: _zmCheckOrder,
+            //data: $("#form_CheckOrder").serialize(),
+            type: "get",
+            cache: false,
+            dataType: "json",
+            contentType: "application/x-www-form-urlencoded; charset=utf-8",
+            json: 'callback',
+            success: function (data) {
+                switch (data) {
+                    case "-1": alert("系统繁忙，请稍后再试！"); break;
+                    case "0": {
+                        if (data[0] == "0") {
+                            popClose("needReg_box", true); poplayer('submitReg_success', 'needReg_close_succ', true);
+                            var text = "";
+                            text = "恭喜您，需求已成功提交！";
+                            $('#needReg_box_1 .mainTitle').html(text);
+                            $("#btnCheckOrder").show();
+                            $('#RegionProvince').hide();
+
+                            var h_ProType = $('#h_ProductType').val();//产品类型0是单品，2是套餐
+                            var orderProductId = $('#h_productId').val();//订单提交时单品ID
+                            var orderPackageId = $('#hPackageId').val()//订单提交时套餐ID
+                            var orderNumbers = $('#addNumber').val();   //订单提交时产品数量
+                            var orderProPrice = $('#SingleProductNum').val();//订单提交时产品单价
+
+                        }
+                    } break;
+                    case "1": alert("手机号不能为空！"); break;
+                    case "2": alert("请选择要购买的商品！"); break;
+                    case "3": alert("输入的商品数量不正确！"); break;
+                    default: alert(data); break;
+                }
+                InitCheckOrderMsg();
+                GetNeedRegList(_a);
+            }
+        });
+    }
+
+    $(function () {
+        var addNumber = $('#addNumber');
+        var fixed_address = $('.fixed_address');//更换地址
+        var rightFixed_r = $('.rightFixed_r');//返回新增地址
+        var rightFixed_m = $('.rightFixed_m');//返回不修改了
+
+        addNumber.click(function () {
+            $(this).addClass('addinput_hover');
+        });
+
+        //更换地址的显示
+        fixed_address.click(function () {
+            popClose("needReg_box", false);
+            poplayer('needReg_box_1', 'needReg_close2', false);
+        });
+
+
+        //返回新增地址
+        rightFixed_r.click(function () {
+            $('#RegionProvince').val(-1);
+            $('#RegionCity').val(-1);
+            $('#RegionArea').val(-1);
+            $('#txtAddress').val("");
+            $('#RegionCity,#RegionArea').hide();
+        })
+        //关闭不修改
+        rightFixed_m.click(function () {
+            InitOCUserMsg();
+        })
+
+    })
+</script>
+
+<script type="text/javascript">
+    var Url = "";
+
+    jQuery(document).ready(function () {
+        $('#hidden_ProductId').val(_b);
+        InitCheckOrderMsg();
+        //GetNeedRegList(_a);
+        //$(".go_close").bind("click",function(){GetNeedRegList(_a);});
+        //点击触发需求登记弹窗
+        jQuery(".buy_bi1b").click(function () {
+            if ($('#h_ConAdobe').val() == 1) { $('#h_ConAdobe').val(0); }
+            nRegNum = 1;
+            GetUserMsg();  //获取用户名
+            ShowNeedRegBox();//显示遮罩层
+            setTimeout(function () { InitCheckOrderMsg(); }, 1000);
+            //InitCheckOrderMsg();//InitCheckOrderMsg初始化
+            if ($('#product_amount').length > 0 && $('#product_amount').val() != '') {
+                $('#addNumber').val($('#product_amount').val());
+            }
+
+            var totalPrice;
+            if (!$("#txtYliaoc a").hasClass("on")) {
+                if (!$("#txtYtaozc a").hasClass('on')) {//销售价格
+                    totalPrice = $('#h_Price').val();
+                } else {//选中套装
+                    totalPrice = $('#SingleProductNum').val();
+                }
+            } else {//选了疗程装
+                totalPrice = $("#ActivityMessage #pricenumber").html();
+            }
+            $('.ViperPrice_num').html('￥' + parseFloat(totalPrice * $('#addNumber').val()).toFixed(2));
+
+
+            if ($('#h_ProductType').val() == '0') {
+                var num1 = parseInt($('#product_amount').val());
+                AfterProductPrices(num1, _a);
+            }
+            //if(!$("#txtYtaozc a").hasClass("on")){$("#tobuyone").click();$("#h_ProductType").val(0);}
+            if (!$("#txtYtaozc a").hasClass("on")) {
+                //$("#tobuyone").click(); $("#h_ProductType").val(0);
+                //$("#txtYtaozc a").addClass("on")
+                $("#tobuyone").parent().addClass("addLi_hover");
+            }
+            ctrActionsend("demand_reg_pc");
+
+            SyncHidRegArea();
+        });
+        Url = document.URL;
+        if (Url.indexOf("?") > -1) {
+            Url += "&open=1"
+        }
+        else {
+            Url += "?open=1"
+        }
+        if (document.URL.indexOf("open=1") > 0) {
+            setTimeout(function () { $('#h_ConAdobe').val(0); jQuery(".buy_bi1b").click(); }, 1000);
+        }
+
+        jQuery("#Buy_OrdSclo").click(function () { jQuery("#Buy_OrdS").css("display", "none"); });
+        //处方药与非处方药温馨提示状态切换
+        if ($("#h_rxotc").val() == "rx" || $("#h_rxotc").val() == "rxa" || $("#h_rxotc").val() == "rxb") {
+            $('#Rx_note').css('display', 'inline'); $('#Otc_note').css('display', 'none');
+        } else { $('#Rx_note').css('display', 'none'); $('#Otc_note').css('display', 'inline'); };
+        //GetNeedRegList(_a);
+    });
+
+    //订购信息
+    function CreateBuyO(BuyO_cont) {
+        if ($.trim(BuyO_cont) == '') {
+            alert("请填写订购信息！");
+            $("#BuyO_cont").focus();
+            return false;
+        }
+        //获取当前href
+        var curHref = window.location.href;
+        BuyO_cont = BuyO_cont + ' | ' + curHref;
+        $.ajax({
+            type: 'GET',
+            url: 'http://user.360kad.com/Blessing/Send?type=17&Content=' + BuyO_cont,
+            cache: false,
+            dataType: "jsonp",
+            jsonp: 'callback',
+            success: function (data) {
+                if (data == 1) {
+                    jQuery(".buy_ti1").hide();
+                    $('#BuyO_cont').val(' ');
+                    poplayer('Buy_OrdS', 'closeClassb', true);
+
+                }
+                else { alert("提交失败"); }
+
+            }
+        })
+    }
+    //电话回访
+    function PhoneBack(phoneTxt) {
+        $('.Tel_bi1b').css('display', 'none'); $('.Tel_bi1b1').css('display', 'block');
+        if ($.trim(phoneTxt) == '') {
+            $('.Tel_bi1b1').css('display', 'none');
+            $('.Tel_bi1b').css('display', 'block');
+
+            $("#phoneTxt").focus();
+            var _messageTel2 = '<i class="ico-tipsExc"></i>请填写电话回拨！';
+            showPrompt(_messageTel2, 0, 1);
+            return false;
+        }
+        //获取当前href
+        var curHref = window.location.href;
+        var mobilePhoneReg = /^(\d{11}$)/;
+        var telphoneReg = /^(\d{3}-\d{8}|\d{4}-\d{7})$/;
+        if (mobilePhoneReg.exec($.trim(phoneTxt)) || telphoneReg.exec($.trim(phoneTxt))) {
+            $('#h_CurrentUrl').val(curHref);
+            $('#txtPhoneCall').val(phoneTxt);
+            if (curHref.indexOf('?ref=kadsearch') > -1) {
+                $("#ocRef_p").val("kadsearch");
+            }
+            var zmPhoneBack = $("#form_CreateOrder_Phone").serialize();
+            //zmPhoneBack = decodeURIComponent(zmPhoneBack,true);
+            $.ajax({
+                type: 'get',
+                url: "/Order/CreateCheckOrderPhone",
+                cache: false,
+                dataType: "json",
+                data: zmPhoneBack,
+                //data: $("#form_CreateOrder_Phone").serialize(),
+                contentType: "application/x-www-form-urlencoded; charset=utf-8",
+                json: 'callback',
+                success: function (data) {
+                    if (data == "5") { alert("抱歉，系统升级中，暂时不能提交！(H)"); return false; }
+                    if (data[0] == "0") {
+                        $('#Tel_bot,#Tel_bot1').val(' ');
+                        $('#txtPhoneCall').val('');
+                        poplayer('Buy_OrdS', 'closeClassb', true);
+                        $('.Tel_bi1b1').css('display', 'none');
+                        $('.Tel_bi1b').css('display', 'block');
+
+                        var h_ProType = $('#h_ProductType').val();//产品类型0是单品，2是套餐
+                        var orderProductId = $('#h_productId').val();//订单提交时单品ID
+                        var orderPackageId = $('#hPackageId').val()//订单提交时套餐ID
+                        var orderNumbers = $('#addNumber').val();   //订单提交时产品数量
+                        var orderProPrice = $('#SingleProductNum').val();//订单提交时产品单价
+
+                        $('#rdivBox').css('display', 'none');
+                        $('#h_ProductType_Phone').val(0);
+                    }
+                    else {
+                        alert("提交失败");
+                        $('.Tel_bi1b1').css('display', 'none'); $('.Tel_bi1b').css('display', 'block');
+
+                    }
+
+                }
+            })
+        }
+        else {
+            $("#phoneTxt").focus();
+            $('.Tel_bi1b1').css('display', 'none');
+            $('.Tel_bi1b').css('display', 'block');
+            var _messageTel = '<i class="ico-tipsExc"></i>请输入正确的电话号码！<br>如手机号：13900000000<br>或电话：010-66666666或0662-8989888！';
+            showPrompt(_messageTel, 0, 1);
+            return false;
+        }
+    }
+</script>
+
+<script type="text/javascript">
+    //读取用户初始信息
+    function InitAddressMsg(dataAddress) {
+        $("#RegionProvince").val(dataAddress.ProvinceCode);
+
+        GetRegionProvice(dataAddress.ProvinceCode);
+        //$("#RegionProvince").val(dataAddress.ProvinceCode);
+        //$("#RegionProvince option[value='dataAddress.ProvinceCode']").attr("selected",true)
+
+        GetRegionCity(dataAddress.CityCode);
+        setTimeout(function () {
+            $("#RegionCity").val(dataAddress.CityCode);
+            setTimeout(function () {
+                GetRegionArea(dataAddress.DistrictCode);
+                $("#RegionArea").val(dataAddress.DistrictCode);
+                $("#txtAddress").val(dataAddress.Address);
+            }, 200);
+        }, 50);
+    }
+
+
+    //获取用户信息
+    function GetFastOrderMsg(pid, q, proType, type) {
+        if (pid == "" || q == "") {
+            //alert("数量和ID不能为空");
+            return;
+        }
+        var url = location.href;
+        $.ajax({
+            url: window.urlConfig.multiDomain.pc() + "/Address/GetDefault",
+            data: { proId: pid, proType: proType, type: type, url: url },
+            type: "get",
+            async: false,
+            cache: false,
+            dataType: "jsonp",
+            json: "callback",
+            success: function (data) {
+                //if (data == "0") {
+                //    alert("请先登录，再进行操作！");
+                //}
+                //else {
+                if (type == 0) {
+                    $("#h_ProductType").val(proType);
+                    if (data != null) {
+                        $("#txtMobilephone").val(data.MobilePhone);
+                        $("#txtConsignee").val(data.Accepter);
+                        $("#h_AddressId ").val(data.ID);
+                        InitAddressMsg(data);
+                        $('#h_RegionCity').val(data.CityCode)
+                    }
+                    else {
+                        GetRegionProvice();
+                    }
+                }
+                else {
+                    $("#h_CurrentUrl").val(url);
+                    $("#h_ProductId_Phone").val(pid);
+                    $("#h_ProductType_Phone").val(proType);
+                }
+                //}
+            }
+        });
+    }
+
+    function CheckOrderPhoneSubmit() {
+        var params = $("#form_CheckOrder_Phone").serialize();
+        params = decodeURIComponent(params, true);
+        $("#btnCheckOrderPhone").hide();
+        $.ajax({
+            url: "/Order/CreateCheckOrderPhone",
+            //data: $("#form_CheckOrder_Phone").serialize(),
+            data: params,
+            type: "get",
+            cache: false,
+            dataType: 'json',
+            json: 'callback',
+            success: function (data) {
+                switch (data) {
+                    case "1": alert("手机号不能为空！"); break;
+                    case "2": alert("请选择要购买的商品！"); break;
+                    case "5": alert("抱歉，系统升级中，暂时不能提交！(H)"); break;
+                    default: alert("抱歉，系统升级中，暂时不能提交！");
+                }
+                $("#btnCheckOrderPhone").show();
+            },
+            error: function () {
+                $("#btnCheckOrderPhone").show();
+            }
+        });
+    }
+    /*
+     function GetRegionProvice() {
+     var parentId = 0;
+     $("#RegionProvince").val("");
+     getList(parentId, "RegionProvince");
+
+     }
+
+     function GetRegionCity() {
+     var parentId = $("#RegionProvince").val();
+     $("#RegionArea").css("display", "none");
+     $("#RegionArea").val("");
+     getList(parentId, "RegionCity");
+
+     }
+     function GetRegionArea() {
+     var parentId = jQuery("#RegionCity").val();
+     getList(parentId, "RegionArea");
+     }
+
+     //区域列表
+     function getList(parentId, showId) {
+
+     jQuery.ajax({
+     url: '/Remote.aspx',
+     data: "Remote=/order/RegionOptionp&ParentId=" + parentId,
+     type: "get",
+     cache: false,
+     async: false,
+     dataType: 'json',
+     success: function (data) {
+     if (data.length > 0) {
+     $("#" + showId).css("display", "");
+     $("#" + showId).html(data);
+
+     } else {
+     $("#" + showId).css("display", "none");
+     $("#" + showId).val("");
+     }
+     }
+     });
+     }*/
+
+
+
+
+    function GetRegionProvice(addressid) {
+        //$("#RegionProvince").val("");
+        GetAddressList(addressid, 0)
+
+    }
+    function GetRegionCity(addressid) {
+        if ($("#RegionProvince").val() == "-1") return;//未选中省的
+        $("#RegionCity").show();
+        //$("#RegionArea").val("");
+
+        GetAddressList(addressid, 1)
+
+    }
+    function GetRegionArea(addressid) {
+        if ($('#RegionCity').val() == "-1") return;//未选中市
+        $("#RegionArea").show();
+        GetAddressList(addressid, 2)
+    }
+
+    //获取地址列表
+    function GetAddressList(addressid, action) {
+        var parentId = 0;
+        var showId = ["RegionProvince", "RegionCity", "RegionArea"];
+        var topOpt = ["请选择省份", "请选择城市", "请选择区县"];
+        /*if (action > 0 && action < showId.length) {
+         parentId = $("#" + showId[action - 1]).val();
+         $("#" + showId[action]).css({ "background-color": "#ffffff", "color": "#000000" });
+         }*/
+        switch (action) {
+            case 0:
+                parentId = 0;
+                break;
+            case 1:
+                parentId = $("#RegionProvince").val();
+                break;
+            case 2:
+                parentId = $('#RegionCity').val();
+                if (parentId == "")
+                { parentId = $('#h_RegionCity').val(); }
+                break;
+        }
+        for (var i = action == 0 ? 1 : action; i < showId.length; i++) {
+            $("#" + showId[i]).html(ListToSelect([], topOpt[i]));
+            //在没有获取到数据的情况下显示省市区？
+        }
+        jQuery.ajax({
+            url: window.urlConfig.multiDomain.pc() + "/Address/GetAddressList",
+            data: { parentId: parentId, selectId: action },
+            type: "post",
+            cache: false,
+            dataType: "jsonp",
+            json: "callback",
+            success: function (data) {
+                if (data.length > 0) {
+                    $("#" + showId[action]).css("display", "");
+                    $("#" + showId[action]).html(ListToSelect(data, topOpt[action], addressid));
+                }
+                else {
+                    $("#" + showId[action]).css("display", "none");
+                    if ($("#" + showId[action + 1]) != null) {
+                        $("#" + showId[action + 1]).css("display", "none");
+                    }
+                    $("#" + showId[action]).val("");
+                }
+            }
+        });
+    }
+
+    /*list转为select下拉框*/
+    function ListToSelect(data, topOpt, addressid) {
+        var str = ['<option value="-1">' + topOpt + '</option>'];
+        for (var i = 0; i < data.length; i++) {
+            var id = data[i].Id;
+            var name = data[i].Name;
+            if (id == addressid) {
+                str.push('<option value="' + id + '" selected="selected">' + name + '</option>');
+            } else {
+                str.push('<option value="' + id + '">' + name + '</option>');
+            }
+
+        }
+        return str.join('');
+    }
+    function GetUserMsg() {
+        jQuery.ajax({
+            type: "Get",
+            url: window.urlConfig.multiDomain.pc() + "/User/GetUserInfo",
+            cache: false,
+            dataType: "jsonp",
+            json: "callback",
+            success: function (data) {
+                if (data["IsLogin"] == false) { return; }
+                $('#txtUserName').text(data["userName"]);
+            }
+        });
+    }
+    //需求登记获取单品或套餐
+    function GetNeedRegList(productId) {
+        jQuery.ajax({
+            url: "/product/KitList?id=" + productId,
+            type: "get",
+            cache: false,
+            dataType: "json",
+            //json: "callback",
+            success: function (data) {
+                $('#h_ConAdobe').val(1);
+                //筛选一次 详情页模板显示的
+                var dataResult = [];
+                var currentWareCode = $("#WareSkuCode").val() || "";//商品ID
+                for (var i = 0; i < data.Result.length; i++) {
+                    var kitSubList = data.Result[i].kitSubList;
+                    for (var j = 0; j < kitSubList.length; j++) {
+                        if (kitSubList[j].WareCode == currentWareCode && kitSubList[j].IsDetailShow) {
+                            dataResult.push(data.Result[i]);//记录详情页显示的套餐
+                            break;
+                        }
+                    }
+                }
+                if (dataResult.length > 0) {
+                    $('.newNeedF').show();
+                    var str = "", _index = "";
+                    for (var i = 0; i < dataResult.length; i++) {
+                        var oprice = dataResult[i].OriginPrice, pprice = dataResult[i].KitPrice;
+                        var packcartfun_2 = "packcartfun4('" + dataResult[i].PrmCode + "','" + oprice + "','" + pprice + "')";
+                        str += "<li><a  class='tobuypackage' onclick=\"$('#hidden_ProductId').val(" + dataResult[i].PrmCode + ");" + packcartfun_2 + "\" href='javascript:void(0)'>" + dataResult[i].PrmName + "</a></li>";
+                    }
+
+                    $("#set_mealList").html("<li><a class='tobuyone' id='tobuyone' href='javascript:void(0)' >一件体验装</a></li>" + str);
+                    $("#productpackage").show(); $(".infocon .marprice").hide();
+
+
+                    $("#set_mealList li a").click(function () { $(this).parent('li').addClass('addLi_hover'); $(this).parent('li').siblings().removeClass('addLi_hover'); return false; })
+                    $("#set_mealList .tobuypackage").click(function () {
+                        if ($("#hPopVal").val() == 0 && !$("#txtYtaozc a").hasClass("on")) { $('#h_ProductType').val(1); }
+
+
+                    });
+                    $("#tobuyone").click(function () {
+                        $('#hidden_ProductId').val($('#h_productId').val());
+                        $('#h_ProductType').val(0);
+
+                        AfterProductPrices($('#addNumber').val(), $('#hidden_ProductId').val());
+                    });
+
+                } else {
+
+                    $('#ViperPrice .ViperPrice_num').html("￥" + parseFloat(_c * parseInt($('#addNumber').val())).toFixed(2));
+                    $('#SingleProductNum').val(_c);
+                    $('#addNumber').val(1);
+                    $('.newNeedF').hide();
+                }
+            }
+        });
+    }
+
+    function packcartfun4(id, oprice, pprice) {
+        $("#SingleProductNum").val(pprice);
+        $("#hPackageId").val(id);
+        jQuery("#ViperPrice .ViperPrice_num").html("￥" + parseFloat(pprice * parseInt($('#addNumber').val())).toFixed(2));
+        if ($("#hPopVal").val() == 0) { $('#h_ProductType').val(0); } else {
+            $('#h_ProductType').val(1);
+        }
+    }
+
+    //专题需求登记获取套餐
+    function GetNeedRegList2(packageId, kType) {
+        $("#h_ProductType").val(2);
+        jQuery.ajax({
+            url: "/product/GetKit?prmCode=" + packageId,
+            type: "get",
+            cache: false,
+            dataType: "json",
+            success: function (data) {
+                var str = "<li><a herf='javascript:void(0);'>" + data.PrmName + "</a></li>";
+                $('#set_mealList').html(str);
+                $('#SingleProductNum').val(data.KitPrice);
+                if (kType == 1) {
+                    $('.ViperPrice_num').html('￥' + parseFloat(data.KitPrice).toFixed(2));//专题、详情页处方套餐需要在GetNeedRegList2(packageId,kType)这个方法传一个kType形参1进来做判断，不需要乘以外边的数量
+                } else {
+                    $('.ViperPrice_num').html('￥' + parseFloat(data.KitPrice * $('#addNumber').val()).toFixed(2));//非处方套餐含有处方药
+                }
+                $("#set_mealList li").addClass("addLi_hover");
+            }
+        });
+    }
+    //套餐end
+
+    //获取单品详细信息
+    function addCart_rx1(num, productId) {
+        $("#h_ProductType").val(0);
+        $("#addNumber").val(1);
+        $("#set_mealList li").hide();
+        $("#hidden_ProductId").val(productId);
+        $('.newNeedF').hide();
+        AfterProductPrices(num, $("#hidden_ProductId").val());
+        $('#addNumber').val(num);
+        ShowNeedRegBox();
+        GetUserMsg();
+        InitCheckOrderMsg();
+    }
+    //内容处调用处方电话回拨_旧办法
+    function addPackage_rx1(aPrid) {
+        $('#h_ProductType_Phone').val(2);
+        $('#h_ProductId_Phone').val(aPrid);
+        poplayer('rdivBox', 'rdivClose', true);
+    }
+    //内容处调用处方登记_类型数量
+    function addPackage_rxNum(aPrid, num, type) {
+
+        GetNeedRegList2(aPrid);
+        $("#hidden_ProductId").val(aPrid);
+        $('#h_ProductType').val(type);
+        $("#addNumber").val(num); //专题默认初始套餐数量
+        $('.newNeedF .set_mealTitle,.newNeedF').show();
+        $('#ViperPrice .ViperPrice_num').html('￥' + parseFloat($('#SingleProductNum').val() * $("#addNumber").val()).toFixed(2));
+        ShowNeedRegBox();
+        GetUserMsg();
+        InitCheckOrderMsg();
+    }
+    //获取套餐详细信息
+    function addPackage_rx(packageId, kType) {//传形参kType=1进来，如果是专题套餐数量初始值：$("#addNumber").val(1);详情页的话直接拿相对应的数量值：$("#addNumber").val($('#product_amount').val());
+        GetNeedRegList2(packageId);
+        $("#hidden_ProductId").val(packageId);
+        if (kType == 1) {
+            $("#addNumber").val(1); //专题默认初始套餐数量
+        } else {
+            $("#addNumber").val($('#product_amount').val());
+        }
+        $('.newNeedF .set_mealTitle,.newNeedF').show();
+        $('#ViperPrice .ViperPrice_num').html('￥' + parseFloat($('#SingleProductNum').val() * $("#addNumber").val()).toFixed(2));
+        ShowNeedRegBox();
+
+        GetUserMsg();
+    }
+    //展示产品优惠后价格
+    function AfterProductPrices(num, productId) {
+        $('#h_ProductType').val(0);
+        $.ajax({
+            async: false,
+            type: 'get',
+            //url: '/Product/GetPriceByProductId?num=' + num + '&productId=' + productId,
+            url: '/Product/GetActivityConcessionPrice?productId=' + productId + '&price=' + _c + '&quantity=' + num + '',
+            cache: false,
+            dataType: 'json',
+            success: function (data) {
+                $('#SingleProductNum').val(data.Concession / parseInt(num));
+                var productNumbers = '￥' + parseFloat(data.Concession).toFixed(2);
+                $('#ViperPrice .ViperPrice_num').html(productNumbers);
+            }
+        })
+    }
+    ////展示产品优惠后价格
+    //function AfterProductPrices(num, productId) {
+    //    $('#h_ProductType').val(0);
+    //    $.ajax({
+    //        type: 'get',
+    //        url: '/Product/GetPrice?productId=' + productId,
+    //        cache: false,
+    //        dataType: 'json',
+
+    //        success: function (data) {
+    //            $('#SingleProductNum').val(data.SalePrice);
+    //            var productNumbers = '￥' + (parseFloat(data.SalePrice) * num).toFixed(2);
+    //            $('#ViperPrice .ViperPrice_num').html(productNumbers);
+    //        }
+
+    //    })
+    //}
+
+
+    //用户地址列表
+    function UserAddressList() {
+        $('#addNew_addressUl').html("");
+        $.ajax({
+            type: "GET",
+            url: "/Address/GetUserAddressList",
+            cache: false,
+            dataType: "json",
+            json: "callback",
+            error: function () { },
+            success: function (data) {
+                if (data) {
+
+                    var str = "";
+                    for (var i = 0; i < data.length; i++) {
+                        if (data[i].IsDefault) {
+                            //默认地址
+                            str += '<li><input type="radio" class="clicked_r radAddressId" name="checekRad" checked="checked" index="' + data[i].ID + '" /><p class="newaddress_txt">' + data[i].Province + data[i].City + data[i].District + data[i].Address + data[i].Accepter + " 联系方式：" + data[i].MobilePhone + '</p></li>';
+                        } else {
+                            //非默认地址
+                            str += '<li><input type="radio" name="checekRad"  class="clicked_r radAddressId" index="' + data[i].ID + '" /><p class="newaddress_txt">' + data[i].Province + data[i].City + data[i].District + data[i].Address + data[i].Accepter + " 联系方式：" + data[i].MobilePhone + '</p></li>';
+
+                        }
+                    }
+
+                    if (data.length > 0) {
+                        $('#addNew_addressUl').html(str);
+                    } else {
+                        var str1 = "<h3 style='text-align:center;'>地址列表为空，请返回新增地址，谢谢！</h>";
+                        $('#addNew_addressUl').html(str1);
+                    }
+                    //$("#needReg_box_1").attr("display", "block");
+                    //poplayer("needReg_box_1", true);
+                }
+            }
+        });
+        $("#needReg_box_1").attr("display", "block");
+        poplayer("needReg_box_1", true);
+    }
+
+
+
+
+
+    function UpdateAddressId() {
+        var addressId = $(".radAddressId:checked").eq(0).attr("index");
+        Default(addressId);
+        returnPrevLayer();
+    }
+
+    //返回上一个层
+    function returnPrevLayer() {
+        popClose("needReg_box_1", true);
+        poplayer("needReg_box", "needReg_close1", true);
+    }
+
+    //设置为默认
+    function Default(id) {
+        jQuery.ajax({
+            url: "/Address/SetDefault?AddressId=" + id,
+            type: "get",
+            cache: false,
+            dataType: 'json',
+            success: function (data) {
+                if (data) {
+                    InitOCUserMsg();
+                    ShowNeedRegBox();
+                }
+                else {
+                    ShowNeedRegBox();
+                }
+            }
+        });
+    }
+
+
+    function InitCheckOrderMsg() {
+        //是否登录的切换状态
+        if (!IsLogin()) { $('.login_name').show(); $('.logined_name').hide(); } else { $('.login_name').hide(); $('.logined_name').show(); }
+        $('.usersName_txt').val('必填');
+        $('.users_phone_txt').val('必填');
+        $('#txtAddress').val('必填 街道名及编号、楼宇名及房间号');
+        $('.province_txt,.city_txt,.town_txt,#txtRemark').val('');
+        $("#form_CheckOrder input[type=hidden][id!=h_ProductType][id!=hidden_ProductId][id!=Department]").val("");//清空隐藏字段默认信息
+
+        $('#RegionProvince').val(-1);
+        $('#RegionProvince').show();
+        $('#RegionCity,#RegionArea').hide();
+
+        var pid = $('#hidden_ProductId').val();
+        var q = $('#addNumber').val();
+        var proType = $('#h_ProductType').val();
+        GetFastOrderMsg(pid, q, proType, 0);//2015-4-23----------------------------------------------------------------
+        GetUserMsg();
+    }
+    //显示遮罩层
+    function ShowNeedRegBox() {
+        poplayer("needReg_box", "needReg_close1", true);
+
+    }
+    //校验信息
+    function CheckOutMsg() {
+        var mobilePhoneRegs = /^(\d{11}$)/;
+        var PhoneNumbers = $('#txtMobilephone').val();
+
+        if ($.trim($('#txtConsignee').val()) == '' || $('#txtConsignee').val() == '必填' || $.trim($('#txtMobilephone').val()) == '' || $('#txtMobilephone').val() == '必填' || $('#txtMobilephone').val().length < 11 || $.trim($('#txtAddress').val()) == '' || $('#txtAddress').val() == '必填 街道名及编号、楼宇名及房间号') {
+            popClose("needReg_box", true);
+            poplayer("alertDivs", "alertDivs_tips_r", true);
+            $('#alertDivs .alertTxt_title').html('请确认姓名/手机/地址填写完整。');
+
+            return false;
+        } else if (!mobilePhoneRegs.exec(PhoneNumbers)) {
+            popClose("needReg_box", true);
+            poplayer("alertDivs", "alertDivs_tips_r", true);
+            $('#alertDivs .alertTxt_title').html('请输入正确的手机号码！');
+
+            return false;
+        }
+        else if (!$('#addNumber').is('.addinput_hover')) {
+            popClose("needReg_box", true);
+            poplayer("alertDivs", "alertDivs_tips_r", true);
+            $('#alertDivs .alertTxt_title').html('请确认您需要的数量，以便登记。');
+            //adobe_shuliang();
+            return false;
+        }
+        else if ($('#RegionProvince').val() == '-1') {
+            popClose("needReg_box", true);
+            poplayer("alertDivs", "alertDivs_tips_r", true);
+            $('#alertDivs .alertTxt_title').html('请选择您所在的省份，以便登记。');
+
+            return false;
+        } else if ($('#RegionCity').val() == '-1') {
+            popClose("needReg_box", true); poplayer("alertDivs", "alertDivs_tips_r", true);
+            $('#alertDivs .alertTxt_title').html('请选择您所在的城市，以便登记。');
+            return false;
+        } else if ($('#RegionArea').val() == '-1') {
+            if ($('#RegionArea').css('display', 'none')) {
+                return true;
+            } else {
+                popClose("needReg_box", true); poplayer("alertDivs", "alertDivs_tips_r", true);
+                $('#alertDivs .alertTxt_title').html('请选择您所在的地区，以便登记。');
+                return false;
+            }
+        }
+        return true;
+    }
+
+
+    //详情页内部购买数量（数量加减）
+    function BuyQuantity1(quantity) {
+        var q = jQuery("#product_amount").val();
+        if (isNaN(q)) { jQuery("#product_amount").val(1); return false; }
+        var total = parseInt(q) + parseInt(quantity);
+        if (total == 0) { $('.ViperPrice_num').html('￥' + parseFloat($('#SingleProductNum').val()).toFixed(2)); } else { $('.ViperPrice_num').html('￥' + parseFloat(total * $('#SingleProductNum').val()).toFixed(2)); }
+        if (parseInt(total) > 0) { jQuery("#product_amount").val(total); }
+    }
+
+    //需求登记判断商品数量为0时自动+1
+    function NumModify2() {
+        if ($('#addNumber').val() <= 0) { $('#addNumber').val(1); $('#addNumber').focus(); if ($('#h_ProductType').val() == 0) { AfterProductPrices(1, $('#hidden_ProductId').val()); } else { $('.ViperPrice_num').html('￥' + parseFloat($('#SingleProductNum').val()).toFixed(2)); }; alert("请输入正确的数量！"); }
+        if ($('#addNumber').val() > 999) { $('#addNumber').val(1); $('#addNumber').focus(); if ($('#h_ProductType').val() == 0) { AfterProductPrices(1, $('#hidden_ProductId').val()); } else { $('.ViperPrice_num').html('￥' + parseFloat($('#SingleProductNum').val()).toFixed(2)); }; alert("请输入正确的数量！"); }
+    }
+    //需求登记购买数量（数量加减）
+    function BuyQuantity2(quantity) {
+        var q = $.trim(jQuery("#addNumber").val());
+        var total = parseInt(q) + parseInt(quantity);
+        if (isNaN(q) || q > 999 || q < 0) { jQuery("#addNumber").val(1); if ($('#h_ProductType').val() == 0) { AfterProductPrices(1, $('#hidden_ProductId').val()); } else { $('.ViperPrice_num').html('￥' + parseFloat($('#SingleProductNum').val()).toFixed(2)); } return false; }
+
+        if (total == 0) { $('.ViperPrice_num').html('￥' + parseFloat($('#SingleProductNum').val()).toFixed(2)); } else { if ($('#h_ProductType').val() == 0) { AfterProductPrices(total, $('#hidden_ProductId').val()); } else { $('.ViperPrice_num').html('￥' + parseFloat(total * $('#SingleProductNum').val()).toFixed(2)); } }
+        if (parseInt(total) > 0) { jQuery("#addNumber").val(total); }
+    }
+
+    function InitOCUserMsg() {
+        var pid = $('#hidden_ProductId').val();
+        var q = $('#addNumber').val();
+        var proType = $('#h_ProductType').val();
+        GetFastOrderMsg(pid, q, proType, 0);
+
+        //是否登录的切换状态
+        if (IsLogin()) { $('.logined_name').show(); $('.login_name').hide(); $('.newYesLogin').show(); $('.newNoLogin').hide(); } else { $('.login_name').show(); $('.logined_name').hide(); $('.newYesLogin').hide(); $('.newNoLogin').show(); }
+        ShowNeedRegBox();//弹出遮罩
+
+    }
+
+    //第一次加载页面用
+    function CreateGetNeedRegList(data) {
+        $('#h_ConAdobe').val(1);
+        //筛选一次 详情页模板显示的
+        var dataResult = [];
+        var currentWareCode = $("#WareSkuCode").val() || "";//商品ID
+        for (var i = 0; i < data.Result.length; i++) {
+            var kitSubList = data.Result[i].kitSubList;
+            for (var j = 0; j < kitSubList.length; j++) {
+                if (kitSubList[j].WareCode == currentWareCode && kitSubList[j].IsDetailShow) {
+                    dataResult.push(data.Result[i]);//记录详情页显示的套餐
+                    break;
+                }
+            }
+        }
+        if (dataResult.length > 0) {
+            $('.newNeedF').show();
+            var str = "", _index = "";
+            for (var i = 0; i < dataResult.length; i++) {
+                var oprice = dataResult[i].OriginPrice, pprice = dataResult[i].KitPrice;
+                var packcartfun_2 = "packcartfun4('" + dataResult[i].PrmCode + "','" + oprice + "','" + pprice + "')";
+                str += "<li><a  class='tobuypackage' onclick=\"$('#hidden_ProductId').val(" + dataResult[i].PrmCode + ");" + packcartfun_2 + "\" href='javascript:void(0)'>" + dataResult[i].PrmName + "</a></li>";
+            }
+
+            $("#set_mealList").html("<li><a class='tobuyone' id='tobuyone' href='javascript:void(0)' >一件体验装</a></li>" + str);
+            $("#productpackage").show(); $(".infocon .marprice").hide();
+
+
+            $("#set_mealList li a").click(function () { $(this).parent('li').addClass('addLi_hover'); $(this).parent('li').siblings().removeClass('addLi_hover'); return false; })
+            $("#set_mealList .tobuypackage").click(function () {
+                if ($("#hPopVal").val() == 0 && !$("#txtYtaozc a").hasClass("on")) { $('#h_ProductType').val(1); }
+
+
+            });
+            $("#tobuyone").click(function () {
+                $('#hidden_ProductId').val($('#h_productId').val());
+                $('#h_ProductType').val(0);
+
+                AfterProductPrices($('#addNumber').val(), $('#hidden_ProductId').val());
+            });
+
+        } else {
+
+            $('#ViperPrice .ViperPrice_num').html("￥" + parseFloat(_c * parseInt($('#addNumber').val())).toFixed(2));
+            $('#SingleProductNum').val(_c);
+            $('#addNumber').val(1);
+            $('.newNeedF').hide();
+        }
+    }
+
+
+</script>
+
+<div class="footer_list" style="width: 100%;">
+
+    <div class="width980">
+        <!--关于康爱多网上药店-->
+        <p class="aboutKadList">
+            <a rel="nofollow" href="Recruitment"
+               target="_blank">加入133号药铺</a> |
+            <a href="tel:＋8618321873524" target="_blank" rel="nofollow">全国热线</a>
+            | <a href="mailto:liu120945561@163.com" target="_blank" rel="nofollow">邮件联系</a>
+        </p>
+        <p class="bottom" style="font-family: " 宋体";">
+        &copy; 2016-2017 华东理工大学<a href="index.html">133号药铺</a> 版权所有，并保留所有权利
+        </p>
+        <!--END行业认证-->
+    </div>
+</div>
+<!--部件结束:home_footer_other-->
+
+<script>
+    $(function()
+    {
+        $("#Yliaoc dt").text("超值装：");
+        if(""=="计生用品"){
+            $("#Ytab li:nth-child(2)").hide();
+            $(".YpfnavC_tab .Ytabg li:nth-child(2)").hide();
+        }
+
+    })
+</script>
+</body>
+</html>
+

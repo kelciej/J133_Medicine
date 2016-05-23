@@ -1,0 +1,210 @@
+.order-msg-wrap{margin:10px auto 0;width: 980px;overflow: hidden;}
+.order-msg-wrap .cart-thead{padding-left: 10px;font:normal 16px/40px "";color:#666;border:1px solid #e0e0e0;border-top:2px solid #0066d4;background:#f3f4f3;}
+.order-msg-wrap .other-msg span,
+.order-msg-wrap .pro-title,
+.order-msg-wrap .full-chose-box{padding-left: 24px;position: relative;float:left;font-weight: bold;}
+.order-msg-wrap .other-msg span{padding-left: 0;}
+.order-msg-wrap .full-chose-box,.pro-list-box li label,.settle-0accounts label{position:relative;cursor:pointer;}
+.pro-list-box li label{float:left;}
+.order-msg-wrap label i{position: absolute;left:0;top:0;width: 12px;height: 12px;background: url(http://tstres.360kad.com/theme/default/img/user/2015/orderP_allbgs.png) no-repeat 0px -125px;overflow:hidden;}
+.order-msg-wrap .full-chose-box i{top:12px;}
+.order-msg-wrap label i.on{background-position: 0px -150px;}
+.order-msg-wrap label input[type="checkbox"]{position: absolute;left:0;top:0;width: 12px;height: 12px;z-index: 2;opacity:0;filter:alpha(opacity=0);cursor:pointer;overflow: hidden;}
+.order-msg-wrap .pro-title{padding-left: 88px;}
+.order-msg-wrap .full-chose-input{margin-right: 10px;}
+.order-msg-wrap .other-msg{float:right;}
+.order-msg-wrap .other-msg span{float:left;text-align: center;}
+.order-msg-wrap .other-msg .line{padding: 0;font-weight: normal;width:7px;}
+.order-msg-wrap .other-msg .sw80{width: 80px;}
+.order-msg-wrap .other-msg .sw124{width: 110px;}
+.order-msg-wrap .other-msg .sw106{width: 94px;}
+.order-msg-wrap .other-msg .sw80{width: 110px;}
+/*购物车主体*/
+.order-msg-wrap .cart-body{margin-top: 10px;border:1px solid #e0e0e0;}
+.order-msg-wrap .cart-body .th-title{padding-left: 10px;font: bold 14px/34px "";background:#f5f5f5;border-bottom:1px solid #e0e0e0;}
+.order-msg-wrap .cart-body li{padding:8px 0 6px;font-size:0;line-height:0;text-align:left;border-bottom:1px dotted #e0e0e0;}
+.order-msg-wrap .cart-body li.act{background:#f0f9ff;}
+.order-msg-wrap .cart-body .disb{display: inline-block;*display: inline;*zoom: 1;font-size:14px;line-height:20px;color:#3c3c3c;vertical-align: middle;  }
+.order-msg-wrap .cart-body .single-chose{margin:0 10px;}
+.order-msg-wrap .cart-body .disb a,
+.order-msg-wrap .cart-body .disb a:hover{color:#3c3c3c;}
+.order-msg-wrap .pro-list-box .item1{position:relative;width: 32px;}
+.order-msg-wrap .pro-list-box .item2{width: 100px;}
+.order-msg-wrap .pro-list-box .item3{padding:0 24px 0 10px;width: 244px;clear:both;overflow: hidden;width:35%}
+.order-msg-wrap .pro-list-box .icon0{float:left;display:inline;font-style:normal;color:#fe2424;}
+.order-msg-wrap .pro-list-box .icon01{margin-top:2px;margin-right: 6px;width:34px; height:16px;background: url(http://tstres.360kad.com/theme/default/img/user/2015/orderP_allbgs.png) no-repeat 0px -162px;}
+.order-msg-wrap .pro-list-box .icon02{margin-top:2px;margin-right: 6px;width:34px; height:16px;background:url(http://tstres.360kad.com/theme/default/img/user/2015/orderP_allbgs.png) no-repeat 0px -178px; }
+.order-msg-wrap .pro-list-box .icon03{margin-top:2px;margin-right: 6px;width:34px; height:16px;background:url(http://tstres.360kad.com/theme/default/img/user/2015/orderP_allbgs.png) no-repeat 0px -194px; }
+.order-msg-wrap .pro-list-box .icon04{margin-top:2px;margin-right: 6px;width:34px; height:16px;background:url(http://tstres.360kad.com/theme/default/img/user/2015/orderP_allbgs.png) no-repeat 0px -210px; }
+.order-msg-wrap .pro-list-box .icon05{margin-top:2px;margin-right: 6px;width:34px; height:16px;background:url(http://tstres.360kad.com/theme/default/img/user/2015/yOtc_03.png) no-repeat;}
+.order-msg-wrap .pro-list-box .item4{padding-left: 22px;width: 90px;color:#fe2424;font:normal 16px/20px "微软雅黑";text-align:left;overflow: hidden; white-space: nowrap;text-overflow:ellipsis;}
+.order-msg-wrap .pro-list-box .item5{padding-left:8px;width: 90px;clear:both;overflow: hidden;}
+.order-msg-wrap .reduct-btn,
+.order-msg-wrap .add-btn,
+.order-msg-wrap .num-txt{float:left;}
+.order-msg-wrap .reduct-btn{margin-top: 4px;padding-left: 4px;width: 10px;height: 14px;line-height:15px;color:#666;border:1px solid #dedede;text-align:left;cursor:pointer;}
+.order-msg-wrap .reduct-btn:hover{ color:#fe2424; border:1px solid #fe2424;}
+.order-msg-wrap .num-txt{display:inline;margin:0 6px;width: 38px;height: 22px;line-height:22px;color:#333;text-align: center;border:1px solid #dedede;}
+.order-msg-wrap .pro-list-box .item6{padding-left: 40px;width: 90px;overflow: hidden; white-space: nowrap;text-overflow:ellipsis;text-align: left;}
+.order-msg-wrap .pro-list-box .save-price{padding:0 2px;font-family:"微软雅黑";color:#fe2424;}
+.order-msg-wrap .pro-list-box .item7{width: 64px;color:#fe2424;font:normal 16px/20px "微软雅黑";text-align: center;}
+.order-msg-wrap .pro-list-box .item8{width: 115px;font:normal 16px/20px "微软雅黑";text-align: center;overflow: hidden; white-space: nowrap;text-overflow:ellipsis;}
+.order-msg-wrap .pro-list-box .item9{width: 110px;text-align: center;width:14%}
+.order-msg-wrap .pro-list-box .delte-btn{cursor:pointer;}
+.order-msg-wrap .pro-list-box .children-pro{padding-left: 2px;font-size: 12px;}
+.order-msg-wrap .children-pro img{margin-right: 4px;}
+.total-price{padding-right: 30px;line-height:34px;text-align: right;font-family: "微软雅黑";color:#3c3c3c;}
+.cart-sectionB .th-title{border-top:1px solid #e0e0e0;}
+/*结算*/
+.order-msg-wrap .settle-0accounts{margin-top: 10px;padding:12px 0;height: 80px;border:1px solid #e0e0e0;}
+.order-msg-wrap .settle-0accounts label{margin-left: 10px;padding-left: 23px;float:left;font-size: 14px;}
+.order-msg-wrap .settle-0accounts label i{top:2px;}
+.order-msg-wrap .settle-0accounts .delte-full-btn{display:inline;margin-left: 26px;padding-left: 20px;float:left;font-size: 14px;background: url(http://tstres.360kad.com/theme/default/img/user/2015/delete-iconPic01.png) no-repeat 0px 2px;cursor:pointer;}
+.order-msg-wrap .settle-0accounts .without-pay{padding-right: 10px;float: right;font-size:0;line-height:0;}
+.order-msg-wrap .without-pay i,.order-msg-wrap .without-pay span{display: inline-block;*display: inline;*zoom: 1;font-size:12px;line-height:16px;}
+.order-msg-wrap .without-pay i{margin-right: 6px;width:24px; height:18px;background: url(http://tstres.360kad.com/theme/default/img/user/2015/orderP_allbgs.png) no-repeat 0px -742px;vertical-align: bottom;
+}
+.order-msg-wrap .go-pay-box {margin-top: 12px;padding:12px 10px;background: #f5f5f5;}
+.order-msg-wrap .go-pay-box .go-back{padding-top: 12px;float: left;width: 94px;}
+.order-msg-wrap .go-pay-box .go-back i{display:inline;margin-top: 2px;margin-right: 6px;float: left;width:13px; height:16px;background: url(http://tstres.360kad.com/theme/default/img/user/2015/orderP_allbgs.png) no-repeat 0px -760px;}
+.order-msg-wrap .go-pay-box .cart-msg{float:right;}
+.order-msg-wrap .go-back a,.order-msg-wrap .go-back a:hover{color:#bbb;font:bold 18px/20px "微软雅黑";text-decoration:none;}
+.order-msg-wrap .go-pay-box .go-pay-btn{margin-left: 22px;float: right;height: 38px;}
+.order-msg-wrap .go-pay-box .go-pay-btn a{display:block;width:140px; height:38px;background: url(http://tstres.360kad.com/theme/default/img/user/2015/orderP_allbgs.png) no-repeat 0px -226px;}
+.order-msg-wrap .go-pay-box .go-pay-btn a:hover{background-position:0px -264px;}
+.order-msg-wrap .go-pay-box .product-total-price{float: right;padding-left: 5px;padding-top: 4px;font-size:24px;color:#fe2424;font-family: "微软雅黑";}
+.order-msg-wrap .go-pay-box .product-nums{padding:0 8px;color:#fe2424;}
+.order-msg-wrap .go-pay-box .fr{padding-top: 14px;float: right;}
+/*买了的人还买了*/
+.buy-other-things{margin:10px 0;}
+.buy-other-things h4{padding-left: 24px;background:url(http://tstres.360kad.com/theme/default/img/user/2015/title_bg01.png) repeat-x;font-size:14px;line-height:38px;border:1px solid #ccc;border-bottom:0;}
+.buy-pro-list{position:relative;height: 264px;border:1px solid #e0e0e0;border-top-color:#0066d4;}
+.buy-pro-list .pro-box{margin:0 24px;width: 930px;overflow: hidden;}
+.buy-pro-list ul{font-size: 0;line-height:0;text-align:left;}
+.buy-pro-list ul li{display: inline-block;*display: inline;*zoom: 1;padding-top: 10px;width: 182px;height: 250px;font-size:12px;line-height:20px;border:2px solid #fff;vertical-align: bottom;
+}
+.buy-pro-list .product-pic{padding-bottom: 6px;text-align: center;}
+.buy-pro-list .product-pic img{width: 170px;height: 170px;overflow: hidden;}
+.buy-pro-list .product-title{padding:0 10px;height: 40px;overflow: hidden;}
+.buy-pro-list .product-title a{color:#666;}
+.buy-pro-list .product-title .icon01{display:inline;margin-top: 2px;margin-right: 2px;float:left;width: 34px;height: 16px;background: url(http://tstres.360kad.com/theme/default/img/user/2015/orderP_allbgs.png) no-repeat 0px -162px;}
+.buy-pro-list .product-title .icon02{display:inline;margin-top: 2px;margin-right: 2px;float:left;width: 34px;height: 16px;background:url(http://tstres.360kad.com/theme/default/img/user/2015/orderP_allbgs.png) no-repeat 0px -178px; }
+.buy-pro-list .product-title .icon03{display:inline;margin-top: 2px;margin-right: 2px;float:left;width: 34px;height: 16px;background:url(http://tstres.360kad.com/theme/default/img/user/2015/orderP_allbgs.png) no-repeat 0px -194px; }
+.buy-pro-list .product-title .icon04{display:inline;margin-top: 2px;margin-right: 2px;float:left;width: 34px;height: 16px;background:url(http://tstres.360kad.com/theme/default/img/user/2015/orderP_allbgs.png) no-repeat 0px -210px; }
+.buy-pro-list .product-title .icon05{display:inline;margin-top: 2px;margin-right: 2px;float:left;width: 34px;height: 16px;background:url(http://tstres.360kad.com/theme/default/img/user/2015/yOtc_03.png) no-repeat; }
+.buy-pro-list .product-price{text-align:center;color:#ff0000;font:normal 16px/20px "微软雅黑";}
+.buy-pro-list .prev-btn{display:none;position:absolute;left:0;top:50%;z-index:2;margin-top: -25px;width:20px; height:50px;background: url(http://tstres.360kad.com/theme/default/img/user/2015/orderP_allbgs.png) no-repeat 0px -776px;cursor:pointer;}
+.buy-pro-list .next-btn{background-position: 0px -826px;left:auto;right:0;}
+
+/*提交成功页头部*/
+.subsuccess_h{ width:980px; height:92px; padding:10px 0 6px;}
+.subsuccess_h .head_l{ width:240px; height:65px; float:left; }
+.subsuccess_h .head_l p{ height:24px; line-height:24px;}
+.subsuccess_h .head_l p span{ color:#2d8ef3;}
+.subsuccess_h .head_r{ width:518px; height:52px; float:right; margin-top:20px;}
+/*订单提交成功*/
+.order_c{ width:938px; border:solid 1px #ade0ff; border-top:solid 2px #0066d4; padding:20px; position:relative; margin-bottom:10px; background:#e7f6ff;}
+.order_c p{ height:20px; line-height:20px; text-indent:2em;}
+.order_c .order_p1{ height:30px; font-size:18px;  background:url(http://tstres.360kad.com/theme/default/img/user/2015/submit_i.png) no-repeat 0 0;}
+.order_c .order_p2 a,.order_m p a{ color:#4484db;}
+.order_c .order_p2 span.order_pri{ color:#ff3f3f; font-weight:bold;}
+.order_c .web_ewm{ position:absolute; top:-13px; right:40px;}
+.order_m{ width:980px; margin-bottom:60px;}
+.order_m p{ height:20px; line-height:20px;}
+.order_m p span.s1{ margin-right:30px;}
+.order_m p span.integral{ color:#ff3f3f; font-weight:bold;}
+
+/*无商品*/
+.cart-nothings{margin-left: 224px;margin-top: 26px;padding:10px 0 8px 132px;font:normal 14px/24px "";color:#3c3c3c;background: url(http://tstres.360kad.com/theme/default/img/user/2015/kk-pic01.png) no-repeat;}
+.cart-nothings .title{padding-bottom: 4px;font-weight: bold;font-size: 16px;font-family: "微软雅黑";}
+.cart-nothings a{color:#4484db;}
+.kad-search-box a{color:#959595;}
+.kad-search-box a.red{color:#ff0000;}
+.kad-search-box{margin-bottom: 40px;}
+.kad-search-box .header_r{padding-top: 68px;}
+
+/*新登录框start*/
+.showLogOrReg{width: 448px; margin:0 auto; position:absolute; filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr='#80000000', EndColorStr='#80000000'); background-color: rgba(102, 102, 102, 0.65); z-index:20; top:50%; left:50%; margin-top:-230px; margin-left:-219px; padding:8px; /* color: #666; */}
+.wrightbg{ background:#000000; width:100%; height:100%;  left:0; top:0; z-index:0; }
+.wright{width: 448px;  background:#fff; color:#858484;  }
+.LoginError{ margin-left:55px; color:#FF0000; display:none;}
+.wright_t{padding-left:10px; height:36px; line-height:36px; padding-top:2px; background:#eee; color:#666666;}
+.wright_t span{display:block; float:left; margin-right:10px; font-size:12px; cursor:pointer;}
+.wright_t span.selthis{font-weight:bold; font-size:16px;}
+.wright_t a.go_close{float:right;  display:inline-block; margin:7px 7px 0px 0px; background:url(http://tstres.360kad.com/theme/default/img/www/login_ico.jpg) no-repeat 0px -94px; width:19px; height:19px;}
+.wright_t a:hover.go_close{ background-position:-35px -94px;}
+.wright_m .import_class{position:relative; z-index:8; width:340px; top: -18px;height: 62px;}
+.wright_m .pt10{padding:23px 0px 0px;  font-size:12px; line-height:18px; color: #666; height:18px;}
+.wright_m .txtClass input{width:332px; height:30px; line-height:30px; padding:0 3px; outline:none; overflow:hidden; border:solid 1px #bbbbbb; background-color:#fff;}
+.UserPasswordtxt{width:332px; height:30px; line-height:30px; padding:0 3px; outline:none; overflow:hidden; border:solid 1px #bbbbbb; background-color:#fff; display:inline-block; position:absolute; bottom:0;}
+.wright_m .txtClass .input_hover{border:solid 1px #38a7e1;}
+.wright_m .txtClass .input_error{color:#ff0000;border:1px solid #ff0000;}
+.wright_m .forget_ps, .wright_m .Register_ps{font-size:12px; font-weight:normal; float:right;}
+.wright_m .forget_ps a{ color: #666;}
+.wright_m .Register_ps a{ color:#4484db;}
+.wright_m .cbxClass{padding: 3px 0 7px; line-height:12px;color: #666;}
+.wright_m .cbxClass .inputcheck{ display:none;}
+.wright_m .cbxClass span{display:inline-block; float:left; margin-right:5px; background:#ff875a; width:12px; height:12px; cursor:pointer;}
+.wright_m .cbxClass span.on{background:url(http://tstres.360kad.com/theme/default/img/www/login_ico.jpg) no-repeat 0px -70px;}
+.wright_m .check_help{color:#858484;}
+.wright_m .forget_ps a:hover,.wright_m .check_help:hover{color:#eb0101; text-decoration:underline;}
+.wright .p_input{position:relative; z-index:1; background:#fff;}
+#UserEmail{color:#999;}
+.wright .txt_icon{background-image:url(http://tstres.360kad.com/theme/default/img/user/2015/login_icon1_bg.png); background-repeat:no-repeat; width:20px; height:16px; position:absolute; right:5px; top:9px; display:none;}
+.wright .txt_right{background-position:0 0;}
+.wright .txt_error{background-position:0 -24px;}
+.wright_m .btnclass{padding-bottom:29px;}
+.wright_m .btnclass .btncss{background:#4a9bef; border-radius:5px; color:#FFFFFF; width:340px; height: 37px;font-family: "Microsoft YaHei";font-size: 18px;}
+.wright_m .btnclass .btncss_hover{background-position:0 -45px;}
+.wright_m .btnclass input, .wright_m .btnclass img{background:url() no-repeat -238px 0; cursor:pointer; height:32px; width:102px; border:none;}
+.wright_m .btnclass a{margin-left:6px; color:#cf0000; }
+.wright_m .btnclass a img{background-position:-443px 0; width:14px; height:14px; vertical-align:middle;}
+.more_login{color: #666; padding-bottom:10px;}
+.wright_m .txtClass input.txtcode{width: 130px;}
+
+.log_user_other{overflow:hidden; padding-bottom: 8px;}
+.log_user_other span{}
+.log_user_other a{background:url(http://tstres.360kad.com/theme/default/img/www/login_ico.jpg) no-repeat; float:left; margin-right: 14px; width:32px; height:32px; width:32px; display:inline-block;}
+.log_user_other a:hover{}
+.wright_m{padding:10px 0px;}
+.log_user_other a.l_qq{}
+.log_user_other a.l_xinlang{ background-position:-47px 0px;}
+.log_user_other a.l_alipay{ background-position:-94px 0px;}
+.log_user_other a.l_taobao{ background-position:-141px 0px;}
+.log_user_other a.l_ebaolife{ background:url(http://tstres.360kad.com/theme/default/img/user/2015/ebl_login.png) no-repeat;}
+.log_user_other a.l_weChat{ background:url(http://tstres.360kad.com/theme/default/img/user/2015/WeChatLogin.png) no-repeat;}
+.log_user_other a:hover.l_qq{ background-position:0px -33px;}
+.log_user_other a:hover.l_xinlang{ background-position:-47px -33px;}
+.log_user_other a:hover.l_alipay{ background-position:-94px -33px;}
+.log_user_other a:hover.l_taobao{ background-position:-141px -33px;}
+.log_user_other a:hover.l_ebaolife{ background:url(http://tstres.360kad.com/theme/default/img/user/2015/ebl_login_hover.png) no-repeat;}
+.log_user_other a:hover.l_weChat{ background:url(http://tstres.360kad.com/theme/default/img/user/2015/WeChatLogin_hover.png) no-repeat;}
+.log_user_other a.l_renren{}
+.log_user_other a.l_neteaseLogin{}
+.log_user_other a.l_kaixinLogin{}
+.log_user_other a.l_doubain{}
+.pb5{padding-left:5px; color:#999;}
+.p_help{padding-top:10px; margin:10px 18px 6px; _margin:25px 18px 0; text-align:center; border-top:1px dashed #e1e1e1; clear:both;}
+
+
+.txtWarn{border:solid 1px #ffbdbf; height:20px; display:none; clear:both; line-height:20px; width:299px; padding-left:10px; background-color:#ffebeb; position:absolute; z-index:10; top:67px; left:90px;}
+.txtError{ display:none; border:solid 1px #e9c64e; height: 28px; line-height: 28px; clear:both;  padding:0px 10px; background-color:#fdf8e3; color:#ff0000; position:absolute; z-index:10; top:10px; *top:10px; _top:10px; left:0px;}
+.txtError1{top:10px; *top:10px; _top:10px;}
+.txtError_ico{background:url(http://tstres.360kad.com/theme/default/img/www/login_ico.jpg) no-repeat -28px -76px; position:absolute; width:10px; height:7px; bottom:0px; left: 5px; margin-bottom: -6px; }
+
+.wright_m .import_class, .wright_m .cbxClass, .wright_m .btnclass, .more_login, .log_user_other{ margin-left:55px;}
+.log_help{ margin-left:35px; border-top:1px dashed #dddddd; color: #666; padding: 9px 15px;}
+.log_help b{ color:#666666; padding:0px 5px;}
+
+
+.cbxClass label {
+    position: relative;
+    padding-left: 17px;
+    background: url(http://tstres.360kad.com/theme/default/img/user/2015/kad-check01.png) no-repeat;
+    cursor: pointer;
+    font-style:normal;
+}
+.cbxClass .on {
+    background: url(http://tstres.360kad.com/theme/default/img/user/2015/kad-check02.png) no-repeat;
+}
+/*新登录框end*/

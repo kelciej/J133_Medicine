@@ -1,0 +1,264 @@
+@charset "utf-8";
+/* CSS Document */
+html{ height:100%;}
+*{ margin:0 auto; padding:0; }
+body{ color:#333; font-family:"宋体",Tahoma,Verdana,sans-serif, simsun; font-size:12px; background:#fff;}
+div{height:auto; }
+ul, li{ list-style:none;}
+img{ border:none; }
+h1, h2, h3, h4, h5, h6{ font-size:14px;}
+a{text-decoration:none;outline: none;}
+a:hover{text-decoration:underline}
+input, button, select{ font-size:12px; vertical-align:middle;}
+textarea{ padding:5px;color:#333;}
+table{ border:none;}
+
+/*清除浮动样式*/
+.clear{ clear:both; height:0; width:100%;}
+.clearfix:after{visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
+.clearfix{zoom: 1; clear:both;}
+/*搜索框*/
+.header_r_d a,.header_r_d a:hover,.YnewNoLogin a,.Ymykad a,.Ymyorder a,.tphone a{color:#959595;}
+/*头部导航*/
+.newKad_navBox{width:100%;height:40px;background:#2d8ef3;overflow: hidden;}
+.newKad_navBox .items_contaner{width:1200px;}
+.newKad_navBox .items_contaner .leftSide{position:relative;float:left;padding-left: 16px;width: 184px;height: 40px;font:normal 18px/40px "微软雅黑";color:#fff;text-align:left;background: #0066d4;}
+.newKad_navBox .items_contaner .leftSide a{color:#fff;}
+.newKad_navBox .items_contaner .leftSide a:hover{color:#fff;}
+.newKad_navBox .items_contaner .leftSide i{display:block;position:absolute;right:20px;top:14px;width: 25px;height: 18px;background: url(http://res.360kad.com/theme/default/img/2014NewWeb/ico_110.jpg) no-repeat 0 0;}
+.newKad_navBox .items_contaner .middleSide{float:left;font:bold 14px/42px "宋体";}
+.newKad_navBox .items_contaner .middleSide li{float:left;width: 88px;text-align: center;}
+.newKad_navBox .items_contaner .middleSide a{display:block;color:#fff;}
+.newKad_navBox .items_contaner .middleSide a:hover{color:#fff;text-decoration: none;background:#0066d4;}
+.mainBody .itmes_wrap .msg_rightSide{position:relative;margin-top: 10px;padding-bottom: 10px;float:right;width: 200px;height: 42px;background:#fff url(http://res.360kad.com/theme/default/img/2014newKad/my_icons_bg.png) no-repeat;}
+.lineRx{position:absolute;top:-10px;left:0;display: block;width: 200px;height: 5px;}
+.mainBody .itmes_wrap .msg_rightSide .icon1{position:relative;z-index:3;float:left;width: 50px;height: 49px;cursor: pointer;}
+.mainBody .itmes_wrap .msg_rightSide .msg{display:none;margin-top: 3px;position:relative;z-index:3;float:left;padding: 6px;width:184px;height: 120px;background:#fff;border:2px solid #2d8ef3;color:#535353;}
+.mainBody .itmes_wrap .msg_rightSide .msg p{font:normal 12px/20px "";}
+.mainBody .itmes_wrap .msg_rightSide .msg .title{font:bold 14px/20px "";}
+.mainBody .itmes_wrap .msg_rightSide .msg .pointer{position: absolute;left:16px;top:-9px;width: 13px;height: 9px;background:url(http://res.360kad.com/theme/default/img/2014newKad/lunboBtn_allbgs.png) no-repeat -160px 0;}
+.mainBody .itmes_wrap .msg_rightSide .msg .pointer1{left:68px;}
+.mainBody .itmes_wrap .msg_rightSide .msg .pointer2{left:120px;}
+.mainBody .itmes_wrap .msg_rightSide .msg .pointer3{left:172px;}
+/*主体*/
+/*
+.mainBody{width:100%;background: #f5f5f5;}
+.mainBody .mainBody_box{width: 1200px;}
+.mainBody  .itmes_wrap{position:relative;margin-bottom: 20px;height: 379px;overflow: hidden;}
+.itmes_wrap .leftSide{position:absolute;left:0;top:40px;width: 196px;background: #fff;border:2px solid #2d8ef3;border-top:0; }
+.itmes_wrap .leftSide li{position:relative;z-index:4;padding-left: 16px;width: 180px;height:35px;border-top:2px solid #fff;border-bottom:1px solid #f0f0f0;line-height: 35px;}
+.itmes_wrap .leftSide li a{font-size: 14px;color:#333;}
+.itmes_wrap .leftSide li.act{margin-right: 2px;padding-left: 30px;width: 166px;border-right:0;border-top:2px solid #2d8ef3;}
+.itmes_wrap .leftSide li.bgNone{border-bottom:0;}
+.itmes_wrap .leftSide li .blueLine{display:none;position:absolute;left:0;bottom:-1px;z-index:10;width: 198px;height: 2px;background:#2d8ef3; }
+.itmes_wrap .leftSide li.act .whiteLine{display:block;position:absolute;right:-2px;top:0;z-index:9;width:2px;height: 35px;background: #fff;overflow:hidden;}
+.itmes_wrap .leftSide li .potiner_h,
+.storeyL_list span.potiner_h{display: block;position:absolute;right:18px;top:15px;width:0;height:0;line-height:0;border:5px solid transparent;border-left-color:#dbd7d7;}
+.storeyL_list span.potiner_h{top:10px;right:0px;}
+.itmes_wrap .leftSide .sideBox{display:none;position:absolute;top:0px;left:196px;width: 802px;min-height:379px;background: #fff;border:2px solid #2d8ef3;overflow: hidden;}
+.itmes_wrap .leftSide .nodeLists{float:left;width: 564px;background:#fff;min-height:379px;}
+.itmes_wrap .leftSide .topL{padding-right: 20px;float:left;width: 544px;}
+.itmes_wrap .leftSide .topL .ml20{margin-left:20px;}
+.itmes_wrap .leftSide .topL h3,.itmes_wrap .leftSide .topR h3{margin-bottom: 4px;width: 524px;height: 30px;border-bottom: 1px solid #f0f0f0;overflow: hidden;}
+.itmes_wrap .leftSide .topL p{width: 524px;padding:2px 20px 0 20px;line-height: 20px;overflow:hidden;}
+.itmes_wrap .leftSide .topL p.pt14{padding-top: 14px;}
+.itmes_wrap .leftSide .topL p a,.itmes_wrap .leftSide .bottom p a{display:inline;float:left;padding:0 4px;font-size: 12px;color:#959595;background:url(http://res.360kad.com/theme/default/img/2014newKad/abor_bg.png) left center no-repeat;white-space: nowrap;}
+.itmes_wrap .leftSide .topL p .bigTitle{padding-right:16px;padding-left: 0;width: 86px;text-align:right;font:bold 12px/20px "";color:#ff0000;background: none;}
+.itmes_wrap .leftSide .sub-nodeList{padding-left: 4px;float:left;width: 438px;}
+.itmes_wrap .leftSide .top .pt5{padding-top: 5px;}
+.itmes_wrap .leftSide li a:hover,.itmes_wrap .leftSide .topL p a:hover,.itmes_wrap .advStation .other_msg a:hover{color:#ff0000;}
+.itmes_wrap .leftSide .topR{float:right;margin-right: 25px;width: 240px;}
+.itmes_wrap .leftSide .topR p{padding-left: 0;border: 0;}
+.itmes_wrap .leftSide .topL i{display:inline;margin:14px 0 0 4px;float:left;width: 15px;height: 9px;background: url("http://res.360kad.com/theme/default/img/2014newKad/newKad_allbgs.png") no-repeat -151px -86px;}
+.itmes_wrap .leftSide .topL .title{float:left;}
+.itmes_wrap .leftSide .hot_research{margin:0 0 5px 20px;border-bottom:1px solid #f0f0f0;background: url(http://res.360kad.com/theme/default/img/2014newKad/hot_research_icon.png) no-repeat 32px 12px;}
+.itmes_wrap .leftSide .bottom{padding-bottom: 20px;padding-right: 20px;}
+.itmes_wrap .leftSide .bottom p{clear:both;padding-left: 14px;}
+.itmes_wrap .leftSide .bottom p a{line-height: 22px;background:url(http://res.360kad.com/theme/default/img/2014newKad/abor_bg.png) right center no-repeat;white-space: nowrap;}
+/*中西药品特有*
+.itmes_wrap .leftSide .nodeLists-zxL{float:left;width:400px;}
+.itmes_wrap .leftSide .nodeLists-zxL .topL,.itmes_wrap .leftSide .nodeLists-zxL .topL p{width:380px;}
+.itmes_wrap .leftSide .nodeLists-zxL .topL h3{width:360px;}
+.itmes_wrap .leftSide .nodeLists-zxL .sub-nodeList{width:274px;}
+.itmes_wrap .leftSide .nodeLists-zxR{float:right;}
+/*END中西药品特有*/
+/*推荐商品*/
+.itmes_wrap .advStation{float:right;padding:18px 10px;width: 218px;overflow:hidden;}
+.itmes_wrap .advStation .adv_title span{float:left;font:bold 16px/18px "微软雅黑";color:#000;}
+.itmes_wrap .advStation .adv_title .closeBtn{float:right;font-weight: normal;color:#acaca9;cursor: pointer;}
+.itmes_wrap .advStation .pro_pic{padding:22px 0 16px;}
+.itmes_wrap .advStation .other_msg{line-height: 26px;}
+.itmes_wrap .advStation .other_msg a{color:#959595;}
+/*轮播*/
+.mainBody .itmes_wrap .middleSide li{display:none;width: 100%;height: 379px;overflow: hidden;opacity: 0;filter:alpha(opacity=0);}
+.mainBody .itmes_wrap .middleSide li.fir01{display:block;background:#2b6b50;opacity: 1;filter:alpha(opacity=100);}
+.mainBody .itmes_wrap .middleSide li.fir02{background:#c1fcde;}
+.mainBody .itmes_wrap .middleSide li.fir03{background:#d3163c;}
+.mainBody .itmes_wrap .middleSide li.fir04{background:#b3131d;}
+.mainBody .itmes_wrap .middleSide li.fir05{background:#591d73;}
+.mainBody .itmes_wrap .middleSide li.fir06{background:#c5145a;}
+.mainBody .itmes_wrap .middleSide li a{display:block;width: 1200px;}
+.mainBody .itmes_wrap .middleSide li img{display:block;width: 804px;vertical-align: bottom;}
+#scroll_num{position:absolute;bottom:10px;left:50%;margin-left: -90px;height:20px;line-height: 20px;text-align: center;}
+#scroll_num span{display:inline;float:left;margin-right:10px;width: 20px;height: 20px;color:#fff;cursor:pointer;font-weight:bold;border-radius:10px;background:#000;opacity: 0.8;filter:alpha(opacity=80);font-family:"Arial";}
+#scroll_num span.act{background: #c40000;}
+#scroll_container a:hover{text-decoration: none;}
+.mainBody .itmes_wrap .middleSide .clickBtn{display:none;position:absolute;top:146px;left:0;width: 40px;height: 80px;background: url(http://res.360kad.com/theme/default/img/2014newKad/lunboBtn_allbgs.png) no-repeat;}
+.mainBody .itmes_wrap .middleSide .nextBtn{left:auto;right:0;text-align: right;background-position:-80px 0;}
+.mainBody .itmes_wrap .middleSide .preH{background-position:-40px 0;}
+.mainBody .itmes_wrap .middleSide .nextH{background-position:-120px 0;}
+/*end轮播*/
+.mainBody .itmes_wrap .rightSide{position:absolute;left:50%;top:0;margin-left:400px;width: 200px;height: 379px;background: #fff;}
+.mainBody .itmes_wrap .rightSide .kad_news_title{padding-left: 10px;height: 34px;font:bold 14px/34px "宋体";border-bottom:1px solid #ededed;text-align:left;}
+.mainBody .itmes_wrap .rightSide .kad_news_pic{float:left;height: 136px;}
+.mainBody .itmes_wrap .rightSide a{color:#000;}
+.mainBody .itmes_wrap .rightSide .kad_news_title .more_kad_news{color:#2d8ef3;padding:0 30px 0 20px;font: normal 12px/30px "";background: url(http://res.360kad.com/theme/default/img/2014newKad/kad_news_pointer_03.png) 76px 4px no-repeat;}
+.mainBody .itmes_wrap .rightSide .kad_news_title a:hover,.mainBody .mainBody_box .itmes_wrap .rightSide a:hover{text-decoration: none;color:#ff0000;}
+.mainBody .itmes_wrap .rightSide .kadN_msg{padding-top:7px;padding-bottom: 7px;overflow: hidden;}
+.mainBody .itmes_wrap .rightSide .pt12{padding-left: 8px;line-height: 22px;}
+.mainBody .itmes_wrap .rightSide .kad_webChat{float:left;margin-top: 6px;padding-top: 4px;width:200px;line-height:20px;border-top:1px solid #ededed;text-align:center;overflow:hidden;}
+.mainBody .itmes_wrap .rightSide .next_weekPro{width: 200px;}
+.mainBody .itmes_wrap .rightSide .kad_webChat span{color:#747474;}
+.mainBody .itmes_wrap .rightSide .next_weekPro .title{padding-left: 10px;font:bold 14px/33px ""; height:33px;overflow:hidden;color:#000;border-bottom: 1px solid #ededed;}
+#next_weekPro_num{padding-left:100px;font-weight: normal;font-size: 12px;color:#2d8ef3;}
+.mainBody .itmes_wrap .rightSide .kadA{padding: 10px 0 6px;}
+/*独家推荐*/
+.mainBody .mainBody_box .recom_productBox{background:#fff;overflow:hidden;}
+.mainBody .mainBody_box .recom_productBox .tab_nav_title{height: 38px;background:#fff;font: bold 14px/38px "";color:#000;border-bottom: 1px solid #2d8ef3;}
+.mainBody .mainBody_box .recom_productBox .tab_nav_title h3{float:left;width: 136px;text-align: center;cursor: pointer;}
+.mainBody .mainBody_box .recom_productBox .tab_nav_title .act_h3{background:#2d8ef3;color:#fff;}
+.mainBody .mainBody_box .recom_productBox ul{display: none;}
+.mainBody .mainBody_box .recom_productBox ul li{float:left;height: 240px;text-align:center;overflow:hidden;}
+.mainBody .mainBody_box .recom_productBox ul li a{display:block;color:#000;font:normal 14px/24px "";padding-bottom: 5px;}
+.mainBody .mainBody_box .recom_productBox ul li a:hover{color:#ff0000;text-decoration: none;}
+.mainBody .mainBody_box .recom_productBox .unique li,.mainBody .mainBody_box .recom_productBox .unique li img{width: 240px;}
+.mainBody .mainBody_box .recom_productBox .my_pro li,.mainBody .mainBody_box .recom_productBox .hot_sales_prod li{position:relative;width: 239px;border-right:1px solid #ededed;}
+.mainBody .mainBody_box .recom_productBox .my_pro .msg{position: absolute;bottom:-18px;left:0;width: 235px;}
+.mainBody .mainBody_box .recom_productBox .my_pro .msg .price,.mainBody .mainBody_box .recom_productBox .hot_sales_prod .price{color:#ff0000;font:bold 16px/24px "微软雅黑";}
+.mainBody .mainBody_box .recom_productBox .my_pro .white_bg{position:absolute;bottom:-24px;left:0;width: 235px;height: 70px;background:#fff;opacity: 0.7;filter:alpha(opacity=70);}
+.mainBody .mainBody_box .recom_productBox .hot_sales_prod li img,.mainBody .mainBody_box .recom_productBox .my_pro li img{padding:20px 0 10px;}
+.mainBody .mainBody_box .recom_productBox .hot_sales_prod li a{padding-bottom: 0;font-size: 12px;}
+.mainBody .mainBody_box .vipShare_adv{padding:20px 0;width: 1200px;height: 90px;overflow: hidden;}
+.mainBody .mainBody_box .vipShare_adv a,.mainBody .mainBody_box .vipShare_adv img{display: block;width: 1200px;height: 90px;}
+.mainBody .mainBody_box .app_adv{padding-top: 0;}
+.mainBody .left-adv-state{display: block;width: 198px;height: 159px;overflow: hidden; position:absolute;bottom:0;}
+.mainBody .left-adv-state img{width: 198px;height: 159px;overflow: hidden;vertical-align: bottom;}
+/*楼层*/
+.mainBody .mainBody_box .storey{padding-bottom: 20px;width: 1200px;overflow: hidden;}
+.mainBody .mainBody_box .storeyL{float:left;width:200px;}
+.mainBody .mainBody_box .storeyL h3{padding-left: 14px;width: 186px;height: 36px;background:#1eb8d4;color:#fff;font:normal 18px/36px "微软雅黑";}
+.ksTitle{padding-left:25px;}
+.mainBody .mainBody_box .storeyL_list{display:inline;float:left;background:#fff;border:1px solid #1eb8d2;border-top:0;height:415px;position:relative;}
+.mainBody .mainBody_box .storeyL_list li{display:inline;position:relative;margin:0 4px;float:left;width: 190px;height:31px;border-bottom:1px solid #f0ebeb;text-align:center;font:bold 16px/31px "";}
+.mainBody .mainBody_box .storeyL_list li.br0{border-bottom:0;}
+.mainBody .mainBody_box .storeyL_list li.act{margin: 0;}
+.mainBody .mainBody_box .storeyL_list li.act div{position:absolute;left:0;top:-2px;z-index:3;width: 198px;height: 39px;line-height:39px;background:url(http://res.360kad.com/theme/default/img/2014newKad/floor_ksBg.png?20141020) repeat-x;cursor:pointer;}
+.mainBody .mainBody_box .storeyL_list li.act .lLine{display: block;position:absolute;left:0;top:1px;z-index:3;width: 4px;height: 33px;background:#1eb8d4;}
+.mainBody .mainBody_box .storeyL_list li.act .rLine{display:block;position: absolute;right:-9px;top:0;z-index: 3;width: 1px;height: 34px;background: #fff;}
+.mainBody .mainBody_box .storeyL_list li.act div a{color:#ff0000;}
+.mainBody .mainBody_box .storeyL .storeyL_list04 li.act div{width:197px;}
+/*男人专区*/
+.mainBody .mainBody_box .storey_men .storeyL h3{background:#5c72e0;}
+.mainBody .mainBody_box .storey_men .storeyL_list{border-color:#5c72e0;}
+.mainBody .mainBody_box .storey_men .storeyL_list li.act .lLine{background:#5c72e0;}
+/*妇婴专区*/
+.mainBody .mainBody_box .storey_baby .storeyL h3{background:#db4fbf;}
+.mainBody .mainBody_box .storey_baby .storeyL_list{border-color:#db4fbf;}
+.mainBody .mainBody_box .storey_baby .storeyL_list li.act .lLine{background:#db4fbf;}
+/*中老年专区*/
+.mainBody .mainBody_box .storey_older .storeyL h3{background:#e89351;}
+.mainBody .mainBody_box .storey_older .storeyL_list{border-color:#e89351;}
+.mainBody .mainBody_box .storey_older .storeyL_list li.act .lLine{background:#e89351;}
+/*保健养生*/
+.mainBody .mainBody_box .storey_health .storeyL h3{background:#87c240;}
+.mainBody .mainBody_box .storey_health .storeyL_list{border-color:#87c240;}
+.mainBody .mainBody_box .storey_health .storeyL_list li.act .lLine{background:#87c240;}
+/*医疗器械*/
+.mainBody .mainBody_box .storey_tool .storeyL h3{background:#d6c354;}
+.mainBody .mainBody_box .storey_tool .storeyL_list{border-color:#d6c354;}
+.mainBody .mainBody_box .storey_tool .storeyL_list li.act .lLine{background:#d6c354;}
+/*成人用品*/
+.mainBody .mainBody_box .storey_sexy .storeyL h3{background:#b67edc;}
+.mainBody .mainBody_box .storey_sexy .storeyL_list{border-color:#b67edc;}
+.mainBody .mainBody_box .storey_sexy .storeyL_list li.act .lLine{background:#b67edc;}
+
+
+.mainBody .mainBody_box .storeyL_list li a,.mainBody .mainBody_box .storeyR .bottom_zone li a{color:#000;font-weight:normal;font-family:微软雅黑;}
+.mainBody .mainBody_box .storeyL_list li a:hover,.mainBody .mainBody_box .storeyR .bottom_zone li a:hover{color:#ff0000;}
+.mainBody .mainBody_box .storeyL_list li a{font-size: 16px;color:#646464;}
+.mainBody .mainBody_box .storeyL_list li a.hot_icon{display:block;padding-right:17px;height:40px;background:url(http://res.360kad.com/theme/default/img/2014newKad/hot_icons.jpg) right center no-repeat;}
+.mainBody .mainBody_box .storeyL .borTop{border-top: 1px solid #dfdede;}
+.mainBody .mainBody_box .storeyL .mainProadv_pic{float:left;padding:5px 0 4px;width: 188px;}
+
+.mainBody .mainBody_box .storeyL .mainProadv_pic img{display:block;width: 188px;}
+.mainBody .mainBody_box .storeyR{display:inline;float:left;width: 1000px;background: #fff;}
+.mainBody .mainBody_box .storeyR .middle_zone{display:none;float: left;}
+.mainBody .mainBody_box .storeyR .w780{float:left;width: 800px;}
+.ksLists .top{position:relative;}
+.ksLists .top .drugsType{position:absolute;right:0;top:76px;width: 142px;}
+.ksLists .top .drugsType .pt10{padding-top: 10px;}
+.ksLists .top .drugsType a{display:inline;float:right;padding: 6px 6px 6px 10px;margin-bottom:6px;height: 8px;line-height: 8px;text-align: center;color:#000;background-color:#d9f5d7;opacity:0.8;filter:alpha(opacity=80);border-radius: 9px 0 0 9px;}
+.ksLists .top .drugsType a:hover{color:#ff3f3f;text-decoration: none;}
+.ksLists .top .drugsType a .totalsNum{padding-left: 2px;color:#ff3f3f;}
+.ksLists .top .drugsType a.type02{background-color:#e4f4f8;}
+.ksLists .top .drugsType a.type03{background-color:#fde6ff;}
+.mainBody .mainBody_box .storeyR .top .advL{width: 599px;height:249px;border-right:1px solid #ededed;border-bottom:1px solid #ededed;text-align: center;overflow: hidden;}
+.mainBody .mainBody_box .storeyR .top .advL img,.mainBody .mainBody_box .storeyR .top .advR img{float:left;width: 599px;display: block;height: 249px;}
+.mainBody .mainBody_box .storeyR .top .advL,.mainBody .mainBody_box .storeyR .top .advR{display: block;float:left;}
+.mainBody .mainBody_box .storeyR .top .advR{height:249px;border-right:1px solid #ededed;border-bottom:1px solid #ededed;}
+.mainBody .mainBody_box .storeyR .top .advR img{width: 199px;}
+.mainBody .mainBody_box .storeyR .top{float:left;width:199px;height: 450px;border-top:1px solid #ededed;border-right:1px solid #ededed;border-bottom:1px solid #ededed;background: url(http://res.360kad.com/theme/default/img/2014newKad/nurses_picBg.jpg) no-repeat;}
+.mainBody .mainBody_box .storeyR .bottom_zone{float:left;width:600px;border-top:1px solid #ededed;}
+.mainBody .mainBody_box .storeyR .bottom_zone li{float:left;width: 199px;height:225px;border-right:1px solid #ededed;border-bottom:1px solid #ededed;line-height:24px;text-align:center;overflow:hidden;}
+.mainBody .mainBody_box .storeyR .bottom_zone li.pt22{height:224px;}
+.mainBody .mainBody_box .storeyR .bottom_zone li .vipMoney{font-size:16px;font-family:"Arial";color:#ff0000;}
+.mainBody .mainBody_box .storeyR .bottom_zone li .marketMoney{padding-left: 10px;font-family:"Arial";color:#959595;text-decoration: line-through;}
+/*热卖排行*/
+.mainBody .mainBody_box .topHot_salse{float:right;width: 200px;}
+.mainBody .mainBody_box .topHot_salse ul{border-top: 1px solid #ededed;}
+.mainBody .mainBody_box .topHot_salse li{display:inline;float:left;width:99px;height: 49px;border-bottom: 1px solid #ededed;border-right: 1px solid #ededed;}
+.mainBody .mainBody_box .topHot_salse li a{display: block;float: left;}
+.mainBody .mainBody_box .topHot_salse li img{width: 99px;height: 49px;}
+.mainBody .mainBody_box .topHot_salse .pPai_adv{display:block;height:200px;border-bottom: 1px solid #ededed;border-right: 1px solid #ededed;overflow: hidden;}
+/*关于KAD*/
+.mainBody .mainBody_box .about_kad_msg{padding-bottom: 20px;}
+.mainBody .mainBody_box .about_kad_msg .about_kadL{display:inline;margin-right: 10px;float: left;width: 198px;border:1px solid #e0e0e0;border-top:0;line-height:20px;background-color: #fff;text-align: center;}
+.mainBody .mainBody_box .about_kad_msg .about_kadL h3,.mainBody .mainBody_box .about_kad_msg .about_kadM .title{height: 36px;font:bold 14px/36px "";color:#000;background-color: #f5f5f5;border-top: 2px solid #2d8ef3;}
+.mainBody .mainBody_box .about_kad_msg .about_kadL a{color:#000;}
+.mainBody .mainBody_box .about_kad_msg .about_kadL a:hover{color:#ff0000;}
+.mainBody .mainBody_box .about_kad_msg .about_kadL .url_link{margin:0 4px;padding-left: 20px;border-bottom:1px dashed #dfdede;line-height:30px;text-align:left;background: url(http://res.360kad.com/theme/default/img/2014newKad/add_icon_bg01.png) no-repeat 6px center;}
+.mainBody .mainBody_box .about_kad_msg .about_kadL .pt10{padding-top: 10px;font-size:18px;font-family: "微软雅黑";}
+.mainBody .mainBody_box .about_kad_msg .about_kadL .pb10{margin-bottom: 4px;border:0;}
+.mainBody .mainBody_box .about_kad_msg .about_kadL .website{padding-bottom: 5px;font-size:14px;color:#ff0000;}
+.mainBody .mainBody_box .about_kad_msg .about_kadL .padd12{padding:0 12px;text-align: left;text-indent: 24px;}
+/*热门资讯*/
+.mainBody .mainBody_box .about_kad_msg .about_kadM{height:280px;}
+.mainBody .mainBody_box .about_kad_msg .about_kadM{display:inline;margin-right: 10px;float:left;width: 778px;background-color: #fff;border:1px solid #e0e0e0;border-top: 0;}
+.mainBody .mainBody_box .about_kad_msg .about_kadM h3{float:left;width: 258px;text-align: center;cursor: pointer;border-right:1px solid #f5f5f5;}
+.mainBody .mainBody_box .about_kad_msg .about_kadM .act{margin-top:-2px;background-color: #fff;color:#ff0000;border-right-color:#e0e0e0;border-top:2px solid #ff0000;}
+.mainBody .mainBody_box .about_kad_msg .about_kadM .main_content{display:none;padding:10px 10px 10px 0;line-height: 24px;}
+.mainBody .mainBody_box .about_kad_msg .about_kadM .main_content li{float:left;padding-left: 10px;width: 144px;overflow: hidden;}
+.mainBody .mainBody_box .about_kad_msg .about_kadM .main_content a{color: #000;}
+.mainBody .mainBody_box .about_kad_msg .about_kadM .main_content a:hover{color: #ff0000;}
+/*会员活动*/
+.mainBody .mainBody_box .about_kad_msg .vipM_active{margin-right:0;padding-bottom: 8px;}
+.mainBody .mainBody_box .about_kad_msg .vipM_active .ptb12{padding:10px 0 10px 10px;text-align:left;}
+.mainBody .mainBody_box .about_kad_msg .vipM_active .pic_adv{height: 121px;}
+.mainBody .mainBody_box .about_kad_msg .vipM_active .pic_adv a{display: block;height: 121px;overflow: hidden;}
+.mainBody .mainBody_box .about_kad_msg .vipM_active .txtclass{margin-bottom: 9px;padding-left: 10px;overflow: hidden;}
+.mainBody .mainBody_box .about_kad_msg .vipM_active input{float:left;}
+.mainBody .mainBody_box .about_kad_msg .vipM_active .txt{padding-left: 4px;width: 119px;height: 26px;line-height:26px;border-radius:3px 0 0 3px;color:#000;border:1px solid #ccc;border-right: 0;}
+.mainBody .mainBody_box .about_kad_msg .vipM_active .btn{width: 57px;height: 28px;border-radius:0 3px 3px 0;background-color: #e60000;border:0;color:#fff;cursor: pointer;}
+/*左侧导航*/
+.mainBody .mainBody_box .fixed_lSide{display:none;position:fixed;margin-left:-39px;margin-top:-210px;top:50%;width: 39px;height: 420px;background:url(http://res.360kad.com/theme/default/img/2014newKad/fixed_floor_bg_03.png) no-repeat;}
+.mainBody .mainBody_box .fixed_lSide ul li{width: 39px;height: 60px;text-align: center;text-indent: -999em;}
+.mainBody .mainBody_box .fixed_lSide ul li.act,.mainBody .mainBody_box .fixed_lSide ul li.act_click{background-color: #2d8ef3;text-indent:0;line-height: 16px;}
+.mainBody .mainBody_box .fixed_lSide ul li a{display:block;padding-top: 18px;width:30px;}
+.mainBody .mainBody_box .fixed_lSide ul li a,.mainBody .mainBody_box .fixed_lSide ul li a:hover{color:#fff;text-decoration: none;}
+.mainBody .mainBody_box .fixed_lSide ul li .firstF{padding-left: 3px;width: 36px;}
+
+/*搜索框冻结*/
+.fixed_searchBox{display:none;position:fixed;top:0;z-index:4;width: 100%;height: 60px;background-color:#fff;box-shadow:4px 0 5px #3e3e3e;}
+.fixed_searchBox .search_wrap{width: 1200px;}
+/*end搜索框冻结*/
+.categorys{position:relative;z-index:4;}

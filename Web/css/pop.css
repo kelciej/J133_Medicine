@@ -1,0 +1,17 @@
+/*删除弹窗*/
+.kad-delete-pop { display: none; padding: 8px; width: 400px; background-color: rgba(102, 102, 102, 0.65); }
+.kad-delete-pop .pop-main { padding-bottom:10px;width: 400px;background: #fff;overflow:hidden;}
+.kad-delete-pop .pop-title { position: relative; padding-left: 10px; height:36px; font: bold 14px/36px ""; color: #666; background: #eee; }
+.kad-delte-closeBtn { position: absolute; right: 10px; top: 10px; width: 15px; height: 15px; background: url(http://res.360kad.com/theme/default/img/pop/paying-close-btn.png) no-repeat; cursor: pointer; }
+.kad-delete-pop .pop-txt { padding: 26px 0 34px 54px;font-size: 0;line-height: 0; color: #333; }
+.kad-delete-pop .pop-txt span{display: inline-block;*display: inline;*zoom: 1;font-size:14px;line-height:24px;vertical-align: middle; width:279px;}
+/*感叹号！*/
+.kad-delete-pop .pop-txt .err_icon01{padding-left:34px;background: url(http://res.360kad.com/theme/default/img/pop/pop-icons_03.png) no-repeat;}
+/*打勾*/
+.kad-delete-pop .pop-txt .err_icon02{padding-left:34px;background: url(http://res.360kad.com/theme/default/img/pop/pop-icons_01.png) no-repeat;}
+/*打叉*/
+.kad-delete-pop .pop-txt .err_icon03{padding-left:34px;background: url(http://res.360kad.com/theme/default/img/pop/pop-icons_05.png) no-repeat;}
+.pop-btn-right, .pop-btn-cancel { float: right; display: inline; margin-right: 8px; width: 76px; height: 28px; background: url(http://res.360kad.com/theme/default/img/pop/submit_successBtn02.png) no-repeat; }
+.pop-btn-cancel { background: url(http://res.360kad.com/theme/default/img/pop/save_btn02.png) no-repeat; }
+.kad-delete-pop .succ-txt{padding-left: 0;padding-bottom:24px;background:none;text-align: center;}
+.succ-main .pop-btn-right{display:block;float:none;margin:0 auto;}
